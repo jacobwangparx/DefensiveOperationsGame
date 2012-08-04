@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+	
+	<screens>
+		<screen id="CALCULATORSCREEN" />
+	</screens>
+	
+	<structure>
+		
+		<screen id="CALCULATORSCREEN" buttonPlusText="S1_10" buttonMinusText="S1_11" buttonMultiplyText="S1_12" buttonDivideText="S1_13" buttonResetText="S1_15" buttonEqualText="S1_14">
+			
+			<numbers>
+				<number value="S1_0"/>
+				<number value="S1_1"/>
+				<number value="S1_2"/>
+				<number value="S1_3"/>
+				<number value="S1_4"/>
+				<number value="S1_5"/>
+				<number value="S1_6"/>
+				<number value="S1_7"/>
+				<number value="S1_8"/>
+				<number value="S1_9"/>
+			</numbers>
+			
+		</screen>
+		
+	</structure>
+	
+</data>
