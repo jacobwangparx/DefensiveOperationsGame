@@ -1,13 +1,18 @@
-package com.twoandtwo.calculator.view 
+package home.game.defensiveOperations.view 
 {
-	import com.twoandtwo.calculator.event.BusyEvent;
-	import com.twoandtwo.calculator.view.screens.CalculatorScreen;
-	import com.twoandtwo.calculator.view.screens.CalculatorScreenMediator;
+ 
+
+	import home.game.defensiveOperations.event.BusyEvent;
+	import home.game.defensiveOperations.event.ScreenEvent;
+	import home.game.defensiveOperations.view.components;
+	import home.game.defensiveOperations.view.screens;
+	
 	import flash.ui.Keyboard;
 	import flash.events.Event;
 	import flash.events.KeyboardEvent;
+	
 	/*screentag-mediator-import*/
-	import com.twoandtwo.calculator.event.ScreenEvent;
+ 
 	import org.robotlegs.mvcs.Mediator;
 	
 	/**
@@ -31,8 +36,8 @@ package com.twoandtwo.calculator.view
 			super.onRegister();
 
 			//register child mediators
-			mediatorMap.mapView(CalculatorScreen, CalculatorScreenMediator);
-			mediatorMap.createMediator(application.calculatorScreen);
+			mediatorMap.mapView(menuScreen, menuScreenMediator);
+			mediatorMap.createMediator(application.menuScreen);
 			
 			/*screentag-mediator-register*/
 			if(pageKeys){

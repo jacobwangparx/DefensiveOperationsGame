@@ -1,6 +1,6 @@
-package com.twoandtwo.calculator.vo 
+package home.game.defensiveOperations.vo 
 {
-	import com.twoandtwo.calculator.event.ScreenEvent;
+	import home.game.defensiveOperations.event.ScreenEvent;
 	/**
 	 * ...
 	 * @author Jacob
@@ -9,7 +9,7 @@ package com.twoandtwo.calculator.vo
 	{
 		public var screens:Array;
 		
-		public var calculatorScreenVO:CalculatorScreenVO;
+		public var menuScreenVO:MenuScreenVO;
 		
 		public function StructureVO() 
 		{
@@ -30,10 +30,11 @@ package com.twoandtwo.calculator.vo
 			{
 				switch(String(screenXML.@id)) {
 			
-					case ScreenEvent.CALCULATORSCREEN:
-						structure.calculatorScreenVO = CalculatorScreenVO.fromXML(screenXML);
-						break;
+					case ScreenEvent.MENUSCREEN:
+						
+						structure.menuScreenVO = menuScreenVO.fromXML(screenXML);
 					
+					break;					
 				}
 			}
 			

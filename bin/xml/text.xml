@@ -2,72 +2,28 @@
 
 <data>
 	
-	<S1>
+	<S1_MENUSCREEN>
 		
 		<textItem id="S1_0">
-			<![CDATA[0]]>
+			<![CDATA[DEFENSIVE OPERATIONS]]>
 		</textItem>
 	
 		<textItem id="S1_1">
-			<![CDATA[1]]>
+			<![CDATA[START GAME]]>
 		</textItem>
 		
 		<textItem id="S1_2">
-			<![CDATA[2]]>
+			<![CDATA[SELECT LEVEL]]>
 		</textItem>
 		
 		<textItem id="S1_3">
-			<![CDATA[3]]>
+			<![CDATA[CREDITS]]>
 		</textItem>
 	
 		<textItem id="S1_4">
-			<![CDATA[4]]>
+			<![CDATA[HELP]]>
 		</textItem>
 		
-		<textItem id="S1_5">
-			<![CDATA[5]]>
-		</textItem>
-	
-		<textItem id="S1_6">
-			<![CDATA[6]]>
-		</textItem>
-		
-		<textItem id="S1_7">
-			<![CDATA[7]]>
-		</textItem>
-	
-		<textItem id="S1_8">
-			<![CDATA[8]]>
-		</textItem>
-		
-		<textItem id="S1_9">
-			<![CDATA[9]]>
-		</textItem>
-	
-		<textItem id="S1_10">
-			<![CDATA[+]]>
-		</textItem>
-		
-		<textItem id="S1_11">
-			<![CDATA[-]]>
-		</textItem>
-		
-		<textItem id="S1_12">
-			<![CDATA[*]]>
-		</textItem>
-		
-		<textItem id="S1_13">
-			<![CDATA[/]]>
-		</textItem>
-		
-		<textItem id="S1_14">
-			<![CDATA[=]]>
-		</textItem>
-		
-		<textItem id="S1_15">
-			<![CDATA[C]]>
-		</textItem>
-		
-	</S1>
+	</S1_MENUSCREEN>
 	
 </data>

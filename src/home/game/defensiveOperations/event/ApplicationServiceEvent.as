@@ -1,6 +1,6 @@
-package com.twoandtwo.calculator.event 
+package home.game.defensiveOperations.event 
 {
-	import com.twoandtwo.calculator.vo.StructureVO
+	import home.game.defensiveOperations.vo.*;
 	import flash.events.Event;
 	
 	/**

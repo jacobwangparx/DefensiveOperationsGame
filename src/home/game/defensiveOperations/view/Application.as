@@ -1,9 +1,11 @@
-package com.twoandtwo.calculator.view 
+package home.game.defensiveOperations.view 
 {
-	import com.twoandtwo.calculator.ApplicationContext;
-	import com.twoandtwo.calculator.view.components.BusyPopup;
-	import com.twoandtwo.calculator.view.components.ErrorPopup;
-	import com.twoandtwo.calculator.view.screens.CalculatorScreen;
+	import home.game.defensiveOperations.ApplcationContext;
+	import home.game.defensiveOperations.enum.ScreenSets;
+	import home.game.defensiveOperations.view.components.BusyPopup;
+	import home.game.defensiveOperations.view.components.ErrorPopup;
+	import home.game.defensiveOperations.view.screens.*;
+	
 	/*screentag-view-import*/
 	import com.lookmum.view.Component;
 	import flash.display.MovieClip;
@@ -11,7 +13,7 @@ package com.twoandtwo.calculator.view
 	import flash.display.StageAlign;
 	import flash.display.StageScaleMode;
 	import flash.events.ErrorEvent;
-	import flash.events.UncaughtErrorEvent;
+	//import flash.events.UncaughtErrorEvent;
 	import flash.events.Event;
 	
 	/**
@@ -22,10 +24,10 @@ package com.twoandtwo.calculator.view
 	{
 		private var context:ApplicationContext;
 
-		public var calculatorScreen:CalculatorScreen;
+		public var menuScreen:MenuScreen;
 		
-		static private const STAGE_WIDTH:Number = 1000;
-		static private const STAGE_HEIGHT:Number = 590;
+		static private const STAGE_WIDTH:Number = ScreenSets.SCREEN_WIDTH;
+		static private const STAGE_HEIGHT:Number = ScreenSets.SCREEN_HEIGHT;
 		
 		public function Application(target:MovieClip) 
 		{
@@ -54,7 +56,7 @@ package com.twoandtwo.calculator.view
 		{
 			super.createChildren();
 
-			calculatorScreen = new CalculatorScreen(target.calculatorScreen);
+			menuScreen = new menuScreen(target.menuScreen);
 
 			context = new ApplicationContext(this);
 		}
