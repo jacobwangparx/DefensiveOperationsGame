@@ -56,8 +56,8 @@ package home.game.defensiveOperations.view
 		{
 			super.createChildren();
 
-			menuScreen = new MenuScreen(target.menuScreen);
-
+			menuScreen = new MenuScreen(new menuScreenClip());
+			addChild(menuScreen);
 			context = new ApplicationContext(this);
 		}
 		
