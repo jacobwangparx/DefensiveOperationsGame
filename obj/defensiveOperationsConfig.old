@@ -35,6 +35,7 @@
       <path-element>C:\Projects\flash\defensiveOperations\lib\robotlegs-framework-v1.0.3.swc</path-element>
       <path-element>C:\Projects\flash\defensiveOperations\lib\menuScreen.swc</path-element>
       <path-element>C:\Projects\flash\defensiveOperations\lib\as3-signals-v0.7.swc</path-element>
+      <path-element>C:\Projects\flash\defensiveOperations\lib\assets.swc</path-element>
     </library-path>
   </compiler>
   <file-specs>

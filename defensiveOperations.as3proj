@@ -61,6 +61,7 @@
     <element path="lib\robotlegs-framework-v1.0.3.swc" />
     <element path="lib\menuScreen.swc" />
     <element path="lib\as3-signals-v0.7.swc" />
+    <element path="lib\assets.swc" />
   </libraryPaths>
   <!-- External Libraries -->
   <externalLibraryPaths>

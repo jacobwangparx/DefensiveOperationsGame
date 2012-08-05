@@ -75,6 +75,27 @@ package home.game.defensiveOperations.view.screens
 		{
 			view.transitionIn();
 		}
+		
+		
+		private function toHelpScreen(e:ScreenEvent):void 
+		{
+			view.transitionOut();
+		}
+		
+		private function toCreditsScreen(e:ScreenEvent):void 
+		{
+			view.transitionOut();
+		}
+		
+		private function toLevelScreen(e:ScreenEvent):void 
+		{
+			view.transitionOut();
+		}
+		
+		private function toGameScreen(e:ScreenEvent):void 
+		{
+			view.transitionOut();
+		}
 			
 	}
 

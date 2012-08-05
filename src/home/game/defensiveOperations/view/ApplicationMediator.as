@@ -4,8 +4,8 @@ package home.game.defensiveOperations.view
 
 	import home.game.defensiveOperations.event.BusyEvent;
 	import home.game.defensiveOperations.event.ScreenEvent;
-	import home.game.defensiveOperations.view.components;
-	import home.game.defensiveOperations.view.screens;
+	import home.game.defensiveOperations.view.components.*;
+	import home.game.defensiveOperations.view.screens.*;
 	
 	import flash.ui.Keyboard;
 	import flash.events.Event;
@@ -36,7 +36,7 @@ package home.game.defensiveOperations.view
 			super.onRegister();
 
 			//register child mediators
-			mediatorMap.mapView(menuScreen, menuScreenMediator);
+			mediatorMap.mapView(MenuScreen, MenuScreenMediator);
 			mediatorMap.createMediator(application.menuScreen);
 			
 			/*screentag-mediator-register*/
