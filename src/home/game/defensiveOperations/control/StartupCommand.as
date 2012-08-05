@@ -1,9 +1,9 @@
-package com.twoandtwo.calculator.control 
+package home.game.defensiveOperations.control 
 {
-	import com.twoandtwo.calculator.event.*;
-	import com.twoandtwo.calculator.model.*;
-	import com.twoandtwo.calculator.view.*;
-	import com.twoandtwo.calculator.service.ApplicationService;
+	import home.game.defensiveOperations.event.*;
+	import home.game.defensiveOperations.model.*;
+	import home.game.defensiveOperations.view.*;
+	import home.game.defensiveOperations.service.ApplicationService;
 	import org.robotlegs.mvcs.Command;
 	
 	/**
@@ -23,7 +23,7 @@ package com.twoandtwo.calculator.control
 			
 			//map model
 			injector.mapValue(ScreenProxy, new ScreenProxy());
-			injector.mapValue(CalculatorProxy, new CalculatorProxy());
+			//injector.mapValue(CalculatorProxy, new CalculatorProxy());
 			
 			//map view
 			mediatorMap.mapView(Application, ApplicationMediator);
@@ -38,17 +38,17 @@ package com.twoandtwo.calculator.control
 			commandMap.mapEvent(ApplicationServiceEvent.LOAD_TEXT, LoadStructureCommand, ApplicationServiceEvent, true);
 			commandMap.mapEvent(ApplicationServiceEvent.LOAD_STRUCTURE, SetStructureCommand, ApplicationServiceEvent, true);
 			
-			commandMap.mapEvent(ScreenEvent.CALCULATORSCREEN, CalculatorScreenCommand, ScreenEvent, false);
-			
-			commandMap.mapEvent(CalculatorEvent.SET_FIRST_VALUE, SetFirstValueCommand, CalculatorEvent, false);
-			commandMap.mapEvent(CalculatorEvent.SET_SECOND_VALUE, SetSecondValueCommand, CalculatorEvent, false);
-			commandMap.mapEvent(CalculatorEvent.SET_OPERATOR_VALUE, SetOperatorValueCommand, CalculatorEvent, false);
-			
-			commandMap.mapEvent( CalculatorEvent.SET_TOTAL_VALUE, SetTotalValueCommand, CalculatorEvent,false);
-			
-			commandMap.mapEvent( CalculatorEvent.SET_CURRENT_TYPE_VALUE, SetCurrentTypeValueCommand, CalculatorEvent, false);
-			
-			commandMap.mapEvent( CalculatorEvent.RESET, ResetCommand, CalculatorEvent, false);
+			//commandMap.mapEvent(ScreenEvent.CALCULATORSCREEN, CalculatorScreenCommand, ScreenEvent, false);
+			//
+			//commandMap.mapEvent(CalculatorEvent.SET_FIRST_VALUE, SetFirstValueCommand, CalculatorEvent, false);
+			//commandMap.mapEvent(CalculatorEvent.SET_SECOND_VALUE, SetSecondValueCommand, CalculatorEvent, false);
+			//commandMap.mapEvent(CalculatorEvent.SET_OPERATOR_VALUE, SetOperatorValueCommand, CalculatorEvent, false);
+			//
+			//commandMap.mapEvent( CalculatorEvent.SET_TOTAL_VALUE, SetTotalValueCommand, CalculatorEvent,false);
+			//
+			//commandMap.mapEvent( CalculatorEvent.SET_CURRENT_TYPE_VALUE, SetCurrentTypeValueCommand, CalculatorEvent, false);
+			//
+			//commandMap.mapEvent( CalculatorEvent.RESET, ResetCommand, CalculatorEvent, false);
 			
 			//chain command
 			dispatch( new ApplicationEvent( ApplicationEvent.LOAD_TEXT));

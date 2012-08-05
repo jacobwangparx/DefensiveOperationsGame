@@ -33,7 +33,7 @@ package home.game.defensiveOperations.view.screens
 		public var signalClickCredits:Signal;
 		public var signalClickHelp:Signal;
 		
-		public function CalculatorScreen(target:MovieClip):void
+		public function MenuScreen(target:MovieClip):void
 		{
 			super(target);
 		}

@@ -1,6 +1,7 @@
-package com.twoandtwo.calculator.model
+package home.game.defensiveOperations.model
 {
-	import com.twoandtwo.calculator.event.DebugEvent;
+
+	import home.game.defensiveOperations.event.DebugEvent;
 	import org.robotlegs.mvcs.Actor;
 	/**
 	 * ...

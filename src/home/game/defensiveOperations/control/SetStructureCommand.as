@@ -1,9 +1,9 @@
-package com.twoandtwo.calculator.control 
+package home.game.defensiveOperations.control 
 {
-	import com.twoandtwo.calculator.event.ApplicationServiceEvent;
-	import com.twoandtwo.calculator.event.ScreenEvent;
-	import com.twoandtwo.calculator.model.ScreenProxy;
-	import com.twoandtwo.calculator.vo.StructureVO;
+	import home.game.defensiveOperations.event.ApplicationServiceEvent;
+	import home.game.defensiveOperations.event.ScreenEvent;
+	import home.game.defensiveOperations.model.ScreenProxy;
+	import home.game.defensiveOperations.vo.StructureVO;
 	import org.robotlegs.mvcs.Command;
 	
 	/**

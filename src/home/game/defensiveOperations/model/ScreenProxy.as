@@ -1,6 +1,6 @@
-package com.twoandtwo.calculator.model 
+package home.game.defensiveOperations.model 
 {
-	import com.twoandtwo.calculator.event.ScreenEvent;
+	import home.game.defensiveOperations.event.ScreenEvent;
 	import org.robotlegs.mvcs.Actor;
 	
 	/**

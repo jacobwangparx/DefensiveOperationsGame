@@ -19,9 +19,11 @@
     <class path="lib" />
     <class path="..\actuate" />
     <class path="..\lib_as3" />
-    <class path="..\lookmum" />
     <class path="..\robotlegs-framework-v1.5.2" />
     <class path="..\trn" />
+    <class path="..\lookmum\src\fp9" />
+    <class path="..\lookmum\src\fp10" />
+    <class path="..\lookmum\src\common" />
   </classpaths>
   <!-- Build options -->
   <build>

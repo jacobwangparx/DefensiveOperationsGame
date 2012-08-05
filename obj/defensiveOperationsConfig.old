@@ -16,7 +16,7 @@
     </define>
     <define append="true">
       <name>CONFIG::timeStamp</name>
-      <value>'4/08/2012'</value>
+      <value>'5/08/2012'</value>
     </define>
     <verbose-stacktraces>true</verbose-stacktraces>
     <source-path append="true">
@@ -24,9 +24,11 @@
       <path-element>C:\Projects\flash\defensiveOperations\lib</path-element>
       <path-element>C:\Projects\flash\actuate</path-element>
       <path-element>C:\Projects\flash\lib_as3</path-element>
-      <path-element>C:\Projects\flash\lookmum</path-element>
       <path-element>C:\Projects\flash\robotlegs-framework-v1.5.2</path-element>
       <path-element>C:\Projects\flash\trn</path-element>
+      <path-element>C:\Projects\flash\lookmum\src\fp9</path-element>
+      <path-element>C:\Projects\flash\lookmum\src\fp10</path-element>
+      <path-element>C:\Projects\flash\lookmum\src\common</path-element>
       <path-element>C:\Program Files (x86)\FlashDevelop\Library\AS3\classes</path-element>
     </source-path>
     <library-path append="true">

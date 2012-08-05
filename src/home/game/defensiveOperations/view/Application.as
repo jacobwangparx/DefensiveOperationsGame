@@ -1,6 +1,6 @@
 package home.game.defensiveOperations.view 
 {
-	import home.game.defensiveOperations.ApplcationContext;
+	import home.game.defensiveOperations.ApplicationContext;
 	import home.game.defensiveOperations.enum.ScreenSets;
 	import home.game.defensiveOperations.view.components.BusyPopup;
 	import home.game.defensiveOperations.view.components.ErrorPopup;
@@ -56,7 +56,7 @@ package home.game.defensiveOperations.view
 		{
 			super.createChildren();
 
-			menuScreen = new menuScreen(target.menuScreen);
+			menuScreen = new MenuScreen(target.menuScreen);
 
 			context = new ApplicationContext(this);
 		}

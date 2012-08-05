@@ -1,7 +1,7 @@
-package com.twoandtwo.calculator.control 
+package home.game.defensiveOperations.control 
 {
-	import com.twoandtwo.calculator.event.ApplicationServiceEvent;
-	import com.twoandtwo.calculator.service.ApplicationService;
+	import home.game.defensiveOperations.event.ApplicationServiceEvent;
+	import home.game.defensiveOperations.service.ApplicationService;
 	import org.robotlegs.mvcs.Command;
 	
 	/**

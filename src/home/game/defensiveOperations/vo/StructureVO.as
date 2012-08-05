@@ -32,7 +32,7 @@ package home.game.defensiveOperations.vo
 			
 					case ScreenEvent.MENUSCREEN:
 						
-						structure.menuScreenVO = menuScreenVO.fromXML(screenXML);
+						structure.menuScreenVO = MenuScreenVO.fromXML(screenXML);
 					
 					break;					
 				}

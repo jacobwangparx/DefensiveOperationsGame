@@ -20,7 +20,7 @@ package home.game.defensiveOperations.vo
 			
 		}
 		
-		public function  fromXML(xml:XML):MenuScreenVO 
+		public static function  fromXML(xml:XML):MenuScreenVO 
 		{
 			var vo:MenuScreenVO = new MenuScreenVO();
 			
