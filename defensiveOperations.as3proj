@@ -6,8 +6,8 @@
     <movie input="" />
     <movie path="bin\Main.swf" />
     <movie fps="30" />
-    <movie width="800" />
-    <movie height="600" />
+    <movie width="1000" />
+    <movie height="590" />
     <movie version="9" />
     <movie minorVersion="0" />
     <movie platform="Flash Player" />
@@ -62,6 +62,7 @@
     <element path="lib\menuScreen.swc" />
     <element path="lib\as3-signals-v0.7.swc" />
     <element path="lib\assets.swc" />
+    <element path="lib\screens.swc" />
   </libraryPaths>
   <!-- External Libraries -->
   <externalLibraryPaths>

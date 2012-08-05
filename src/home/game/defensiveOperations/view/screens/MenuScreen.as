@@ -99,8 +99,11 @@ package home.game.defensiveOperations.view.screens
 				}
 				
 				menuButtons.push(button);
+				addChild(button);
 				currentY += button.height + Y_OFFSET;
 			}
+			
+ 
 			
 		}
 		
