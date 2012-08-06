@@ -29,6 +29,7 @@ package home.game.defensiveOperations.view
 		public var creditsScreen:CreditsScreen;
 		public var levelScreen:LevelScreen;
 		public var gameScreen:GameScreen;
+		public var helpScreen:HelpScreen;
 		
 		static private const STAGE_WIDTH:Number = ScreenSets.SCREEN_WIDTH;
 		static private const STAGE_HEIGHT:Number = ScreenSets.SCREEN_HEIGHT;
@@ -65,12 +66,14 @@ package home.game.defensiveOperations.view
 			creditsScreen = new CreditsScreen(new creditsScreenClip());
 			levelScreen = new LevelScreen(new levelScreenClip());
 			gameScreen = new GameScreen(new gameScreenClip());
+			helpScreen = new HelpScreen(new helpScreenClip());
 			
 			addChild(menuScreen);
 			addChild(gameScreen);
 			addChild(shopScreen);
 			addChild(creditsScreen);
 			addChild(levelScreen);
+			addChild(helpScreen);
 			
 			context = new ApplicationContext(this);
 		}

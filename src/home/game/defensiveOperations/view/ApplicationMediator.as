@@ -51,6 +51,9 @@ package home.game.defensiveOperations.view
 			mediatorMap.mapView(CreditsScreen, CreditsScreenMediator);
 			mediatorMap.createMediator(application.creditsScreen);
 			
+			mediatorMap.mapView(HelpScreen, HelpScreenMediator);
+			mediatorMap.createMediator(application.helpScreen);
+			
 			/*screentag-mediator-register*/
 			if(pageKeys){
 				application.addEventListener(Event.ADDED_TO_STAGE, onAddedToStage);

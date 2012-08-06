@@ -50,28 +50,28 @@ package home.game.defensiveOperations.vo
 					
 					case ScreenEvent.CREDITSSCREEN:
 						
-						structure.creditsScreenVO = GameScreenVO.fromXML(screenXML);
+						structure.creditsScreenVO = CreditsScreenVO.fromXML(screenXML);
 					
 					break;
 					
 					
 					case ScreenEvent.LEVELSCREEN:
 						
-						structure.levelScreenVO = GameScreenVO.fromXML(screenXML);
+						structure.levelScreenVO = LevelScreenVO.fromXML(screenXML);
 					
 					break;
 					
 					
 					case ScreenEvent.SHOPSCREEN:
 						
-						structure.shopScreenVO = GameScreenVO.fromXML(screenXML);
-					
+						structure.shopScreenVO = ShopScreenVO.fromXML(screenXML);
+				
 					break;
 					
 					
 					case ScreenEvent.HELPSCREEN:
 						
-						structure.helpScreenVO = GameScreenVO.fromXML(screenXML);
+						structure.helpScreenVO = HelpScreenVO.fromXML(screenXML);
 					
 					break;
 					
