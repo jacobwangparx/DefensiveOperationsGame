@@ -17,7 +17,9 @@ package home.game.defensiveOperations.view.screens
 	 */
 	public class GameScreen extends AbstractScreen
 	{
-	 
+		
+		private var textKilled:TextField;
+		private var textMissed:TextField;
 		
 		private var _gameScreenVO:GameScreenVO;
 	 
@@ -30,8 +32,10 @@ package home.game.defensiveOperations.view.screens
 		override protected function createChildren():void 
 		{
 			super.createChildren();
+			textKilled = target.textKilled;
+			textMissed = target.textMissed;
 		}
-		
+				
 		public function get gameScreenVO():GameScreenVO 
 		{
 			return _gameScreenVO;

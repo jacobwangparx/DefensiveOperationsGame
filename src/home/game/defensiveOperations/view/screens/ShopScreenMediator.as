@@ -24,6 +24,8 @@ package home.game.defensiveOperations.view.screens
 		override public function onRegister():void 
 		{
 			super.onRegister();
+			
+			eventMap.mapListener(eventDispatcher, ScreenEvent.SHOPSCREEN, showScreen, ScreenEvent);
 		}
  
 		private function showScreen(e:ScreenEvent):void 

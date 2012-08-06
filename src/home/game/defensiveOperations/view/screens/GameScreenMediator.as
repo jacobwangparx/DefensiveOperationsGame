@@ -25,7 +25,8 @@ package home.game.defensiveOperations.view.screens
 		{
 			super.onRegister();
 			
-	 
+			eventMap.mapListener(eventDispatcher, ScreenEvent.GAMESCREEN, showScreen, ScreenEvent);
+				
 			
 		}
 				

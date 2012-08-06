@@ -39,6 +39,18 @@ package home.game.defensiveOperations.view
 			mediatorMap.mapView(MenuScreen, MenuScreenMediator);
 			mediatorMap.createMediator(application.menuScreen);
 			
+			mediatorMap.mapView(GameScreen, GameScreenMediator);
+			mediatorMap.createMediator(application.gameScreen);
+			
+			mediatorMap.mapView(ShopScreen, ShopScreenMediator);
+			mediatorMap.createMediator(application.shopScreen);
+			
+			mediatorMap.mapView(LevelScreen, LevelScreenMediator);
+			mediatorMap.createMediator(application.levelScreen);
+			
+			mediatorMap.mapView(CreditsScreen, CreditsScreenMediator);
+			mediatorMap.createMediator(application.creditsScreen);
+			
 			/*screentag-mediator-register*/
 			if(pageKeys){
 				application.addEventListener(Event.ADDED_TO_STAGE, onAddedToStage);

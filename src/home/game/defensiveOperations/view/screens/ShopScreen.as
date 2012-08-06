@@ -20,7 +20,7 @@ package home.game.defensiveOperations.view.screens
 	 
 		private var _shopScreenVO:ShopScreenVO;
 		
-		public function MenuScreen(target:MovieClip):void
+		public function ShopScreen(target:MovieClip):void
 		{
 			super(target);
 		}

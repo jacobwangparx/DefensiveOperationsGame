@@ -2,11 +2,14 @@
 <data>
 	
 	<screens>
-		<screen id="MENUSCREEN" />
-		<screen id="SHOPSCREEN" />
-		<screen id="LEVELSCREEN" />
+		
+		<screen id="MENUSCREEN" /> 
+		<screen id="GAMESCREEN" /> 
+		<screen id="LEVELSCREEN" /> 
+		<screen id="SHOPSCREEN" /> 
 		<screen id="CREDITSSCREEN" />
-		<screen id="GAMESCREEN" />
+		<screen id="HELPSCREEN" />
+		
 	</screens>
 	
 	<structure>

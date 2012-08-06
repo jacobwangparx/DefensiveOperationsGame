@@ -10,6 +10,11 @@ package home.game.defensiveOperations.vo
 		public var screens:Array;
 		
 		public var menuScreenVO:MenuScreenVO;
+		public var gameScreenVO:GameScreenVO;
+		public var creditsScreenVO:CreditsScreenVO;
+		public var helpScreenVO:HelpScreenVO;
+		public var levelScreenVO:LevelScreenVO;
+		public var shopScreenVO:ShopScreenVO;
 		
 		public function StructureVO() 
 		{
@@ -34,7 +39,43 @@ package home.game.defensiveOperations.vo
 						
 						structure.menuScreenVO = MenuScreenVO.fromXML(screenXML);
 					
-					break;					
+					break;	
+					
+					case ScreenEvent.GAMESCREEN:
+						
+						structure.gameScreenVO = GameScreenVO.fromXML(screenXML);
+					
+					break;
+					
+					
+					case ScreenEvent.CREDITSSCREEN:
+						
+						structure.creditsScreenVO = GameScreenVO.fromXML(screenXML);
+					
+					break;
+					
+					
+					case ScreenEvent.LEVELSCREEN:
+						
+						structure.levelScreenVO = GameScreenVO.fromXML(screenXML);
+					
+					break;
+					
+					
+					case ScreenEvent.SHOPSCREEN:
+						
+						structure.shopScreenVO = GameScreenVO.fromXML(screenXML);
+					
+					break;
+					
+					
+					case ScreenEvent.HELPSCREEN:
+						
+						structure.helpScreenVO = GameScreenVO.fromXML(screenXML);
+					
+					break;
+					
+					
 				}
 			}
 			

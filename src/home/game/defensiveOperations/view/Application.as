@@ -67,10 +67,10 @@ package home.game.defensiveOperations.view
 			gameScreen = new GameScreen(new gameScreenClip());
 			
 			addChild(menuScreen);
+			addChild(gameScreen);
 			addChild(shopScreen);
 			addChild(creditsScreen);
 			addChild(levelScreen);
-			addChild(gameScreen);
 			
 			context = new ApplicationContext(this);
 		}

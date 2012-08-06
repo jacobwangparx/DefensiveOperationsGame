@@ -9,14 +9,14 @@ package home.game.defensiveOperations.view.screens
 	 * ...
 	 * @author Jacob
 	 */
-	public class CreditsScreenMediator extends Mediator
+	public class HelpScreenMediator extends Mediator
 	{
 		
 		[Inject]
-		public var view:CreditsScreen;
+		public var view:HelpScreen;
 		
 
-		public function CreditsScreenMediator() 
+		public function HelpScreenMediator() 
 		{
 			super();
 		}
@@ -24,6 +24,8 @@ package home.game.defensiveOperations.view.screens
 		override public function onRegister():void 
 		{
 			super.onRegister();	
+			
+			eventMap.mapListener(eventDispatcher, ScreenEvent.HELPSCREEN, showScreen, ScreenEvent);
 		}
 			
 		private function showScreen(e:ScreenEvent):void 
