@@ -3,7 +3,7 @@
 	
 	<screens>
 		<screen id="MENUSCREEN" />
-		<screen id="UPDATESCREEN" />
+		<screen id="SHOPSCREEN" />
 		<screen id="LEVELSCREEN" />
 		<screen id="CREDITSSCREEN" />
 		<screen id="GAMESCREEN" />
@@ -15,6 +15,22 @@
 		
 		</screen>
 		
+		<screen id="SHOPSCREEN" >
+			
+		</screen>
+		
+		<screen id="LEVELSCREEN" >
+			
+		</screen>
+		
+		<screen id="CREDITSSCREEN" >
+			
+		</screen>
+		
+		<screen id="GAMESCREEN" >
+			
+		</screen>
+			
 	</structure>
 	
 </data>

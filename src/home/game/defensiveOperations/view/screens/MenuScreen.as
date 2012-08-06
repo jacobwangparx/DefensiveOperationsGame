@@ -9,7 +9,7 @@ package home.game.defensiveOperations.view.screens
 	import flash.text.TextFieldAutoSize;
 	import flash.utils.Dictionary;
 	import org.osflash.signals.Signal;
-	import home.game.defensiveOperations.vo.MenuScreenVO;
+	import home.game.defensiveOperations.vo.*;
 	
 	/**
 	 * ...

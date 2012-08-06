@@ -13,7 +13,7 @@ package home.game.defensiveOperations.event
 		public static const HIDE_ALL:String = "HIDE_ALL";
 		
 		public static const MENUSCREEN:String = "MENUSCREEN";
-		public static const UPDATESCREEN:String = "UPDATESCREEN";
+		public static const SHOPSCREEN:String = "SHOPSCREEN";
 		public static const GAMESCREEN:String = "GAMESCREEN";
 		public static const HELPSCREEN:String = "HELPSCREEN";
 		public static const CREDITSSCREEN:String = "CREDITSSCREEN";

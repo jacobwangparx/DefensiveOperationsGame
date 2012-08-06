@@ -25,6 +25,10 @@ package home.game.defensiveOperations.view
 		private var context:ApplicationContext;
 
 		public var menuScreen:MenuScreen;
+		public var shopScreen:ShopScreen;
+		public var creditsScreen:CreditsScreen;
+		public var levelScreen:LevelScreen;
+		public var gameScreen:GameScreen;
 		
 		static private const STAGE_WIDTH:Number = ScreenSets.SCREEN_WIDTH;
 		static private const STAGE_HEIGHT:Number = ScreenSets.SCREEN_HEIGHT;
@@ -57,7 +61,17 @@ package home.game.defensiveOperations.view
 			super.createChildren();
 
 			menuScreen = new MenuScreen(new menuScreenClip());
+			shopScreen = new ShopScreen(new shopScreenClip());
+			creditsScreen = new CreditsScreen(new creditsScreenClip());
+			levelScreen = new LevelScreen(new levelScreenClip());
+			gameScreen = new GameScreen(new gameScreenClip());
+			
 			addChild(menuScreen);
+			addChild(shopScreen);
+			addChild(creditsScreen);
+			addChild(levelScreen);
+			addChild(gameScreen);
+			
 			context = new ApplicationContext(this);
 		}
 		
