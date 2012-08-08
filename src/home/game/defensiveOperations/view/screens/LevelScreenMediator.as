@@ -26,7 +26,16 @@ package home.game.defensiveOperations.view.screens
 			super.onRegister();	
 			
 			eventMap.mapListener(eventDispatcher, ScreenEvent.LEVELSCREEN, showScreen, ScreenEvent);
+			
+			view.signalClickButtonBack.add(backToMenuScreen);
 		 
+		}
+		
+		private function backToMenuScreen():void 
+		{
+			var screenEvent:ScreenEvent = new ScreenEvent(ScreenEvent.MENUSCREEN);
+			dispatch(screenEvent);
+			view.transitionOut();
 		}
 		
 		private function showScreen(e:ScreenEvent):void 

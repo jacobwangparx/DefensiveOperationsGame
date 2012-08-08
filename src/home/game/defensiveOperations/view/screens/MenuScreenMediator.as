@@ -46,6 +46,7 @@ package home.game.defensiveOperations.view.screens
 		{
 			var screenEvent:ScreenEvent = new ScreenEvent(ScreenEvent.GAMESCREEN);
 			dispatch(screenEvent);
+			removeScreen();
 		}
 		
 		private function onClickButtonSelectLevel():void
@@ -64,6 +65,7 @@ package home.game.defensiveOperations.view.screens
 		{
 			var screenEvent:ScreenEvent = new ScreenEvent(ScreenEvent.HELPSCREEN);
 			dispatch(screenEvent);
+			removeScreen();
 		}
 		
 		private function onLoadStructure(e:ApplicationServiceEvent):void 
@@ -76,6 +78,11 @@ package home.game.defensiveOperations.view.screens
 			view.transitionIn();
 		}
 		
+		
+		private function removeScreen():void 
+		{
+			view.transitionOut();
+		}
 		
 		private function toHelpScreen(e:ScreenEvent):void 
 		{

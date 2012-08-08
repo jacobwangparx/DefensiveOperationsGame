@@ -1,5 +1,6 @@
 package home.game.defensiveOperations.view.screens 
 {
+	import com.lookmum.view.LabelButton;
 	import home.game.defensiveOperations.event.ScreenEvent;
 	import com.lookmum.util.TextManager;
 	import com.lookmum.view.Button;
@@ -17,6 +18,7 @@ package home.game.defensiveOperations.view.screens
 	public class AbstractScreen extends Component 
 	{
 		protected var buttonNext:Button;
+		protected var buttonBack:LabelButton;
 		protected var screenTitle:TextComponent;
 		public var next:Signal;
 		protected var nextScreen:String = ScreenEvent.NEXT;
@@ -41,6 +43,19 @@ package home.game.defensiveOperations.view.screens
 				screenTitle = new TextComponent(target.screenTitle);
 				screenTitle.autoSize = TextFieldAutoSize.LEFT;
 			}
+			if (target.buttonBack)
+			{
+				buttonBack = new LabelButton(target.buttonBack);
+				buttonBack.addEventListener(MouseEvent.CLICK, onClickBack); 
+				addChild(buttonBack);
+				
+			}
+		}
+		
+		private function onClickBack(e:MouseEvent):void 
+		{
+			var screenEvent:ScreenEvent = new ScreenEvent(ScreenEvent.MENUSCREEN);
+			dispatchEvent(screenEvent);
 		}
 		
 		protected function onClickNext(e:MouseEvent):void 

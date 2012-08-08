@@ -81,22 +81,27 @@ package home.game.defensiveOperations.view.screens
 				{
 					case 0:
 						button.htmlText = value.textStartGame;
+						button.addEventListener(MouseEvent.CLICK, onClickButtonStartGame);
 					break;
 							
 					case 1:
 						button.htmlText = value.textSelectLevel;
+						button.addEventListener(MouseEvent.CLICK, onClickButtoSelectLevel);
 					break;
 					
 					case 2:
 						button.htmlText = value.textCredits;
+						button.addEventListener(MouseEvent.CLICK, onClickButtonCredits);
 					break;
 					
 					case 3:
 						button.htmlText = value.textHelp;
+						button.addEventListener(MouseEvent.CLICK, onClickButtonHelp);
 					break;
 					
 					default: button.htmlText = '';
 				}
+				
 				
 				menuButtons.push(button);
 				addChild(button);
@@ -106,6 +111,28 @@ package home.game.defensiveOperations.view.screens
  
 			
 		}
+		
+		private function onClickButtonHelp(e:MouseEvent):void 
+		{
+			signalClickHelp.dispatch();
+		}
+		
+		private function onClickButtonCredits(e:MouseEvent):void 
+		{
+			signalClickCredits.dispatch();
+		}
+		
+		private function onClickButtoSelectLevel(e:MouseEvent):void 
+		{
+			signalClickSelectLevel.dispatch();
+		}
+		
+		private function onClickButtonStartGame(e:MouseEvent):void 
+		{
+			signalClickStartGame.dispatch();
+		}
+		
+		
 		
 	}
 

@@ -1,15 +1,16 @@
 package home.game.defensiveOperations.event 
 {
+	import flash.events.Event;
 	/**
 	 * ...
 	 * @author Jake
 	 */
-	public class LevelScreenEvent 
+	public class LevelScreenEvent extends Event
 	{		
-		//public static const TO_START_GAME_SCREEN:String = "MenuScreenEvent.TO_START_GAME_SCREEN";
-		//public static const TO_SELECT_LEVEL_SCREEN:String = "MenuScreenEvent.TO_SELECT_LEVEL_SCREEN";
-		//public static const TO_CREDITS_SCREEN:String = "MenuScreenEvent.TO_CREDITS_SCREEN";
-		//public static const TO_HELP_SCREEN:String = "MenuScreenEvent.TO_HELP_SCREEN";
+
+		public static const CHANGE_CURRENT_LEVEL:String = "LevelScreenEvent.CHANGE_CURRENT_LEVEL";
+		public static const SET_CURRENT_LEVEL:String = "LevelScreenEvent.SET_CURRENT_LEVEL";
+		
 		
 		public function LevelScreenEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false) 
 		{ 
