@@ -13,14 +13,17 @@ package home.game.defensiveOperations.view.screens
 	import home.game.defensiveOperations.vo.*;
 	
 	/**
-	 * ...
+	 
+	* ...
 	 * @author Jake
 	 */
 	public class LevelScreen extends AbstractScreen
 	{		
 		private var _levelScreenVO:LevelScreenVO;
-			
-		public var signalClickButtonBack:Signal;
+		
+		
+		public var signalClickButtonBack:Signal
+		
 		
 		public function LevelScreen(target:MovieClip):void
 		{
