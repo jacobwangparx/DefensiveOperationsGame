@@ -18,8 +18,8 @@ package home.game.defensiveOperations.view.screens
 	public class MenuScreen extends AbstractScreen
 	{
 		private static const Y_OFFSET:Number = 10;
-		private static const MENU_BUTTONS_Y_START:Number = 350;
-		private static const NENU_BUTTONS_X:Number = 30;
+		//private static const MENU_BUTTONS_Y_START:Number = 242;
+		//private static const NENU_BUTTONS_X:Number = 37;
 		
 		private var _menuScreenVO:MenuScreenVO;
 		
@@ -32,6 +32,7 @@ package home.game.defensiveOperations.view.screens
 		public var signalClickSelectLevel:Signal;
 		public var signalClickCredits:Signal;
 		public var signalClickHelp:Signal;
+		public var signalClickExit:Signal;
 		
 		public function MenuScreen(target:MovieClip):void
 		{
@@ -45,7 +46,7 @@ package home.game.defensiveOperations.view.screens
 			
 			textHeading = target.textHeading;
 			textHeading.mouseEnabled = false;
-			textHeading.autoSize = TextFieldAutoSize.CENTER;
+			textHeading.autoSize = TextFieldAutoSize.RIGHT;
 			
 			menuButtons = new Array();
 			panelMenu = target.panelMenu;
@@ -55,6 +56,7 @@ package home.game.defensiveOperations.view.screens
 			signalClickSelectLevel = new Signal();
 			signalClickCredits = new Signal();
 			signalClickHelp = new Signal();
+			signalClickExit = new Signal();
 		}
 			
 		public function get menuScreenVO():MenuScreenVO 
@@ -68,14 +70,14 @@ package home.game.defensiveOperations.view.screens
 			
 			textHeading.htmlText = value.textHeading;
 			
-			var currentY:Number = MENU_BUTTONS_Y_START;
-			var currentX:Number = NENU_BUTTONS_X;
+			//var currentY:Number = MENU_BUTTONS_Y_START;
+			//var currentX:Number = NENU_BUTTONS_X;
 			
-			for (var i:int = 0; i < 4; i++) 
+			for (var i:int = 0; i < 5; i++) 
 			{
-				var button:LabelButton = new LabelButton(new buttonMenuClip());
-				button.x = currentX;
-				button.y = currentY;
+				var button:LabelButton = new LabelButton(target['button' + i]);
+				//button.x = currentX;
+				//button.y = currentY;
 				
 				switch (i) 
 				{
@@ -99,17 +101,28 @@ package home.game.defensiveOperations.view.screens
 						button.addEventListener(MouseEvent.CLICK, onClickButtonHelp);
 					break;
 					
+					case 4:
+						button.htmlText = value.textExit;
+						button.addEventListener(MouseEvent.CLICK, onClickButtonExit);
+					break;
+					
+					
 					default: button.htmlText = '';
 				}
 				
 				
 				menuButtons.push(button);
 				addChild(button);
-				currentY += button.height + Y_OFFSET;
+				//currentY += button.height + Y_OFFSET;
 			}
 			
  
 			
+		}
+		
+		private function onClickButtonExit(e:MouseEvent):void 
+		{
+			signalClickExit.dispatch();
 		}
 		
 		private function onClickButtonHelp(e:MouseEvent):void 

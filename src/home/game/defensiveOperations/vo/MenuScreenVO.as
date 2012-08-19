@@ -14,7 +14,8 @@ package home.game.defensiveOperations.vo
 		public var textSelectLevel:String;
 		public var textCredits:String;
 		public var textHelp:String;
-	
+		public var textExit:String;
+		
 		public function MenuScreenVO() 
 		{
 			
@@ -29,6 +30,8 @@ package home.game.defensiveOperations.vo
 			if (xml.@textSelectLevel != undefined) vo.textSelectLevel = TextManager.getText(xml.@textSelectLevel);
 			if (xml.@textCredits != undefined) vo.textCredits = TextManager.getText(xml.@textCredits);
 			if (xml.@textHelp != undefined) vo.textHelp = TextManager.getText(xml.@textHelp);
+			
+			vo.textExit = 'EXIT';
 			
 			return vo;
 		}
