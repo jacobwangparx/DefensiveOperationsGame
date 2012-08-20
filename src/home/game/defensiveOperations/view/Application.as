@@ -45,7 +45,7 @@ package home.game.defensiveOperations.view
 		}
 		
 		private function onAdded(e:Event = null):void 
-		{
+		{	
 			removeEventListener(Event.ADDED_TO_STAGE, onAdded);
 			stage.scaleMode = StageScaleMode.NO_SCALE;
 			stage.addEventListener(Event.RESIZE, onResize)
@@ -66,14 +66,14 @@ package home.game.defensiveOperations.view
 			creditsScreen = new CreditsScreen(new creditsScreenClip());
 			levelScreen = new LevelScreen(new levelScreenClip());
 			gameScreen = new GameScreen(new gameScreenClip());
-			helpScreen = new HelpScreen(new helpScreenClip());
+			//helpScreen = new HelpScreen(new helpScreenClip());
 			
 			addChild(menuScreen);
 			addChild(gameScreen);
 			addChild(shopScreen);
 			addChild(creditsScreen);
 			addChild(levelScreen);
-			addChild(helpScreen);
+			//addChild(helpScreen);
 			
 			context = new ApplicationContext(this);
 		}
