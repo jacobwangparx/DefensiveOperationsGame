@@ -8,6 +8,7 @@ package home.game.defensiveOperations.view.screens
 	import flash.text.TextField;
 	import flash.text.TextFieldAutoSize;
 	import flash.utils.Dictionary;
+	import home.game.defensiveOperations.event.MenuScreenEvent;
 	import org.osflash.signals.Signal;
 	import home.game.defensiveOperations.vo.*;
 	

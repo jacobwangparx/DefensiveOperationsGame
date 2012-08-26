@@ -1,10 +1,11 @@
 package home.game.defensiveOperations.event 
 {
+	import flash.events.Event;
 	/**
 	 * ...
 	 * @author Jake
 	 */
-	public class MenuScreenEvent 
+	public class MenuScreenEvent  extends Event
 	{		
 		//public static const TO_START_GAME_SCREEN:String = "MenuScreenEvent.TO_START_GAME_SCREEN";
 		//public static const TO_SELECT_LEVEL_SCREEN:String = "MenuScreenEvent.TO_SELECT_LEVEL_SCREEN";
