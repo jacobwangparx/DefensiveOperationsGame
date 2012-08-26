@@ -75,7 +75,6 @@ package home.game.defensiveOperations.view.screens
 			
 			for (var i:int = 0; i < 5; i++) 
 			{
-				trace("get buttons");
 				var button:LabelButton = new LabelButton(target['button' + i]);
 				//button.x = currentX;
 				//button.y = currentY;
