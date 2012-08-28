@@ -16,11 +16,6 @@ package home.game.defensiveOperations.vo
 		public var textHelp:String;
 		public var textExit:String;
 		
-		public function MenuScreenVO() 
-		{
-			
-		}
-		
 		public static function  fromXML(xml:XML):MenuScreenVO 
 		{
 			var vo:MenuScreenVO = new MenuScreenVO();

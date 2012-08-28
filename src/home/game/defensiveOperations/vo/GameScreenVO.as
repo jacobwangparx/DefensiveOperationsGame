@@ -9,14 +9,18 @@ package home.game.defensiveOperations.vo
 	 */
 	public class GameScreenVO 
 	{	
-		public function GameScreenVO() 
-		{
-			
-		}
 		
-		public static function  fromXML(xml:XML):GameScreenVO 
+		public var textLevel:String;
+		public var textKilled:String;
+		public var panelControl:PanelControlVO;
+		
+		
+		public static function fromXML(xml:XML):GameScreenVO 
 		{
 			var vo:GameScreenVO = new GameScreenVO();
+			vo.textKilled = 'Killed:';
+			vo.textLevel = 'Level:';
+			vo.panelControl = PanelControlVO.fromXML(xml.panelControl);
 			
 			return vo;
 		}

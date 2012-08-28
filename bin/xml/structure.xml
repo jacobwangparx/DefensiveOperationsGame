@@ -30,8 +30,26 @@
 			
 		</screen>
 		
-		<screen id="GAMESCREEN" >
+		<screen id="GAMESCREEN">
 			
+			<panelControl>
+				
+				<unitImages>
+				
+					<unitImage uri="images/unitSentryGun.jpg" />
+					<unitImage uri="images/unitSentryGun.jpg" />
+				 	
+				</unitImages>	
+					
+				<characterImages>
+					
+					<characterImage uri="images/iconStacey.jpg" />
+					<characterImage uri="images/iconStacey.jpg" />
+					
+				</characterImages>
+				
+			</panelControl>
+				
 		</screen>
 			
 	</structure>
