@@ -47,8 +47,45 @@
 					<characterImage uri="images/iconStacey.jpg" />
 					
 				</characterImages>
-				
+					
 			</panelControl>
+			
+			<characters>
+					
+				<character name="Stacey" currentLevel="0">
+					
+					<levels>
+						
+						<level levelNum="0" imageUri="images/character1/level1.png" attack="2" attackPrice="0" speed="3" speedPrice="0" health="13" healthPrice="0" range="5" rangePrice="0"  />
+						<level levelNum="1" imageUri="images/character1/level1.png" attack="3" attackPrice="3" speed="3" speedPrice="2" health="13" healthPrice="1" range="5" rangePrice="3"  />
+						<level levelNum="2" imageUri="images/character1/level2.png" attack="4" attackPrice="6" speed="4" speedPrice="5" health="16" healthPrice="4" range="6" rangePrice="7"  />
+						<level levelNum="3" imageUri="images/character1/level2.png" attack="5" attackPrice="12" speed="6" speedPrice="15" health="22" healthPrice="12" range="10" rangePrice="14"  />
+							
+					</levels>
+					
+				</character>
+				
+				<character name="Jacob" currentLevel="0">
+					
+					<levels>
+						
+						<level levelNum="0" imageUri="images/character2/level1.png" attack="3" attackPrice="0" speed="2" speedPrice="0" health="15" healthPrice="0" range="4" rangePrice="0"  />
+						<level levelNum="1" imageUri="images/character2/level1.png" attack="3" attackPrice="3" speed="3" speedPrice="2" health="13" healthPrice="1" range="5" rangePrice="3"  />
+						<level levelNum="2" imageUri="images/character2/level2.png" attack="4" attackPrice="6" speed="4" speedPrice="5" health="16" healthPrice="4" range="6" rangePrice="7"  />
+						<level levelNum="3" imageUri="images/character2/level2.png" attack="5" attackPrice="12" speed="6" speedPrice="15" health="22" healthPrice="12" range="10" rangePrice="14"  />
+							
+					</levels>
+					
+				</character>
+					
+			</characters>
+			
+			<units>
+				
+				<unit imageUri="images/assets/sentryGun0.png" name="Sentry Gun" attack="3" health="12" range="6" speed="10" rpgSpeed="0" rpgAttack="0" price="30">
+				<unit imageUri="images/assets/sentryGun1.png" name="Sentry RPG" attack="4" health="20" range="12" speed="10" rpgSpeed="3" rpgAttack="12" price="100">
+				
+			</units>
 				
 		</screen>
 			

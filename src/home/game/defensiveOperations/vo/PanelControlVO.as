@@ -14,8 +14,18 @@ package home.game.defensiveOperations.vo
 		public var textPause:String;
 		public var characterImageUris:Array;
 		public var unitImageUris:Array;
-		public var bloodCharacter1:Number;
-		public var bloodCharacter2:Number;
+		
+		public var healthCharacter1:Number;
+		public var healthCharacter2:Number;
+		
+		public var priceUnit1:Number;
+		public var priceUnit2:Number;
+		
+		public var nameCharacter1:String;
+		public var nameCharacter2:String;
+		
+		public var money:int;
+		public var gold:int;
 		
 		public static function fromXML(xml:XML):PanelControlVO 
 		{
@@ -27,8 +37,11 @@ package home.game.defensiveOperations.vo
 			vo.characterImageUris = new Array();
 			vo.unitImageUris = new Array();
 			
-			vo.bloodCharacter1 = 100;
-			vo.bloodCharacter2 = 100;
+			vo.healthCharacter1 = 0;
+			vo.healthCharacter2 = 0;
+			
+			vo.priceUnit1 = 0;
+			vo.priceUnit2 = 0;
 			
 			for each (var characterImageXML in xml.characterImages.characterImage) 
 			{
