@@ -9,10 +9,8 @@ package home.game.defensiveOperations.vo
 	 */
 	public class HelpScreenVO 
 	{	
-		public function HelpScreenVO() 
-		{
-			
-		}
+		
+		public var text:String; 
 		
 		public static function  fromXML(xml:XML):HelpScreenVO 
 		{

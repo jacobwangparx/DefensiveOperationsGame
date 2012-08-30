@@ -7,10 +7,11 @@ package home.game.defensiveOperations.vo
 	 * ...
 	 * @author Jake
 	 */
-	public class UnitVO 
+	public class SentryRPGVO 
 	{	
 		public var name:String;
 		public var bodyImageUri:String;
+		
 		public var attack:int;
 		public var range:int;
 		public var health:int;
@@ -18,17 +19,21 @@ package home.game.defensiveOperations.vo
 		
 		public var rpgAttack:int;
 		public var rpgSpeed:int;
+		
 		public var price:int;
 		
 		public var positionX:Number;
 		public var positionY:Number;
+		
+		public var index: int;
 
-		public static function fromXML(xml:XML):UnitVO 
+		public static function fromXML(xml:XML):SentryRPGVO 
 		{
-			var vo:UnitVO = new UnitVO();
+			var vo:SentryRPGVO = new SentryRPGVO();
 			
 			if (xml.@name != undefined) vo.name = xml.@name;
 			if (xml.@bodyImageUri != undefined) vo.bodyImageUri = xml.@bodyImageUri;
+			
 			if (xml.@attack != undefined) vo.attack = xml.@attack;
 			if (xml.@range != undefined) vo.range = xml.@range;
 			if (xml.@health != undefined) vo.health = xml.@health;

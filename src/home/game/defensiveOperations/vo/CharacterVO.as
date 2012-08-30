@@ -27,14 +27,16 @@ package home.game.defensiveOperations.vo
 		{
 			var vo:CharacterVO = new CharacterVO();
 			
+			vo.levelVOs = new Array();
+			
 			if (xml.@name != undefined) vo.name = xml.@name;
 			if (xml.@currentLevel != undefined) vo.currentLevel = xml.@currentLevel;
 			
-			for each (var levelXML in xml.levels.level ) 
+			for each (var levelXML:XML in xml.levels.level ) 
 			{
 				var levelVO:LevelCharacterVO = LevelCharacterVO.fromXML(levelXML);
 				
-				if (vo.currentLevel = levelVO.levelNum)
+				if (vo.currentLevel == levelVO.levelNum)
 				{
 					vo.currentAttack = levelVO.attack;
 					vo.currentHealth = levelVO.health;

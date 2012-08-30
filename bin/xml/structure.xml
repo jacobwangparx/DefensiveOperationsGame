@@ -30,7 +30,7 @@
 			
 		</screen>
 		
-		<screen id="GAMESCREEN">
+		<screen id="GAMESCREEN" textHeading="game screen">
 			
 			<panelControl>
 				
@@ -80,12 +80,15 @@
 					
 			</characters>
 			
-			<units>
-				
-				<unit imageUri="images/assets/sentryGun0.png" name="Sentry Gun" attack="3" health="12" range="6" speed="10" rpgSpeed="0" rpgAttack="0" price="30">
-				<unit imageUri="images/assets/sentryGun1.png" name="Sentry RPG" attack="4" health="20" range="12" speed="10" rpgSpeed="3" rpgAttack="12" price="100">
-				
-			</units>
+			<sentryGun imageUri="images/assets/sentryGun0.png" name="Sentry Gun" attack="3" health="12" range="6" speed="10"  price="30"/>
+		 
+			<sentryRPG imageUri="images/assets/sentryGun1.png" name="Sentry RPG" attack="4" health="20" range="12" speed="10" rpgSpeed="3" rpgAttack="12" price="100"/>
+						
+			<solider attack="1" speed="4" range="6" health="5" />
+			
+			<tank attack="5" speed="1" range="10" health="10" />
+			
+			<btr attack="3" speed="2" range="5" health="5" />
 				
 		</screen>
 			

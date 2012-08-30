@@ -9,45 +9,43 @@ package home.game.defensiveOperations.vo
 	 */
 	public class GameScreenVO 
 	{	
-		
 		public var textLevel:String;
 		public var textKilled:String;
 		
 		public var panelControl:PanelControlVO;
 		public var characterVOs:Array;
-		public var unitVOs:Array;
+		
+		public var sentryGunVO:SentryGunVO;
+		public var sentryRPGVO:SentryRPGVO;
+		
+		public var soliderVO:SoliderVO;
+		public var tankVO:TankVO;
+		public var btrVO:BtrVO;
 		
 		public static function fromXML(xml:XML):GameScreenVO 
 		{
 			var vo:GameScreenVO = new GameScreenVO();
+			
 			vo.textKilled = 'Killed:';
 			vo.textLevel = 'Level:';
-			vo.panelControl = PanelControlVO.fromXML(xml.panelControl);
+			
+			vo.panelControl =  PanelControlVO.fromXML(XML(xml.panelControl));
 			
 			vo.characterVOs = new Array();
-			for each (var characterXML in xml.characters.character)
+			for each (var characterXML:XML in xml.characters.character)
 			{
 				var characterVO:CharacterVO = CharacterVO.fromXML(characterXML);
 				vo.characterVOs.push(characterVO);
 			}
 			
-			vo.unitVOs = new Array();
+			vo.sentryGunVO = SentryGunVO.fromXML(XML(xml.sentryGun));
+			vo.sentryRPGVO = SentryRPGVO.fromXML(XML(xml.sentryRPG));
+			vo.soliderVO = SoliderVO.fromXML(XML(xml.solider));
+			vo.tankVO = TankVO.fromXML(XML(xml.tank));
+			vo.btrVO = BtrVO.fromXML(XML(xml.btr));
 			
-			var counter:int = 0;
-			
-			for each (var unitXML in xml.units.unit) 
-			{
-				var unitVO:UnitVO = UnitVO.fromXML(unitXML);
-				
-				if(counter == 0)
-					vo.panelControl.priceUnit1 = unitVO.price;
-				else
-					vo.panelControl.priceUnit2 = unitVO.price;
-					
-				vo.unitVOs.push(unitVO);
-				
-				counter++;
-			}
+			vo.panelControl.priceUnit1 = vo.sentryGunVO.price;
+			vo.panelControl.priceUnit2 = vo.sentryRPGVO.price;
 			
 			return vo;
 		}

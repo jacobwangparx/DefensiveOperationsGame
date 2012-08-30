@@ -9,15 +9,14 @@ package home.game.defensiveOperations.vo
 	 */
 	public class LevelScreenVO 
 	{
-	
-		public function LevelScreenVO() 
-		{
-			
-		}
+		public var currentLevel:int;
+		
 		
 		public static function  fromXML(xml:XML):LevelScreenVO 
 		{
 			var vo:LevelScreenVO = new LevelScreenVO();
+			
+			vo.currentLevel = 1;
 			
 			return vo;
 		}
