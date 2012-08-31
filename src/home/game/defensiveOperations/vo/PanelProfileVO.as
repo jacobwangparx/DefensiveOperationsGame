@@ -7,17 +7,16 @@ package home.game.defensiveOperations.vo
 	 * ...
 	 * @author Jake
 	 */
-	public class ShopScreenVO 
+	public class PanelProfileVO 
 	{	
- 
-		public var gold:int;
-		
-		public var characterVOs:Array;
+		public var labelProfileVOs:Array;
 		
 		
-		public static function  fromXML(xml:XML):ShopScreenVO 
+		public static function fromXML(xml:XML):PanelProfileVO 
 		{
-			var vo:ShopScreenVO = new ShopScreenVO();
+			var vo:PanelProfileVO = new PanelProfileVO();
+			
+			vo.labelProfileVOs = new Array();
 			
 			return vo;
 		}

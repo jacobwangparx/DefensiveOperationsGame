@@ -20,6 +20,15 @@
 		
 		<screen id="SHOPSCREEN" >
 			
+			<panelProfiel>
+				
+				<labelProfile textHeading="health" level="0" price="0" />
+				<labelProfile textHeading="speed" level="0" price="0" />
+				<labelProfile textHeading="attack" level="0" price="0" />
+				<labelProfile textHeading="range" level="0" price="0" />
+				
+			</panelProfiel>
+			
 		</screen>
 		
 		<screen id="LEVELSCREEN" >
@@ -29,6 +38,9 @@
 		<screen id="CREDITSSCREEN" >
 			
 		</screen>
+		
+		<screen id="HELPSCREEN" text="dummy text" />
+		
 		
 		<screen id="GAMESCREEN" textHeading="game screen">
 			
