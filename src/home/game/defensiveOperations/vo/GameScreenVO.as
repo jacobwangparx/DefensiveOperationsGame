@@ -35,6 +35,7 @@ package home.game.defensiveOperations.vo
 			for each (var characterXML:XML in xml.characters.character)
 			{
 				var characterVO:CharacterVO = CharacterVO.fromXML(characterXML);
+				
 				vo.characterVOs.push(characterVO);
 			}
 			

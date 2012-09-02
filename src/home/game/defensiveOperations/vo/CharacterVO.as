@@ -31,7 +31,7 @@ package home.game.defensiveOperations.vo
 			
 			if (xml.@name != undefined) vo.name = xml.@name;
 			if (xml.@currentLevel != undefined) vo.currentLevel = xml.@currentLevel;
-			
+	
 			for each (var levelXML:XML in xml.levels.level ) 
 			{
 				var levelVO:LevelCharacterVO = LevelCharacterVO.fromXML(levelXML);
