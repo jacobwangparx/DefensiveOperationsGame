@@ -9,12 +9,12 @@ package home.game.defensiveOperations.model
 	 * ...
 	 * @author Jacob
 	 */
-	public class LevelProxy extends Actor
+	public class GameLevelProxy extends Actor
 	{
 		
 		private var _levelScreenVO:LevelScreenVO;
 		
-		public function LevelProxy() 
+		public function GameLevelProxy() 
 		{
 			super();
 			

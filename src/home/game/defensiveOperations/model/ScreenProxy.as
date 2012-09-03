@@ -1,6 +1,8 @@
 package home.game.defensiveOperations.model 
 {
 	import home.game.defensiveOperations.event.ScreenEvent;
+	import home.game.defensiveOperations.vo.GameScreenVO;
+	import home.game.defensiveOperations.vo.StructureVO;
 	import org.robotlegs.mvcs.Actor;
 	
 	/**
@@ -12,7 +14,6 @@ package home.game.defensiveOperations.model
 		public function ScreenProxy() 
 		{
 			super();
-			
 		}
 		
 		private var _screens:Array;
@@ -30,7 +31,7 @@ package home.game.defensiveOperations.model
 		{
 			_currentScreen = value;
 		}
-		
+			
 		public function next():void 
 		{
 			if (!screens || screens.length == 0) return;
@@ -50,11 +51,13 @@ package home.game.defensiveOperations.model
 				}
 			}
 		}
+		
 		public function begin():void
 		{
 			if (!screens || screens.length == 0) return;
 			dispatch(new ScreenEvent(screens[0]));
 		}
+			
 	}
 
 }

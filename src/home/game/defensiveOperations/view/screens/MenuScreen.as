@@ -29,10 +29,10 @@ package home.game.defensiveOperations.view.screens
 		private var panelMenu:MovieClip;
 		private var bg:MovieClip;
 		
+		public var signalClickContinueGame:Signal;
 		public var signalClickStartGame:Signal;
 		public var signalClickSelectLevel:Signal;
 		public var signalClickCredits:Signal;
-		public var signalClickHelp:Signal;
 		public var signalClickExit:Signal;
 		
 		public function MenuScreen(target:MovieClip):void
@@ -53,10 +53,10 @@ package home.game.defensiveOperations.view.screens
 			panelMenu = target.panelMenu;
 			bg = target.bg;
 			
+			signalClickContinueGame = new Signal();
 			signalClickStartGame = new Signal();
 			signalClickSelectLevel = new Signal();
 			signalClickCredits = new Signal();
-			signalClickHelp = new Signal();
 			signalClickExit = new Signal();
 		}
 			
@@ -71,35 +71,30 @@ package home.game.defensiveOperations.view.screens
 			
 			textHeading.htmlText = value.textHeading;
 			
-			//var currentY:Number = MENU_BUTTONS_Y_START;
-			//var currentX:Number = NENU_BUTTONS_X;
-			
 			for (var i:int = 0; i < 5; i++) 
 			{
 				var button:LabelButton = new LabelButton(target['button' + i]);
-				//button.x = currentX;
-				//button.y = currentY;
 				
 				switch (i) 
 				{
 					case 0:
+						button.htmlText = value.textContinueGame;
+						button.addEventListener(MouseEvent.CLICK, onClickButtonContinue);
+					break;
+					
+					case 1:
 						button.htmlText = value.textStartGame;
 						button.addEventListener(MouseEvent.CLICK, onClickButtonStartGame);
 					break;
 							
-					case 1:
+					case 2:
 						button.htmlText = value.textSelectLevel;
 						button.addEventListener(MouseEvent.CLICK, onClickButtoSelectLevel);
 					break;
 					
-					case 2:
+					case 3:
 						button.htmlText = value.textCredits;
 						button.addEventListener(MouseEvent.CLICK, onClickButtonCredits);
-					break;
-					
-					case 3:
-						button.htmlText = value.textHelp;
-						button.addEventListener(MouseEvent.CLICK, onClickButtonHelp);
 					break;
 					
 					case 4:
@@ -121,16 +116,16 @@ package home.game.defensiveOperations.view.screens
 			
 		}
 		
+		private function onClickButtonContinue(e:MouseEvent):void 
+		{
+			signalClickContinueGame.dispatch();
+		}
+		
 		private function onClickButtonExit(e:MouseEvent):void 
 		{
 			signalClickExit.dispatch();
 		}
-		
-		private function onClickButtonHelp(e:MouseEvent):void 
-		{
-			signalClickHelp.dispatch();
-		}
-		
+	
 		private function onClickButtonCredits(e:MouseEvent):void 
 		{
 			signalClickCredits.dispatch();

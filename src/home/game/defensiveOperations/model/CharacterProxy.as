@@ -7,17 +7,19 @@ package home.game.defensiveOperations.model
 	 * ...
 	 * @author Jacob
 	 */
-	public class ShopProxy extends Actor
+	public class CharacterProxy extends Actor
 	{
+
 		
 		
-		public function ShopProxy() 
+		
+		public function CharacterProxy() 
 		{
-			super();
+			super();	
 		}
 		
 		
-	 
+		
 	}
 
 }

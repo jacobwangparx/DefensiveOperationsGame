@@ -19,11 +19,13 @@ package home.game.defensiveOperations.control
 			commandMap.mapEvent(ScreenEvent.NEXT, NextCommand, ScreenEvent, false);
 			commandMap.mapEvent(ScreenEvent.BEGIN, BeginCommand, ScreenEvent, true);
 			
+			commandMap.mapEvent(GameScreenEvent.SET_CURRENT_GAME_SCREEN, SetGameScreenCommand, GameScreenEvent, false);
+			
 			/*screentag-command*/
 			
 			//map model
 			injector.mapValue(ScreenProxy, new ScreenProxy());
-
+			injector.mapValue(GameScreenProxy, new GameScreenProxy());
 			
 			//map view
 			mediatorMap.mapView(Application, ApplicationMediator);

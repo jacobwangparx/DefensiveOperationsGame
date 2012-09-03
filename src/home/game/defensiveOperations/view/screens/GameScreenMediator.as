@@ -25,16 +25,33 @@ package home.game.defensiveOperations.view.screens
 		{
 			super.onRegister();
 			
-			eventMap.mapListener(eventDispatcher, ScreenEvent.GAMESCREEN, showScreen, ScreenEvent);
-				
+			eventMap.mapListener(eventDispatcher, GameScreenEvent.CHANGE_CURRENT_GAME_SCREEN, onChangeGameScreenVO, GameScreenEvent);
 			
+			eventMap.mapListener(eventDispatcher, GameScreenEvent.CONTINUE_GAME, onTransitionInScreen, GameScreenEvent);
+			eventMap.mapListener(eventDispatcher, GameScreenEvent.START_GAME, onTransitionInScreen, GameScreenEvent);
+		
+			view.signalClickButtonRestart.add(restartGame);
 		}
-				
-		private function showScreen(e:ScreenEvent):void 
+		
+		private function restartGame():void 
+		{
+			//var gameScreenEvent:GameScreenEvent = new GameScreenEvent(GameScreenEvent.START_GAME);
+			//dispatch(gameScreenEvent);
+			
+			trace("restart");
+		}
+		
+		private function onChangeGameScreenVO(e:GameScreenEvent):void 
+		{
+			view.gameScreenVO = e.currentGameScreenVO;
+		}
+		
+		private function onTransitionInScreen(e:GameScreenEvent):void 
 		{
 			view.transitionIn();
 		}
-		
+				
+				
 
 	}
 

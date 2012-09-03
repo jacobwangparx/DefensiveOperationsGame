@@ -10,6 +10,7 @@ package home.game.defensiveOperations.vo
 	public class MenuScreenVO 
 	{
 		public var textHeading:String;
+		public var textContinueGame:String;
 		public var textStartGame:String;
 		public var textSelectLevel:String;
 		public var textCredits:String;
@@ -21,6 +22,7 @@ package home.game.defensiveOperations.vo
 			var vo:MenuScreenVO = new MenuScreenVO();
 			
 			if (xml.@textHeading != undefined) vo.textHeading = TextManager.getText(xml.@textHeading);
+			if (xml.@textContinueGame != undefined) vo.textContinueGame = TextManager.getText(xml.@textContinueGame);
 			if (xml.@textStartGame != undefined) vo.textStartGame = TextManager.getText(xml.@textStartGame);
 			if (xml.@textSelectLevel != undefined) vo.textSelectLevel = TextManager.getText(xml.@textSelectLevel);
 			if (xml.@textCredits != undefined) vo.textCredits = TextManager.getText(xml.@textCredits);

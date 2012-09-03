@@ -12,7 +12,7 @@ package home.game.defensiveOperations.vo
 		public var textLevel:String;
 		public var textKilled:String;
 		
-		public var panelControl:PanelControlVO;
+		public var panelControlVO:PanelControlVO;
 		public var characterVOs:Array;
 		
 		public var sentryGunVO:SentryGunVO;
@@ -22,6 +22,10 @@ package home.game.defensiveOperations.vo
 		public var tankVO:TankVO;
 		public var btrVO:BtrVO;
 		
+		public var soliderVOs:Array;
+		public var tankVOs:Array;
+		public var btrVOs:Array;
+		
 		public static function fromXML(xml:XML):GameScreenVO 
 		{
 			var vo:GameScreenVO = new GameScreenVO();
@@ -29,13 +33,12 @@ package home.game.defensiveOperations.vo
 			vo.textKilled = 'Killed:';
 			vo.textLevel = 'Level:';
 			
-			vo.panelControl =  PanelControlVO.fromXML(XML(xml.panelControl));
+			vo.panelControlVO =  PanelControlVO.fromXML(XML(xml.panelControl));
 			
 			vo.characterVOs = new Array();
 			for each (var characterXML:XML in xml.characters.character)
 			{
 				var characterVO:CharacterVO = CharacterVO.fromXML(characterXML);
-				
 				vo.characterVOs.push(characterVO);
 			}
 			
@@ -45,8 +48,8 @@ package home.game.defensiveOperations.vo
 			vo.tankVO = TankVO.fromXML(XML(xml.tank));
 			vo.btrVO = BtrVO.fromXML(XML(xml.btr));
 			
-			vo.panelControl.priceUnit1 = vo.sentryGunVO.price;
-			vo.panelControl.priceUnit2 = vo.sentryRPGVO.price;
+			vo.panelControlVO.priceUnit1 = vo.sentryGunVO.price;
+			vo.panelControlVO.priceUnit2 = vo.sentryRPGVO.price;
 			
 			return vo;
 		}

@@ -10,16 +10,17 @@ package home.game.defensiveOperations.vo
 	 */
 	public class LabelProfileVO 
 	{	
-		public var textHeading:String;
+		public var name:String;
 		public var level:int;
 		public var price:int;
+		
 		public var index:int;
 		
 		public static function fromXML(xml:XML):LabelProfileVO 
 		{
 			var vo:LabelProfileVO = new LabelProfileVO();
 		 
-			if (xml.@textHeading != undefined) vo.textHeading = xml.@textHeading;
+			if (xml.@name != undefined) vo.name = xml.@name;
 			if (xml.@level != undefined) vo.level = xml.@level;
 			if (xml.@price != undefined) vo.price = xml.@price;
 			

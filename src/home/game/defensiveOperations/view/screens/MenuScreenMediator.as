@@ -27,29 +27,34 @@ package home.game.defensiveOperations.view.screens
 			
 			eventMap.mapListener(eventDispatcher, ScreenEvent.MENUSCREEN, showScreen, ScreenEvent);
 				
-			eventMap.mapListener(eventDispatcher, ScreenEvent.GAMESCREEN, toGameScreen, ScreenEvent);
-			eventMap.mapListener(eventDispatcher, ScreenEvent.LEVELSCREEN, toLevelScreen, ScreenEvent);
-			eventMap.mapListener(eventDispatcher, ScreenEvent.CREDITSSCREEN, toCreditsScreen, ScreenEvent);
-			eventMap.mapListener(eventDispatcher, ScreenEvent.HELPSCREEN, toHelpScreen, ScreenEvent);
-			
 			eventMap.mapListener(eventDispatcher, ApplicationServiceEvent.LOAD_STRUCTURE, onLoadStructure, ApplicationServiceEvent);
 			
+			view.signalClickContinueGame.add(onClickButtonContinueGame);
 			view.signalClickStartGame.add(onClickButtonStartGame);
-			view.signalClickSelectLevel.add(onClickButtonSelectLevel);
+			view.signalClickSelectLevel.add(onClickButtonLevel);
 			view.signalClickCredits.add(onClickButtonCredits);
-			view.signalClickHelp.add(onClickButtonHelp);
+			view.signalClickExit.addOnce(onClickButtonExits);
 			
 		}
 		
-
-		private function onClickButtonStartGame():void
+		private function onClickButtonContinueGame():void
 		{
-			var screenEvent:ScreenEvent = new ScreenEvent(ScreenEvent.GAMESCREEN);
-			dispatch(screenEvent);
-			removeScreen();
+			view.transitionOut();
+			
+			var gameScreenEvent:GameScreenEvent = new GameScreenEvent(GameScreenEvent.CONTINUE_GAME);
+			dispatch(gameScreenEvent);
 		}
 		
-		private function onClickButtonSelectLevel():void
+		private function onClickButtonStartGame():void 
+		{
+			view.transitionOut();
+			
+			var gameScreenEvent:GameScreenEvent = new GameScreenEvent(GameScreenEvent.START_GAME);
+			dispatch(gameScreenEvent);
+		}
+		
+		
+		private function onClickButtonLevel():void
 		{
 			var screenEvent:ScreenEvent = new ScreenEvent(ScreenEvent.LEVELSCREEN);
 			dispatch(screenEvent);
@@ -61,12 +66,12 @@ package home.game.defensiveOperations.view.screens
 			dispatch(screenEvent);
 		}
 		
-		private function onClickButtonHelp():void
+		private function onClickButtonExits():void 
 		{
-			var screenEvent:ScreenEvent = new ScreenEvent(ScreenEvent.HELPSCREEN);
-			dispatch(screenEvent);
-			removeScreen();
+			trace("game exit");
 		}
+		
+		
 		
 		private function onLoadStructure(e:ApplicationServiceEvent):void 
 		{
@@ -78,32 +83,7 @@ package home.game.defensiveOperations.view.screens
 			view.transitionIn();
 		}
 		
-		
-		private function removeScreen():void 
-		{
-			view.transitionOut();
-		}
-		
-		private function toHelpScreen(e:ScreenEvent):void 
-		{
-			view.transitionOut();
-		}
-		
-		private function toCreditsScreen(e:ScreenEvent):void 
-		{
-			view.transitionOut();
-		}
-		
-		private function toLevelScreen(e:ScreenEvent):void 
-		{
-			view.transitionOut();
-		}
-		
-		private function toGameScreen(e:ScreenEvent):void 
-		{
-			view.transitionOut();
-		}
-			
+				
 	}
 
 }

@@ -17,12 +17,6 @@ package home.game.defensiveOperations.control
 	{
 		
 		[Inject]
-		public var levelProxy:LevelProxy;
-
-		[Inject]
-		public var gameProxy:GameProxy;
-		
-		[Inject]
 		public var levelEvent:LevelScreenEvent;
 		
 		public function SetLevelCommand() 

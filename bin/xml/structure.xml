@@ -8,41 +8,17 @@
 		<screen id="LEVELSCREEN" /> 
 		<screen id="SHOPSCREEN" /> 
 		<screen id="CREDITSSCREEN" />
-		<screen id="HELPSCREEN" />
+		<!--<screen id="HELPSCREEN" />-->
 		
 	</screens>
 	
 	<structure>
 		
-		<screen id="MENUSCREEN" textHeading="S1_0" textStartGame="S1_1" textSelectLevel="S1_2" textCredits="S1_3" textHelp="S1_4">
+		<screen id="MENUSCREEN" textHeading="S1_0" textContinueGame="S1_5" textStartGame="S1_1" textSelectLevel="S1_2" textCredits="S1_3" textHelp="S1_4">
 		
 		</screen>
 		
-		<screen id="SHOPSCREEN" >
-			
-			<panelProfiel>
-				
-				<labelProfile textHeading="health" level="0" price="0" />
-				<labelProfile textHeading="speed" level="0" price="0" />
-				<labelProfile textHeading="attack" level="0" price="0" />
-				<labelProfile textHeading="range" level="0" price="0" />
-				
-			</panelProfiel>
-			
-		</screen>
-		
-		<screen id="LEVELSCREEN" >
-			
-		</screen>
-		
-		<screen id="CREDITSSCREEN" >
-			
-		</screen>
-		
-		<screen id="HELPSCREEN" text="dummy text" />
-		
-		
-		<screen id="GAMESCREEN" textHeading="game screen">
+		<screen id="GAMESCREEN" isStart="0">
 			
 			<panelControl>
 				
@@ -101,8 +77,98 @@
 			<tank attack="5" speed="1" range="10" health="10" />
 			
 			<btr attack="3" speed="2" range="5" health="5" />
-				
+			
 		</screen>
+	
+		<screen id="SHOPSCREEN" >
+			
+			<labelCharacters>
+				
+				<labelCharacter textLabel="Stacey" imageUri="images/iconStacey.jpg" />				
+				<labelCharacter textLabel="Jacob" imageUri="images/iconStacey.jpg" />				
+							
+			</labelCharacters>
+			
+			<panelProfiles>
+				
+				<panelProfile>
+					
+					<labels>
+						<labelProfile name="health" level="0" price="0" />
+						<labelProfile name="speed" level="0" price="0" />
+						<labelProfile name="attack" level="0" price="0" />
+						<labelProfile name="range" level="0" price="0" />
+					</labels>	
+						
+				</panelProfile>
+				
+				<panelProfile>
+					
+					<labels>
+						<labelProfile name="health" level="0" price="0" />
+						<labelProfile name="speed" level="0" price="0" />
+						<labelProfile name="attack" level="0" price="0" />
+						<labelProfile name="range" level="0" price="0" />
+					</labels>
+					
+				</panelProfile>
+				
+			</panelProfiles>
+			
+		</screen>
+		
+		<screen id="LEVELSCREEN" >
+			
+			<gameLevels>
+				
+				<level index="0" stepTotal="3">
+					
+					<steps>
+						
+						<step tankNum="0" soliderNum="3" btrNum="0"/>
+						<step tankNum="0" soliderNum="5" btrNum="0"/>
+						<step tankNum="0" soliderNum="5" btrNum="1"/>
+						
+					</steps>	
+					
+				</level>
+				
+				<level index="1" stepTotal="3">
+					
+					<steps>
+						
+						<step tankNum="0" soliderNum="6" btrNum="1"/>
+						<step tankNum="0" soliderNum="5" btrNum="2"/>
+						<step tankNum="1" soliderNum="5" btrNum="2"/>
+			 
+					</steps>	
+					
+				</level>
+				
+				<level index="2" stepTotal="3">
+					
+					<steps>
+						
+						<step tankNum="2" soliderNum="6" btrNum="2"/>
+						<step tankNum="2" soliderNum="6" btrNum="2"/>
+						<step tankNum="3" soliderNum="5" btrNum="2"/>
+			 
+					</steps>	
+					
+				</level>
+				
+			</gameLevels>
+			
+			
+		</screen>
+		
+		<screen id="CREDITSSCREEN" >
+			
+		</screen>
+		
+		<screen id="HELPSCREEN" text="dummy text" />
+		
+		
 			
 	</structure>
 	

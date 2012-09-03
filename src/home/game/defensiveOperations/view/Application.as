@@ -29,7 +29,7 @@ package home.game.defensiveOperations.view
 		public var creditsScreen:CreditsScreen;
 		public var levelScreen:LevelScreen;
 		public var gameScreen:GameScreen;
-		public var helpScreen:HelpScreen;
+		//public var helpScreen:HelpScreen;
 		
 		static private const STAGE_WIDTH:Number = ScreenSets.SCREEN_WIDTH;
 		static private const STAGE_HEIGHT:Number = ScreenSets.SCREEN_HEIGHT;

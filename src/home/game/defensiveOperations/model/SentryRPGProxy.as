@@ -7,9 +7,9 @@ package home.game.defensiveOperations.model
 	 * ...
 	 * @author Jacob
 	 */
-	public class GameProxy extends Actor
+	public class SentryRPGProxy extends Actor
 	{
-		public function GameProxy() 
+		public function SentryRPGProxy() 
 		{
 			super();
 			
