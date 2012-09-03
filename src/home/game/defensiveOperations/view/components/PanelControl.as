@@ -103,6 +103,8 @@ package home.game.defensiveOperations.view.components
 			labelGold.htmlText = value.gold.toString();
 			
 			panelUnit.panelControlVO = value;
+			characterLabelStacey.panelControlVO = value;
+			characterLabelJacob.panelControlVO = value;
 		}
 						
 	}

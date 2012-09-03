@@ -40,8 +40,11 @@ package home.game.defensiveOperations.view.components
 			super.createChildren();
 			
 			buttonImage = new ImageButton(target.buttonImage);
-			signalClickLabelImage = new Signal();
 			buttonImage.addEventListener(MouseEvent.CLICK, onClickLabelImage);
+
+			healthLine = target.healthLine;
+			
+			signalClickLabelImage = new Signal();
 	
 		}
 		
@@ -59,11 +62,11 @@ package home.game.defensiveOperations.view.components
 		{
 			_panelControlVO = value;
 			buttonImage.load(value.characterImageUris[index]);
-			
-			if (index == 0)
-				healthLine.width = value.healthCharacter1;
-			else
-				healthLine.width = value.healthCharacter2;
+
+			//if (index == 0)
+				//healthLine.width = value.healthCharacter1;
+			//else
+				//healthLine.width = value.healthCharacter2;
 		}	
 		
 		public function get index():int 
