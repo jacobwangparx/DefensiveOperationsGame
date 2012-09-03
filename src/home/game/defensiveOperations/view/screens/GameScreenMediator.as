@@ -30,18 +30,18 @@ package home.game.defensiveOperations.view.screens
 			eventMap.mapListener(eventDispatcher, GameScreenEvent.CONTINUE_GAME, onTransitionInScreen, GameScreenEvent);
 			eventMap.mapListener(eventDispatcher, GameScreenEvent.START_GAME, onTransitionInScreen, GameScreenEvent);
 		
-			view.signalClickButtonRestart.add(restartGame);
-			view.signalClickButtonMenu.add(backToMenuScreen);
+			view.signalClickButtonRestart.add(onClickButtonRestart);
+			view.signalClickButtonMenu.add(onClickButtonMenuOnPanelControl);
 		}
 		
-		private function backToMenuScreen():void 
+		private function onClickButtonMenuOnPanelControl():void 
 		{
 			view.transitionOut();
 			var screenEvent:ScreenEvent = new ScreenEvent(ScreenEvent.MENUSCREEN);
 			dispatch(screenEvent);
 		}
 		
-		private function restartGame():void 
+		private function onClickButtonRestart():void 
 		{
 			//var gameScreenEvent:GameScreenEvent = new GameScreenEvent(GameScreenEvent.START_GAME);
 			//dispatch(gameScreenEvent);
