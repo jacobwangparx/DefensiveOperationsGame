@@ -3,6 +3,7 @@ package home.game.defensiveOperations.view.screens
 	import com.lookmum.view.AdvancedTextField;
 	import com.lookmum.view.LabelButton;
 	import com.lookmum.view.TextComponent;
+	import com.lookmum.view.ToggleButton;
 	import flash.display.MovieClip;
 	import flash.events.MouseEvent;
 	import flash.text.TextField;
@@ -21,14 +22,14 @@ package home.game.defensiveOperations.view.screens
 		
 		private var labelKilled:TextComponent;
 		private var labelLevel:TextComponent;
-		
-		private var panelControl:PanelControl;
-		
 		private var buttonRestart:LabelButton;
+		private var buttonSound:ToggleButton;
+		private var panelControl:PanelControl;
 		
 		private var _gameScreenVO:GameScreenVO;
 	 
 		public var signalClickButtonRestart:Signal;
+		public var signalClickButtonMenu:Signal;
 		
 		public function GameScreen(target:MovieClip):void
 		{
@@ -39,38 +40,58 @@ package home.game.defensiveOperations.view.screens
 		{
 			super.createChildren();
 			
-			labelKilled = new TextComponent(target.labelKilled);
-			 
+			labelKilled = new TextComponent(target.labelKilled); 
 			labelLevel = new TextComponent(target.labelLevel);
 			
-			panelControl = new PanelControl(target.panelControl);
-			panelControl.signalClickPanelUnit.add(onClickPanelUnit);
-			panelControl.signalClickStartButton.add(onClickButtonStart);
-			panelControl.signalClickCharacterLabel.add(onClickCharacterLabel);
+			buttonSound = new ToggleButton(target.buttonSound);
+			buttonSound.addEventListener(MouseEvent.CLICK, onClickButtonSound);
 			
 			buttonRestart = new LabelButton(target.buttonRestart);
-			buttonRestart.addEventListener(MouseEvent.CLICK, onRestartGame);
-			
+			buttonRestart.addEventListener(MouseEvent.CLICK, onClickButtonRestart);
 			signalClickButtonRestart = new Signal();
+			
+			panelControl = new PanelControl(target.panelControl);
+			panelControl.signalClickPanelUnit.add(onClickPanelUnitOnPanelControl);
+			panelControl.signalClickStartButton.add(onClickButtonStartOnPanelControl);
+			panelControl.signalClickCharacterLabel.add(onClickCharacterLabelOnPanelControl);
+			panelControl.signalClickButtonMenu.add(onClickButtonMenuOnPanelControl);
+			signalClickButtonMenu = new Signal();
+			panelControl.signalClickButtonPause.add(onClickButtonPauseOnPanelControl);
 		}
 		
-		private function onRestartGame(e:MouseEvent):void 
+		private function onClickButtonPauseOnPanelControl():void 
+		{
+			trace("click button pause");
+		}
+		
+		private function onClickButtonMenuOnPanelControl():void 
+		{
+			trace("click button menu");
+			signalClickButtonMenu.dispatch();
+		}
+		
+		private function onClickButtonSound(e:MouseEvent):void 
+		{
+			trace("add button sound");
+		}
+		
+		private function onClickButtonRestart(e:MouseEvent):void 
 		{
 			signalClickButtonRestart.dispatch();
 		}
 		
-		private function onClickCharacterLabel(index:int):void 
+		private function onClickCharacterLabelOnPanelControl(index:int):void 
 		{
 			trace("click character label: + index: " + index);
 		}
 		
-		private function onClickButtonStart():void 
+		private function onClickButtonStartOnPanelControl():void 
 		{
 			trace("click button start");
 		}
 		
 	
-		private function onClickPanelUnit(index:int):void 
+		private function onClickPanelUnitOnPanelControl(index:int):void 
 		{
 			trace("click button unit: + index: " + index);
 		}

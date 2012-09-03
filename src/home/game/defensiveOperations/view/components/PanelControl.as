@@ -35,6 +35,8 @@ package home.game.defensiveOperations.view.components
 		public var signalClickPanelUnit:Signal;
 		public var signalClickStartButton:Signal;
 		public var signalClickCharacterLabel:Signal;
+		public var signalClickButtonMenu:Signal;
+		public var signalClickButtonPause:Signal;
 		
 		private var _panelControlVO:PanelControlVO;
 	 
@@ -48,7 +50,10 @@ package home.game.defensiveOperations.view.components
 			super.createChildren();
 			
 			buttonMenu = new LabelButton(target.buttonMenu);
+			buttonMenu.addEventListener(MouseEvent.CLICK, onClickButtonMenu);
+			
 			buttonPause = new LabelButton(target.buttonPause);
+			buttonPause.addEventListener(MouseEvent.CLICK, onClickButtonPause);
 			
 			labelMoney = new TextComponent(target.labelMoney);
 			labelGold = new TextComponent(target.labelGold);
@@ -70,6 +75,18 @@ package home.game.defensiveOperations.view.components
 			signalClickPanelUnit = new Signal();
 			signalClickStartButton = new Signal();
 			signalClickCharacterLabel = new Signal();
+			signalClickButtonMenu = new Signal();
+			signalClickButtonPause = new Signal();
+		}
+		
+		private function onClickButtonPause(e:MouseEvent):void 
+		{
+			signalClickButtonPause.dispatch();
+		}
+		
+		private function onClickButtonMenu(e:MouseEvent):void 
+		{
+			signalClickButtonMenu.dispatch();
 		}
 		
 		private function onClickCharacterlabel(index:int):void 
