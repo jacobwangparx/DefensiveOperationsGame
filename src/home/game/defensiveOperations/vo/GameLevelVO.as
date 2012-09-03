@@ -15,9 +15,6 @@ package home.game.defensiveOperations.vo
 		
 		public var stepVOs:Array;
 		
-		
-		public var index:int;
-		
 		public static function fromXML(xml:XML):GameLevelVO 
 		{
 			var vo:GameLevelVO = new GameLevelVO();

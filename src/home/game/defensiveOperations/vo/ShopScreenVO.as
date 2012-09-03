@@ -1,7 +1,6 @@
 package home.game.defensiveOperations.vo 
 {
 	import com.lookmum.util.TextManager;
-	import com.peachpit.aas3wdp.iterators.ArrayIterator;
 	import home.game.defensiveOperations.event.ScreenEvent;
 	
 	/**

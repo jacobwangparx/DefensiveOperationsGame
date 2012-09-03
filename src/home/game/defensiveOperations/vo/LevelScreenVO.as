@@ -23,7 +23,7 @@ package home.game.defensiveOperations.vo
 			var counter:int = 0;
 			for each (var gameLevelXML in xml.gameLevels.level ) 
 			{
-				var gameLevelVO:GameLevelVO = GameLevelVO.fromXML
+				//var gameLevelVO:GameLevelVO = GameLevelVO.fromXML
 			}
 			
 			
