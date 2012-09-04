@@ -26,8 +26,9 @@ package home.game.defensiveOperations.view.screens
 		private var buttonSound:ToggleButton;
 		private var panelControl:PanelControl;
 		
+		private var _gameLevelVO:GameLevelVO;
 		private var _gameScreenVO:GameScreenVO;
-	 
+		
 		public var signalClickButtonRestart:Signal;
 		public var signalClickButtonMenu:Signal;
 		
@@ -110,6 +111,17 @@ package home.game.defensiveOperations.view.screens
 			
 			panelControl.panelControlVO = gameScreenVO.panelControlVO;
 
+		}
+		
+		public function get gameLevelVO():GameLevelVO 
+		{
+			return _gameLevelVO;
+		}
+		
+		public function set gameLevelVO(value:GameLevelVO):void 
+		{
+			_gameLevelVO = value;
+			labelLevel.htmlText += (value.index + 1).toString();
 		}
 			
 	  

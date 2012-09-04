@@ -2,6 +2,7 @@ package home.game.defensiveOperations.control
 {
 	import home.game.defensiveOperations.event.ApplicationServiceEvent;
 	import home.game.defensiveOperations.event.GameScreenEvent;
+	import home.game.defensiveOperations.event.*;
 	import home.game.defensiveOperations.event.ScreenEvent;
 	import home.game.defensiveOperations.model.ScreenProxy;
 	import home.game.defensiveOperations.vo.GameScreenVO;
@@ -34,6 +35,14 @@ package home.game.defensiveOperations.control
 			var gameScreenEvent:GameScreenEvent = new GameScreenEvent(GameScreenEvent.SET_CURRENT_GAME_SCREEN);
 			gameScreenEvent.currentGameScreenVO = event.structure.gameScreenVO;
 			dispatch(gameScreenEvent);
+			
+			var levelScreenEvent:GameLevelEvent = new GameLevelEvent(GameLevelEvent.SET_CURRENT_LEVELSCREEN);
+			levelScreenEvent.levelScreenVO = event.structure.levelScreenVO;
+			dispatch(levelScreenEvent);
+			
+			var gameLevelEvent:GameLevelEvent = new GameLevelEvent(GameLevelEvent.SET_CURRENT_LEVEL);
+			gameLevelEvent.gameLevelVO = event.structure.levelScreenVO.gameLevelVOs[0];
+			dispatch(gameLevelEvent);
 			
 			dispatch(new ScreenEvent(ScreenEvent.BEGIN));
 		}

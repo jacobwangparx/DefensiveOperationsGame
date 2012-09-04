@@ -26,12 +26,19 @@ package home.game.defensiveOperations.view.screens
 			super.onRegister();
 			
 			eventMap.mapListener(eventDispatcher, GameScreenEvent.CHANGE_CURRENT_GAME_SCREEN, onChangeGameScreenVO, GameScreenEvent);
+			eventMap.mapListener(eventDispatcher, GameLevelEvent.CHANGE_CURRENT_LEVEL, onChangeCurrentGameLevelVO, GameLevelEvent);
 			
 			eventMap.mapListener(eventDispatcher, GameScreenEvent.CONTINUE_GAME, onTransitionInScreen, GameScreenEvent);
 			eventMap.mapListener(eventDispatcher, GameScreenEvent.START_GAME, onTransitionInScreen, GameScreenEvent);
 		
+			
 			view.signalClickButtonRestart.add(onClickButtonRestart);
 			view.signalClickButtonMenu.add(onClickButtonMenuOnPanelControl);
+		}
+		
+		private function onChangeCurrentGameLevelVO(e:GameLevelEvent):void 
+		{
+			view.gameLevelVO = e.gameLevelVO;
 		}
 		
 		private function onClickButtonMenuOnPanelControl():void 

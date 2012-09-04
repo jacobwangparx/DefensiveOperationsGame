@@ -1,6 +1,7 @@
 package home.game.defensiveOperations.event 
 {
 	import flash.events.Event;
+	import home.game.defensiveOperations.vo.LevelScreenVO;
 	
 	/**
 	 * ...
@@ -19,7 +20,7 @@ package home.game.defensiveOperations.event
 		public static const CREDITSSCREEN:String = "CREDITSSCREEN";
 		public static const LEVELSCREEN:String = "LEVELSCREEN";
 		
-		
+		private var _levelScreenVO:LevelScreenVO;
 		/*screentag-event*/
 		
 		public function ScreenEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false) 
@@ -36,6 +37,16 @@ package home.game.defensiveOperations.event
 		public override function toString():String 
 		{ 
 			return formatToString("ScreenEvent", "type", "bubbles", "cancelable", "eventPhase"); 
+		}
+		
+		public function get levelScreenVO():LevelScreenVO 
+		{
+			return _levelScreenVO;
+		}
+		
+		public function set levelScreenVO(value:LevelScreenVO):void 
+		{
+			_levelScreenVO = value;
 		}
 		
 	}

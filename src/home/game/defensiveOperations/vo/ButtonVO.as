@@ -9,16 +9,11 @@ package home.game.defensiveOperations.vo
 	 */
 	public class ButtonVO 
 	{	
-		
-		public function ButtonVO() 
-		{
-			
-		}
+		public var index:int;
 		
 		public static function  fromXML(xml:XML):ShopScreenVO 
 		{
-			var vo:ButtonVO = new ButtonVO();
-			
+			var vo:ButtonVO = new ButtonVO();	
 			return vo;
 		}
 		

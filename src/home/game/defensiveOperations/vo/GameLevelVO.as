@@ -18,7 +18,19 @@ package home.game.defensiveOperations.vo
 		public static function fromXML(xml:XML):GameLevelVO 
 		{
 			var vo:GameLevelVO = new GameLevelVO();
+			vo.index = xml.@index;
+			vo.stepTotal = xml.@stepTotal;
+			vo.stepVOs = new Array();
 			
+			var counter:int = 0;
+			for each (var stepXML:XML in xml.steps.step) 
+			{
+				var stepLevelVO:GameStepVO = GameStepVO.fromXML(stepXML);
+				stepLevelVO.index = counter;
+				vo.stepVOs.push(stepLevelVO);
+				
+				counter ++;
+			}
 			return vo;
 		}
 		

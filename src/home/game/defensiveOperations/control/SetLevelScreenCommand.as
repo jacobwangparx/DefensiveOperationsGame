@@ -11,7 +11,7 @@ package home.game.defensiveOperations.control
 	 * ...
 	 * @author Jacob
 	 */
-	public class SetLevelCommand extends Command
+	public class SetLevelScreenCommand extends Command
 	{
 		
 		[Inject]
@@ -20,7 +20,7 @@ package home.game.defensiveOperations.control
 		[Inject]
 		public var gameLevelProxy:GameLevelProxy;
 		
-		public function SetLevelCommand() 
+		public function SetLevelScreenCommand() 
 		{
 			
 		}
@@ -28,7 +28,7 @@ package home.game.defensiveOperations.control
 		override public function execute():void 
 		{
 			super.execute();
-			gameLevelProxy.gameLevelVO = levelEvent.gameLevelVO;
+			gameLevelProxy.levelScreenVO = levelEvent.levelScreenVO;
 			
 		}
 	}

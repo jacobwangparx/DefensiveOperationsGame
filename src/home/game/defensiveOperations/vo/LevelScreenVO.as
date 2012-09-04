@@ -21,12 +21,14 @@ package home.game.defensiveOperations.vo
 			vo.gameLevelVOs = new Array();
 			
 			var counter:int = 0;
-			for each (var gameLevelXML:XML in xml.gameLevels.level ) 
+			for each (var gameLevelXML:XML in xml.gameLevels.level) 
 			{
-				//var gameLevelVO:GameLevelVO = GameLevelVO.fromXML
+				var gameLevelVO:GameLevelVO = GameLevelVO.fromXML(gameLevelXML);
+				gameLevelVO.index = counter;
+				vo.gameLevelVOs.push(gameLevelVO);
+				
+				counter ++;
 			}
-			
-			
 			
 			return vo;
 		}
