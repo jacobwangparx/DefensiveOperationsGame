@@ -121,11 +121,10 @@ package home.game.defensiveOperations.view.screens
 		public function set gameLevelVO(value:GameLevelVO):void 
 		{
 			_gameLevelVO = value;
-			labelLevel.htmlText += (value.index + 1).toString();
+			labelLevel.htmlText =  gameScreenVO.textLevel + (value.index + 1).toString();
 		}
 			
 	  
-		
 	}
 
 }

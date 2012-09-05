@@ -56,7 +56,7 @@ package home.game.defensiveOperations.view.screens
 			for each (var gameLevelVO:GameLevelVO in value.gameLevelVOs) 
 			{
 				var buttonLevel:ButtonLevel = new ButtonLevel(target['buttonLevel' + gameLevelVO.index]);
-				trace( "'buttonLevel' + gameLevelVO.index : " + 'buttonLevel' + gameLevelVO.index );
+			
 				buttonLevel.gameLevelVO = gameLevelVO;
 				buttonLevel.addEventListener(MouseEvent.CLICK, onClickButtonLevel);
 				

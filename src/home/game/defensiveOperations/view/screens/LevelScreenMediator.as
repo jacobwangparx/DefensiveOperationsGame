@@ -39,8 +39,14 @@ package home.game.defensiveOperations.view.screens
 		
 		private function onClickButtonLevel(gameLevelVO:GameLevelVO):void 
 		{
-			//var gameScreenEvent:GameScreenEvent = new GameScreenEvent();
-			trace("get index: " + gameLevelVO.index);
+			view.transitionOut();
+			var gameLevelEvent:GameLevelEvent = new GameLevelEvent(GameLevelEvent.SET_CURRENT_LEVEL);
+			gameLevelEvent.gameLevelVO = gameLevelVO;
+			dispatch(gameLevelEvent);
+			
+			var gameScreenEvent:GameScreenEvent =  new GameScreenEvent(GameScreenEvent.CONTINUE_GAME);
+			dispatch(gameScreenEvent);
+		
 		}
 		
 		private function onClickButtonBackToMenuScreen():void 
