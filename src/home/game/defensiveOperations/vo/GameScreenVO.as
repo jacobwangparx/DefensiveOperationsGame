@@ -26,6 +26,8 @@ package home.game.defensiveOperations.vo
 		public var tankVOs:Array;
 		public var btrVOs:Array;
 		
+		public var isStart:Boolean;
+		
 		public static function fromXML(xml:XML):GameScreenVO 
 		{
 			var vo:GameScreenVO = new GameScreenVO();
@@ -50,6 +52,8 @@ package home.game.defensiveOperations.vo
 			
 			vo.panelControlVO.priceUnit1 = vo.sentryGunVO.price;
 			vo.panelControlVO.priceUnit2 = vo.sentryRPGVO.price;
+			
+			vo.isStart = false;
 			
 			return vo;
 		}
