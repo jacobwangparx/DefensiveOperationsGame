@@ -4,11 +4,13 @@ package home.game.defensiveOperations.view.screens
 	import com.lookmum.view.LabelButton;
 	import com.lookmum.view.TextComponent;
 	import com.lookmum.view.ToggleButton;
+	import flash.display.DisplayObject;
 	import flash.display.MovieClip;
 	import flash.events.MouseEvent;
 	import flash.text.TextField;
 	import flash.text.TextFieldAutoSize;
 	import flash.utils.Dictionary;
+	import flash.utils.Timer;
 	import home.game.defensiveOperations.view.components.*;
 	import org.osflash.signals.Signal;
 	import home.game.defensiveOperations.vo.*;
@@ -36,15 +38,20 @@ package home.game.defensiveOperations.view.screens
 		private var characterJacobVO:CharacterVO;
 		private var characterStaceyVO:CharacterVO;
 		
+		private var characterStacey:Character;
+		private var characterJacob:Character;
+		
 		private var _gameLevelVO:GameLevelVO;
 		private var _gameScreenVO:GameScreenVO;
 		
 		public var signalClickButtonRestart:Signal;
 		public var signalClickButtonMenu:Signal;
 		
+		private var objectOnMove:DisplayObject;
+		
 		private var currentStep:int;
 	
-		
+		private var timer:Timer;
 		
 		public function GameScreen(target:MovieClip):void
 		{
@@ -68,7 +75,7 @@ package home.game.defensiveOperations.view.screens
 			panelControl = new PanelControl(target.panelControl);
 			panelControl.signalClickPanelUnit.add(onClickPanelUnitOnPanelControl);
 			panelControl.signalClickStartButton.add(onClickButtonStartOnPanelControl);
-			panelControl.signalClickCharacterLabel.add(onClickCharacterLabelOnPanelControl);
+			panelControl.signalMouseDownCharacterLabel.add(onMouseDownCharacterLabelOnPanelControl);
 			panelControl.signalClickButtonMenu.add(onClickButtonMenuOnPanelControl);
 			signalClickButtonMenu = new Signal();
 			panelControl.signalClickButtonPause.add(onClickButtonPauseOnPanelControl);
@@ -120,9 +127,47 @@ package home.game.defensiveOperations.view.screens
 			
 		}
 		
-		private function onClickCharacterLabelOnPanelControl(index:int):void 
+		private function onMouseDownCharacterLabelOnPanelControl(index:int):void 
 		{
-			trace("click character label: + index: " + index);
+			trace("on mouse down");
+			if (index == 0)
+			{
+				if(characterStacey == null)
+				{
+					characterStacey = new Character(new characterClip());
+					addChild(characterStacey);
+					characterStacey.currentCharacterVO = characterStaceyVO;
+					objectOnMove = characterStacey;
+					stage.addEventListener(MouseEvent.MOUSE_MOVE, createNewGameObject);
+					stage.addEventListener(MouseEvent.MOUSE_UP, positionNewGameObject);
+				}
+			}
+			else if (index == 1)
+			{
+				if(characterJacob == null)
+				{
+					characterJacob = new Character(new characterClip());
+					addChild(characterJacob);
+					characterJacob.currentCharacterVO = characterJacobVO;
+					objectOnMove = characterJacob;
+					stage.addEventListener(MouseEvent.MOUSE_MOVE, createNewGameObject);
+					stage.addEventListener(MouseEvent.MOUSE_UP, positionNewGameObject);
+				}
+			}
+			
+			
+		}
+		
+		private function positionNewGameObject(e:MouseEvent):void 
+		{
+			stage.removeEventListener(MouseEvent.MOUSE_MOVE, createNewGameObject);
+			stage.removeEventListener(MouseEvent.MOUSE_UP, positionNewGameObject);
+		}
+		
+		private function createNewGameObject(e:MouseEvent):void 
+		{
+			objectOnMove.x = mouseX;
+			objectOnMove.y = mouseY;
 		}
 		
 		private function onClickButtonStartOnPanelControl():void 

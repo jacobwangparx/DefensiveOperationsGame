@@ -34,7 +34,7 @@ package home.game.defensiveOperations.view.components
 		
 		public var signalClickPanelUnit:Signal;
 		public var signalClickStartButton:Signal;
-		public var signalClickCharacterLabel:Signal;
+		public var signalMouseDownCharacterLabel:Signal;
 		public var signalClickButtonMenu:Signal;
 		public var signalClickButtonPause:Signal;
 		
@@ -66,15 +66,15 @@ package home.game.defensiveOperations.view.components
 			
 			characterLabelStacey = new LabelCharacter(target.characterLabelStacey);
 			characterLabelStacey.index = 0;
-			characterLabelStacey.signalClickLabelImage.add(onClickCharacterlabel);
+			characterLabelStacey.signalMouseDownCharacterImage.add(onMouseDownCharacterlabel);
 			
 			characterLabelJacob = new LabelCharacter(target.characterLabelJacob);
 			characterLabelJacob.index = 1;
-			characterLabelJacob.signalClickLabelImage.add(onClickCharacterlabel);
+			characterLabelJacob.signalMouseDownCharacterImage.add(onMouseDownCharacterlabel);
 			
 			signalClickPanelUnit = new Signal();
 			signalClickStartButton = new Signal();
-			signalClickCharacterLabel = new Signal();
+			signalMouseDownCharacterLabel = new Signal();
 			signalClickButtonMenu = new Signal();
 			signalClickButtonPause = new Signal();
 		}
@@ -89,9 +89,9 @@ package home.game.defensiveOperations.view.components
 			signalClickButtonMenu.dispatch();
 		}
 		
-		private function onClickCharacterlabel(index:int):void 
+		private function onMouseDownCharacterlabel(index:int):void 
 		{
-			signalClickCharacterLabel.dispatch(index);
+			signalMouseDownCharacterLabel.dispatch(index);
 		}
 	
 		private function onClickButtonStart(e:MouseEvent):void 
