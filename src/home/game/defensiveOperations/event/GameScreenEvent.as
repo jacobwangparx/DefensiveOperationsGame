@@ -13,7 +13,7 @@ package home.game.defensiveOperations.event
 		
 		public static const START_GAME:String = "GameScreenEvent.START_GAME";
 		public static const CONTINUE_GAME:String = "GameScreenEvent.CONTINUE_GAME";
-		
+			
 		private var _currentGameScreenVO:GameScreenVO;
 		
 		public function GameScreenEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false) 

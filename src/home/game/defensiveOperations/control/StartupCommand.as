@@ -20,6 +20,8 @@ package home.game.defensiveOperations.control
 			commandMap.mapEvent(ScreenEvent.BEGIN, BeginCommand, ScreenEvent, true);
 			
 			commandMap.mapEvent(GameScreenEvent.SET_CURRENT_GAME_SCREEN, SetGameScreenCommand, GameScreenEvent, false);
+			commandMap.mapEvent(GameScreenEvent.START_GAME, StartNewGameCommand, GameScreenEvent, false);
+			
 			commandMap.mapEvent(GameLevelEvent.SET_CURRENT_LEVEL, SetLevelCommand, GameLevelEvent, false);
 			commandMap.mapEvent(GameLevelEvent.SET_CURRENT_LEVELSCREEN, SetLevelScreenCommand, GameLevelEvent, false);
 			

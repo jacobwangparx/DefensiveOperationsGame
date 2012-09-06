@@ -34,6 +34,7 @@ package home.game.defensiveOperations.control
 			
 			var gameScreenEvent:GameScreenEvent = new GameScreenEvent(GameScreenEvent.SET_CURRENT_GAME_SCREEN);
 			gameScreenEvent.currentGameScreenVO = event.structure.gameScreenVO;
+			screenProxy.originGameScreenVO = event.structure.gameScreenVO;
 			dispatch(gameScreenEvent);
 			
 			var levelScreenEvent:GameLevelEvent = new GameLevelEvent(GameLevelEvent.SET_CURRENT_LEVELSCREEN);

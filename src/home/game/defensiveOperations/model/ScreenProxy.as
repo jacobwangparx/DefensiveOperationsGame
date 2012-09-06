@@ -26,10 +26,22 @@ package home.game.defensiveOperations.model
 		
 		private var _currentScreen:String;
 		
+		private var _originGameScreenVO:GameScreenVO;
+		
 		public function get currentScreen():String { return _currentScreen; }
 		public function set currentScreen(value:String):void 
 		{
 			_currentScreen = value;
+		}
+		
+		public function get originGameScreenVO():GameScreenVO 
+		{
+			return _originGameScreenVO;
+		}
+		
+		public function set originGameScreenVO(value:GameScreenVO):void 
+		{
+			_originGameScreenVO = value;
 		}
 			
 		public function next():void 
