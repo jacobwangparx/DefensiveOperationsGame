@@ -18,9 +18,9 @@ package home.game.defensiveOperations.vo
 		public var sentryGunVO:SentryGunVO;
 		public var sentryRPGVO:SentryRPGVO;
 		
-		public var soliderVO:SoliderVO;
-		public var tankVO:TankVO;
-		public var btrVO:BtrVO;
+		public var soliderVO:EnemyVO;
+		public var tankVO:EnemyVO;
+		public var btrVO:EnemyVO;
 		
 		public var soliderVOs:Array;
 		public var tankVOs:Array;
@@ -46,9 +46,9 @@ package home.game.defensiveOperations.vo
 			
 			vo.sentryGunVO = SentryGunVO.fromXML(XML(xml.sentryGun));
 			vo.sentryRPGVO = SentryRPGVO.fromXML(XML(xml.sentryRPG));
-			vo.soliderVO = SoliderVO.fromXML(XML(xml.solider));
-			vo.tankVO = TankVO.fromXML(XML(xml.tank));
-			vo.btrVO = BtrVO.fromXML(XML(xml.btr));
+			vo.soliderVO = EnemyVO.fromXML(XML(xml.solider));
+			vo.tankVO = EnemyVO.fromXML(XML(xml.tank));
+			vo.btrVO = EnemyVO.fromXML(XML(xml.btr));
 			
 			vo.panelControlVO.priceUnit1 = vo.sentryGunVO.price;
 			vo.panelControlVO.priceUnit2 = vo.sentryRPGVO.price;

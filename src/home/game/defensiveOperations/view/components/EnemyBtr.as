@@ -17,33 +17,14 @@ package home.game.defensiveOperations.view.components
 	 * ...
 	 * @author Jake
 	 */
-	public class EnemyBtr extends Component
+	public class EnemyBtr extends Enemy
 	{	
-		private var _btrVO:BtrVO;
-	 
+		
 		public function EnemyBtr(target:MovieClip):void
 		{
 			super(target);
 		}
 		
-		override protected function createChildren():void 
-		{
-			super.createChildren();
-		 
-		}
-		
-		public function get btrVO():BtrVO 
-		{
-			return _btrVO;
-		}
-		
-		public function set btrVO(value:BtrVO):void 
-		{
-			_btrVO = value;
-		}
-		
-		
-						
 	}
 
 }

@@ -17,29 +17,12 @@ package home.game.defensiveOperations.view.components
 	 * ...
 	 * @author Jake
 	 */
-	public class EnemyTank extends Component
+	public class EnemyTank extends Enemy
 	{	
-		private var _tankVO:TankVO;
 	 
 		public function EnemyTank(target:MovieClip):void
 		{
 			super(target);
-		}
-		
-		override protected function createChildren():void 
-		{
-			super.createChildren();
-		 
-		}
-		
-		public function get tankVO():TankVO 
-		{
-			return _tankVO;
-		}
-		
-		public function set tankVO(value:TankVO):void 
-		{
-			_tankVO = value;
 		}
 						
 	}

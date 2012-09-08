@@ -17,31 +17,13 @@ package home.game.defensiveOperations.view.components
 	 * ...
 	 * @author Jake
 	 */
-	public class EnemySolider extends Component
+	public class EnemySolider extends Enemy
 	{	
-		private var _soliderVO:SoliderVO;
-	 
+		 
 		public function EnemySolider(target:MovieClip):void
 		{
 			super(target);
 		}
-		
-		override protected function createChildren():void 
-		{
-			super.createChildren();
-		 
-		}
-		
-		public function get soliderVO():SoliderVO 
-		{
-			return _soliderVO;
-		}
-		
-		public function set soliderVO(value:SoliderVO):void 
-		{
-			_soliderVO = value;
-		}
-	
 						
 	}
 

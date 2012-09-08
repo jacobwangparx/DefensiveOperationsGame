@@ -39,6 +39,7 @@ package home.game.defensiveOperations.vo
 				if (vo.currentLevel == levelVO.levelNum)
 				{
 					vo.currentAttack = levelVO.attack;
+					trace( "levelVO.attack : " + levelVO.attack );
 					vo.currentHealth = levelVO.health;
 					vo.currentRange = levelVO.range;
 					vo.currentSpeed = levelVO.speed;

@@ -7,7 +7,7 @@ package home.game.defensiveOperations.vo
 	 * ...
 	 * @author Jake
 	 */
-	public class BtrVO 
+	public class BtrVO extends EnemyVO
 	{	
 		public var attack:int;
 		public var range:int;

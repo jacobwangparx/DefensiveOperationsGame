@@ -20,26 +20,17 @@ package home.game.defensiveOperations.view.components
 	 * ...
 	 * @author Jake
 	 */
-	public class Character extends Component
+	public class Character extends GameElement
 	{	
 		
 		private var _currentCharacterVO:CharacterVO;
 	 
-		private var body:ImageLoadComponent;
 		
 		public function Character(target:MovieClip):void
 		{
 			super(target);
 		}
-		
-		override protected function createChildren():void 
-		{
-			super.createChildren();
-			
-			body = new ImageLoadComponent(target.body);
-	
-		}
-		
+						
 		public function get currentCharacterVO():CharacterVO 
 		{
 			return _currentCharacterVO;
@@ -51,6 +42,8 @@ package home.game.defensiveOperations.view.components
 			
 			var bodyImageUri:String = LevelCharacterVO(value.levelVOs[value.currentLevel]).imageUri;
 			body.load(bodyImageUri);
+			attackRange.width = value.currentRange;
+			attackRange.height = value.currentRange;
 		}
 		
 	 

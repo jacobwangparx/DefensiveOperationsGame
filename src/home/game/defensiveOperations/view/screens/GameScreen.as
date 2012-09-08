@@ -38,9 +38,6 @@ package home.game.defensiveOperations.view.screens
 		private var stepTotal:int;
 		private var stepVOs:Array;
 		
-		private var characterJacobVO:CharacterVO;
-		private var characterStaceyVO:CharacterVO;
-		
 		private var characterStacey:Character;
 		private var characterJacob:Character;
 		
@@ -64,11 +61,11 @@ package home.game.defensiveOperations.view.screens
 		override protected function createChildren():void 
 		{
 			super.createChildren();
-			
-			//gameScreenMask = new gameScreenMaskClip();
-			//addChild(gameScreenMask);
-						
+		
 			gameElementHolder = target.gameElementHolder;
+			
+			characterStacey = new Character(target.characterStacey);
+			characterJacob = new Character(target.characterJacob);
 			
 			labelKilled = new TextComponent(target.labelKilled); 
 			labelLevel = new TextComponent(target.labelLevel);
@@ -83,7 +80,6 @@ package home.game.defensiveOperations.view.screens
 			panelControl = new PanelControl(target.panelControl);
 			panelControl.signalClickPanelUnit.add(onClickPanelUnitOnPanelControl);
 			panelControl.signalClickStartButton.add(onClickButtonStartOnPanelControl);
-			panelControl.signalClickCharacterImage.add(onClickCharacterLabelOnPanelControl);
 			panelControl.signalClickButtonMenu.add(onClickButtonMenuOnPanelControl);
 			signalClickButtonMenu = new Signal();
 			panelControl.signalClickButtonPause.add(onClickButtonPauseOnPanelControl);
@@ -100,7 +96,7 @@ package home.game.defensiveOperations.view.screens
 		{
 			if(gameScreenVO.isStart)
 			{
-				destoryCurrentEnemies();
+				resetGame();
 				gameScreenVO.isStart = false;
 			}
 			super.transitionOut();
@@ -126,45 +122,8 @@ package home.game.defensiveOperations.view.screens
 		{
 			signalClickButtonRestart.dispatch();
 			
-			if(gameScreenVO.isStart)
-			{
-				destoryCurrentEnemies();
-				currentStep = 0;
-				createEnemiesForCurrentStep();
-			}
-			
-		}
-		
-		private function onClickCharacterLabelOnPanelControl(index:int):void 
-		{
-			if (index == 0)
-			{
-				if(characterStacey == null)
-				{
-					characterStacey = new Character(new characterClip());
-					//characterStacey.mask = gameScreenMask;
-					gameElementHolder.addChild(characterStacey);
-					characterStacey.currentCharacterVO = characterStaceyVO;
-					objectOnMove = characterStacey;
-					stage.addEventListener(MouseEvent.MOUSE_MOVE, moveNewGameObject);
-					stage.addEventListener(MouseEvent.MOUSE_UP, positionNewGameObject);
-				}
-			}
-			else if (index == 1)
-			{
-				if(characterJacob == null)
-				{
-					characterJacob = new Character(new characterClip());
-					//characterJacob.mask = gameScreenMask;
-					gameElementHolder.addChild(characterJacob);
-					characterJacob.currentCharacterVO = characterJacobVO;
-					objectOnMove = characterJacob;
-					stage.addEventListener(MouseEvent.MOUSE_MOVE, moveNewGameObject);
-					stage.addEventListener(MouseEvent.MOUSE_UP, positionNewGameObject);
-				}
-			}
-			
-			
+			resetGame();
+			currentStep = 0;
 		}
 		
 		private function positionNewGameObject(e:MouseEvent):void 
@@ -180,18 +139,9 @@ package home.game.defensiveOperations.view.screens
 		}
 		
 		private function onClickButtonStartOnPanelControl():void 
-		{
-			trace("click button start");
-			
+		{			
 			gameScreenVO.isStart = true;
-			//check character status
-			
-			//destory the group
-			//destoryCurrentEnemies();
-			
-			//create the first group of enemies
 			createEnemiesForCurrentStep();
-
 		}
 		
 		private function createEnemiesForCurrentStep():void 
@@ -247,7 +197,7 @@ package home.game.defensiveOperations.view.screens
 			}
 		}
 		
-		private function destoryCurrentEnemies():void 
+		private function resetGame():void 
 		{
 			var index:int;
 		
@@ -255,24 +205,28 @@ package home.game.defensiveOperations.view.screens
 				for (index = 0; index < btrs.length; index++) 
 				{
 					var btr:EnemyBtr = EnemyBtr(btrs[index]);
-					removeChild(btr.target);
+					gameElementHolder.removeChild(btr.target);
 				}
+				btrs = new Array();
 			}
 			
 			if(tanks != null){
 				for (index = 0; index < tanks.length; index++) 
 				{
 					var tank:EnemyTank = EnemyTank(tanks[index]);
-					removeChild(tank.target);
+					gameElementHolder.removeChild(tank.target);
 				}
+				tanks = new Array();
 			}
 			
 			if(soliders != null){
 				for (index = 0; index < soliders.length; index++) 
 				{
 					var solider:EnemySolider = EnemySolider(soliders[index]);
-					removeChild(solider.target);
+					gameElementHolder.removeChild(solider.target);
 				}
+				
+				soliders = new Array();
 			}
 		}
 		
@@ -296,8 +250,8 @@ package home.game.defensiveOperations.view.screens
 			
 			panelControl.panelControlVO = gameScreenVO.panelControlVO;
 			
-			characterJacobVO = value.characterVOs[1];
-			characterStaceyVO = value.characterVOs[0];
+			characterJacob.currentCharacterVO = value.characterVOs[1];
+			characterStacey.currentCharacterVO = value.characterVOs[0];
 		
 			currentStep = 0;
 		}

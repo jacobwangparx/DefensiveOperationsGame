@@ -26,9 +26,6 @@ package home.game.defensiveOperations.view.components
 		
 		private var _index:int;
 		
-		//public var signalMouseDownCharacterImage:Signal;
-		public var signalMouseClickCharacterImage:Signal;
-		
 		private var _panelControlVO:PanelControlVO;
 	 
 		public function LabelCharacter(target:MovieClip):void
@@ -41,13 +38,13 @@ package home.game.defensiveOperations.view.components
 			super.createChildren();
 			
 			buttonImage = new ImageButton(target.buttonImage);
-			buttonImage.addEventListener(MouseEvent.CLICK, onClickLabelImage);
-			//buttonImage.addEventListener(MouseEvent.MOUSE_DOWN, onMouseDownCharacterImage);
-
+			//buttonImage.addEventListener(MouseEvent.CLICK, onClickLabelImage);
+			buttonImage.enabled = false;
+			
 			healthLine = target.healthLine;
 			
 			//signalMouseDownCharacterImage = new Signal();
-			signalMouseClickCharacterImage = new Signal();
+			//signalMouseClickCharacterImage = new Signal();
 		}
 		
 		//private function onMouseDownCharacterImage(e:MouseEvent):void 
@@ -56,10 +53,10 @@ package home.game.defensiveOperations.view.components
 		//}
 		//
 		
-		private function onClickLabelImage(e:MouseEvent):void 
-		{
-			signalMouseClickCharacterImage.dispatch(index);
-		}
+		//private function onClickLabelImage(e:MouseEvent):void 
+		//{
+			//signalMouseClickCharacterImage.dispatch(index);
+		//}
 		
 		public function get panelControlVO():PanelControlVO 
 		{
