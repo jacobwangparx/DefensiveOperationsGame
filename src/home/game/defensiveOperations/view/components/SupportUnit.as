@@ -20,33 +20,14 @@ package home.game.defensiveOperations.view.components
 	 * ...
 	 * @author Jake
 	 */
-	public class Character extends Allies
+	public class SupportUnit extends Allies
 	{	
 		
-		private var _currentCharacterVO:CharacterVO;
-	 
-		
-		public function Character(target:MovieClip):void
+		public function SupportUnit(target:MovieClip):void
 		{
 			super(target);
 		}
-						
-		public function get currentCharacterVO():CharacterVO 
-		{
-			return _currentCharacterVO;
-		}
-		
-		public function set currentCharacterVO(value:CharacterVO):void 
-		{
-			_currentCharacterVO = value;
-			
-			var bodyImageUri:String = LevelCharacterVO(value.levelVOs[value.currentLevel]).imageUri;
-			body.load(bodyImageUri);
-			attackRange.width = value.currentRange;
-			attackRange.height = value.currentRange;
-		}
-		
-	 
+							
 	}
 
 }

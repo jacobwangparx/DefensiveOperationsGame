@@ -28,6 +28,8 @@ package home.game.defensiveOperations.view.components
 		protected var healthLine:MovieClip;
 		protected var bulletHolder:MovieClip;
 		
+		private var _enemyVO:EnemyVO;
+		
 		public function Enemy(target:MovieClip):void
 		{
 			super(target);
@@ -64,6 +66,16 @@ package home.game.defensiveOperations.view.components
 		{
 			attackRange.visible = true;
 			healthLine.visible = false;
+		}
+		
+		public function get enemyVO():EnemyVO 
+		{
+			return _enemyVO;
+		}
+		
+		public function set enemyVO(value:EnemyVO):void 
+		{
+			_enemyVO = value;
 		}
 	}
 

@@ -20,7 +20,7 @@ package home.game.defensiveOperations.view.components
 	 * ...
 	 * @author Jake
 	 */
-	public class GameElement extends Component
+	public class Allies extends Component
 	{	 
 		protected var body:ImageLoadComponent;
 		protected var hitspot:MovieClip;
@@ -28,9 +28,7 @@ package home.game.defensiveOperations.view.components
 		protected var healthLine:MovieClip;
 		protected var bulletHolder:MovieClip;
 	
-		protected var _enemyVO:EnemyVO;
-		
-		public function GameElement(target:MovieClip):void
+		public function Allies(target:MovieClip):void
 		{
 			super(target);
 		}
@@ -68,15 +66,7 @@ package home.game.defensiveOperations.view.components
 			healthLine.visible = false;
 		}
 		
-		public function get enemyVO():EnemyVO 
-		{
-			return _enemyVO;
-		}
-		
-		public function set enemyVO(value:EnemyVO):void 
-		{
-			_enemyVO = value;
-		}
+	 
 	}
 
 }
