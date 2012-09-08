@@ -18,7 +18,7 @@ package home.game.defensiveOperations.view.components
 	 * @author Jake
 	 */
 	public class PanelControl extends Component
-	{
+	{	
 		private var buttonMenu:LabelButton;
 		private var buttonPause:LabelButton;
 		
@@ -34,7 +34,7 @@ package home.game.defensiveOperations.view.components
 		
 		public var signalClickPanelUnit:Signal;
 		public var signalClickStartButton:Signal;
-		public var signalMouseDownCharacterLabel:Signal;
+		public var signalClickCharacterImage:Signal;
 		public var signalClickButtonMenu:Signal;
 		public var signalClickButtonPause:Signal;
 		
@@ -66,15 +66,15 @@ package home.game.defensiveOperations.view.components
 			
 			characterLabelStacey = new LabelCharacter(target.characterLabelStacey);
 			characterLabelStacey.index = 0;
-			characterLabelStacey.signalMouseDownCharacterImage.add(onMouseDownCharacterlabel);
+			characterLabelStacey.signalMouseClickCharacterImage.add(onClickCharacterlabel);
 			
 			characterLabelJacob = new LabelCharacter(target.characterLabelJacob);
 			characterLabelJacob.index = 1;
-			characterLabelJacob.signalMouseDownCharacterImage.add(onMouseDownCharacterlabel);
+			characterLabelJacob.signalMouseClickCharacterImage.add(onClickCharacterlabel);
 			
 			signalClickPanelUnit = new Signal();
 			signalClickStartButton = new Signal();
-			signalMouseDownCharacterLabel = new Signal();
+			signalClickCharacterImage = new Signal();
 			signalClickButtonMenu = new Signal();
 			signalClickButtonPause = new Signal();
 		}
@@ -89,9 +89,9 @@ package home.game.defensiveOperations.view.components
 			signalClickButtonMenu.dispatch();
 		}
 		
-		private function onMouseDownCharacterlabel(index:int):void 
+		private function onClickCharacterlabel(index:int):void 
 		{
-			signalMouseDownCharacterLabel.dispatch(index);
+			signalClickCharacterImage.dispatch(index);
 		}
 	
 		private function onClickButtonStart(e:MouseEvent):void 

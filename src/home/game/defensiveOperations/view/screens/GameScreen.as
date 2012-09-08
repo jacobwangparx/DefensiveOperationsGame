@@ -21,6 +21,9 @@ package home.game.defensiveOperations.view.screens
 	 */
 	public class GameScreen extends AbstractScreen
 	{
+		//private var gameScreenMask: MovieClip;
+		
+		private var gameElementHolder:MovieClip;
 		
 		private var labelKilled:TextComponent;
 		private var labelLevel:TextComponent;
@@ -62,6 +65,11 @@ package home.game.defensiveOperations.view.screens
 		{
 			super.createChildren();
 			
+			//gameScreenMask = new gameScreenMaskClip();
+			//addChild(gameScreenMask);
+						
+			gameElementHolder = target.gameElementHolder;
+			
 			labelKilled = new TextComponent(target.labelKilled); 
 			labelLevel = new TextComponent(target.labelLevel);
 			
@@ -75,7 +83,7 @@ package home.game.defensiveOperations.view.screens
 			panelControl = new PanelControl(target.panelControl);
 			panelControl.signalClickPanelUnit.add(onClickPanelUnitOnPanelControl);
 			panelControl.signalClickStartButton.add(onClickButtonStartOnPanelControl);
-			panelControl.signalMouseDownCharacterLabel.add(onMouseDownCharacterLabelOnPanelControl);
+			panelControl.signalClickCharacterImage.add(onClickCharacterLabelOnPanelControl);
 			panelControl.signalClickButtonMenu.add(onClickButtonMenuOnPanelControl);
 			signalClickButtonMenu = new Signal();
 			panelControl.signalClickButtonPause.add(onClickButtonPauseOnPanelControl);
@@ -127,18 +135,18 @@ package home.game.defensiveOperations.view.screens
 			
 		}
 		
-		private function onMouseDownCharacterLabelOnPanelControl(index:int):void 
+		private function onClickCharacterLabelOnPanelControl(index:int):void 
 		{
-			trace("on mouse down");
 			if (index == 0)
 			{
 				if(characterStacey == null)
 				{
 					characterStacey = new Character(new characterClip());
-					addChild(characterStacey);
+					//characterStacey.mask = gameScreenMask;
+					gameElementHolder.addChild(characterStacey);
 					characterStacey.currentCharacterVO = characterStaceyVO;
 					objectOnMove = characterStacey;
-					stage.addEventListener(MouseEvent.MOUSE_MOVE, createNewGameObject);
+					stage.addEventListener(MouseEvent.MOUSE_MOVE, moveNewGameObject);
 					stage.addEventListener(MouseEvent.MOUSE_UP, positionNewGameObject);
 				}
 			}
@@ -147,10 +155,11 @@ package home.game.defensiveOperations.view.screens
 				if(characterJacob == null)
 				{
 					characterJacob = new Character(new characterClip());
-					addChild(characterJacob);
+					//characterJacob.mask = gameScreenMask;
+					gameElementHolder.addChild(characterJacob);
 					characterJacob.currentCharacterVO = characterJacobVO;
 					objectOnMove = characterJacob;
-					stage.addEventListener(MouseEvent.MOUSE_MOVE, createNewGameObject);
+					stage.addEventListener(MouseEvent.MOUSE_MOVE, moveNewGameObject);
 					stage.addEventListener(MouseEvent.MOUSE_UP, positionNewGameObject);
 				}
 			}
@@ -160,11 +169,11 @@ package home.game.defensiveOperations.view.screens
 		
 		private function positionNewGameObject(e:MouseEvent):void 
 		{
-			stage.removeEventListener(MouseEvent.MOUSE_MOVE, createNewGameObject);
+			stage.removeEventListener(MouseEvent.MOUSE_MOVE, moveNewGameObject);
 			stage.removeEventListener(MouseEvent.MOUSE_UP, positionNewGameObject);
 		}
 		
-		private function createNewGameObject(e:MouseEvent):void 
+		private function moveNewGameObject(e:MouseEvent):void 
 		{
 			objectOnMove.x = mouseX;
 			objectOnMove.y = mouseY;
@@ -198,23 +207,25 @@ package home.game.defensiveOperations.view.screens
 			for (index = 0; index < stepVO.btrNum; index++) 
 			{
 				var btr:EnemyBtr = new EnemyBtr(new btrClip());
+				//btr.mask = gameScreenMask;
 				btr.x = currentX;
 				btr.y = currentY;
 				
-				addChild(btr);
+				gameElementHolder.addChild(btr);
 				btrs.push(btr);
 				
-				currentX += 30;
-				currentY +=30
+				currentX += 200;
+				currentY += 200
 			}
 			
 			for (index = 0; index < stepVO.tankNum; index++) 
 			{
 				var tank:EnemyTank = new EnemyTank(new tankClip());
+				//tank.mask = gameScreenMask;
 				tank.x = currentX;
 				tank.y = currentY;
 				
-				addChild(tank);
+				gameElementHolder.addChild(tank);
 				tanks.push(tank);
 				
 				currentX += 30;
@@ -224,10 +235,11 @@ package home.game.defensiveOperations.view.screens
 			for (index = 0; index < stepVO.soliderNum; index++) 
 			{
 				var solider:EnemySolider = new EnemySolider(new soliderClip());
+				//solider.mask = gameScreenMask;
 				solider.x = currentX;
 				solider.y = currentY;
 				
-				addChild(solider);
+				gameElementHolder.addChild(solider);
 				soliders.push(solider);
 				
 				currentX += 10;
