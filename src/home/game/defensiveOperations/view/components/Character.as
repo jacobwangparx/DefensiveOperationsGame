@@ -22,7 +22,7 @@ package home.game.defensiveOperations.view.components
 	 */
 	public class Character extends Allies
 	{	
-		
+
 		private var _currentCharacterVO:CharacterVO;
 	 
 		
@@ -31,6 +31,7 @@ package home.game.defensiveOperations.view.components
 			super(target);
 		}
 						
+	
 		public function get currentCharacterVO():CharacterVO 
 		{
 			return _currentCharacterVO;

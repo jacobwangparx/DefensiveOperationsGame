@@ -157,7 +157,8 @@ package home.game.defensiveOperations.view.screens
 			for (index = 0; index < stepVO.btrNum; index++) 
 			{
 				var btr:EnemyBtr = new EnemyBtr(new btrClip());
-				//btr.mask = gameScreenMask;
+				btr.enemyVO = gameScreenVO.btrVO;
+				
 				btr.x = currentX;
 				btr.y = currentY;
 				
@@ -171,7 +172,8 @@ package home.game.defensiveOperations.view.screens
 			for (index = 0; index < stepVO.tankNum; index++) 
 			{
 				var tank:EnemyTank = new EnemyTank(new tankClip());
-				//tank.mask = gameScreenMask;
+				tank.enemyVO = gameScreenVO.tankVO;
+				
 				tank.x = currentX;
 				tank.y = currentY;
 				
@@ -185,7 +187,8 @@ package home.game.defensiveOperations.view.screens
 			for (index = 0; index < stepVO.soliderNum; index++) 
 			{
 				var solider:EnemySolider = new EnemySolider(new soliderClip());
-				//solider.mask = gameScreenMask;
+				solider.enemyVO = gameScreenVO.soliderVO;
+				
 				solider.x = currentX;
 				solider.y = currentY;
 				

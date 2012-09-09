@@ -20,13 +20,9 @@ package home.game.defensiveOperations.view.components
 	 * ...
 	 * @author Jake
 	 */
-	public class Enemy extends Component
-	{	 
-		protected var body:MovieClip;
-		protected var hitspot:MovieClip;
-		protected var attackRange:MovieClip;
-		protected var healthLine:MovieClip;
-		protected var bulletHolder:MovieClip;
+	public class Enemy extends GameElement
+	{	
+		private static const MOVE_SPEED:int = 10;
 		
 		private var _enemyVO:EnemyVO;
 		
@@ -34,40 +30,7 @@ package home.game.defensiveOperations.view.components
 		{
 			super(target);
 		}
-		
-		override protected function createChildren():void 
-		{
-			super.createChildren();
 			
-			hitspot = target.hitspot;
-			hitspot.addEventListener(MouseEvent.ROLL_OVER, onRollOverBody);
-			hitspot.addEventListener(MouseEvent.ROLL_OUT, onRollOutBody);
-			
-			body = target.body;
-			
-			attackRange = target.attackRange;
-			attackRange.visible = false;
-		
-			healthLine = target.healthLine;
-			healthLine.visible = false;
-			
-			bulletHolder = target.bulletHolder;
-			
-		}
-		
-
-		private function onRollOutBody(e:MouseEvent):void 
-		{
-			attackRange.visible = false;
-			healthLine.visible 	= false;	
-		}
-		
-		private function onRollOverBody(e:MouseEvent):void 
-		{
-			attackRange.visible = true;
-			healthLine.visible = false;
-		}
-		
 		public function get enemyVO():EnemyVO 
 		{
 			return _enemyVO;
@@ -76,6 +39,16 @@ package home.game.defensiveOperations.view.components
 		public function set enemyVO(value:EnemyVO):void 
 		{
 			_enemyVO = value;
+			
+			attack = value.attack;
+			attackSpeed = value.speed;
+			attackRange.width = value.range; 
+			attackRange.height = value.range; 
+			
+			healthMax = value.healthMax;
+			currentHealth = healthMax;
+			healthLine.width = currentHealth / healthMax;
+			
 		}
 	}
 

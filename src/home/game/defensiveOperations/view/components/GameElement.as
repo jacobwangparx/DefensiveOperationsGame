@@ -20,8 +20,8 @@ package home.game.defensiveOperations.view.components
 	 * ...
 	 * @author Jake
 	 */
-	public class Allies extends Component 
-	{	 
+	public class GameElement extends Component
+	{	
 		protected var attack:int;
 		protected var attackSpeed:int;
 		protected var currentHealth:int;
@@ -29,18 +29,18 @@ package home.game.defensiveOperations.view.components
 	
 		protected var index:int;
 	
-		protected var body:ImageLoadComponent;
+		protected var body:MovieClip;
 		protected var hitspot:MovieClip;
 		protected var attackRange:MovieClip;
 		protected var healthLine:MovieClip;
 		protected var bulletHolder:MovieClip;
-		
-		public function Allies(target:MovieClip):void
+				
+		public function GameElement(target:MovieClip):void
 		{
 			super(target);
 		}
-	
-			override protected function createChildren():void 
+		
+		override protected function createChildren():void 
 		{
 			super.createChildren();
 			
@@ -48,7 +48,7 @@ package home.game.defensiveOperations.view.components
 			hitspot.addEventListener(MouseEvent.ROLL_OVER, onRollOverBody);
 			hitspot.addEventListener(MouseEvent.ROLL_OUT, onRollOutBody);
 			
-			body = new ImageLoadComponent(target.body);
+			body = target.body;
 			
 			attackRange = target.attackRange;
 			attackRange.visible = false;
@@ -73,6 +73,7 @@ package home.game.defensiveOperations.view.components
 			healthLine.visible = false;
 		}
 		
+
 	}
 
 }

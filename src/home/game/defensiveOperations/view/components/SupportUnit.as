@@ -23,6 +23,7 @@ package home.game.defensiveOperations.view.components
 	public class SupportUnit extends Allies
 	{	
 		
+		
 		public function SupportUnit(target:MovieClip):void
 		{
 			super(target);

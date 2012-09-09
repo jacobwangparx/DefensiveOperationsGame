@@ -7,26 +7,17 @@ package home.game.defensiveOperations.vo
 	 * ...
 	 * @author Jake
 	 */
-	public class SentryRPGVO 
+	public class SentryRPGVO extends GameElementVO
 	{	
 		public var name:String;
 		public var bodyImageUri:String;
-		
-		public var attack:int;
-		public var range:int;
-		public var health:int;
-		public var speed:int;
-		
+	
 		public var rpgAttack:int;
-		public var rpgSpeed:int;
+		public var rpgAttackSpeed:int;
 		
 		public var price:int;
 		
-		public var positionX:Number;
-		public var positionY:Number;
-		
-		public var index: int;
-
+ 
 		public static function fromXML(xml:XML):SentryRPGVO 
 		{
 			var vo:SentryRPGVO = new SentryRPGVO();
@@ -36,11 +27,11 @@ package home.game.defensiveOperations.vo
 			
 			if (xml.@attack != undefined) vo.attack = xml.@attack;
 			if (xml.@range != undefined) vo.range = xml.@range;
-			if (xml.@health != undefined) vo.health = xml.@health;
+			if (xml.@health != undefined) vo.healthMax = xml.@health;
 			if (xml.@speed != undefined) vo.speed = xml.@speed;
 			
 			if (xml.@rpgAttack != undefined) vo.rpgAttack = xml.@rpgAttack;
-			if (xml.@rpgSpeed != undefined) vo.rpgSpeed = xml.@rpgSpeed;
+			if (xml.@rpgSpeed != undefined) vo.rpgAttackSpeed = xml.@rpgSpeed;
 			
 			if (xml.@price != undefined) vo.price = xml.@price;
 			
