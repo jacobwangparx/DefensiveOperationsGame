@@ -16,7 +16,6 @@ package home.game.defensiveOperations.vo
 		public var rpgAttackSpeed:int;
 		
 		public var price:int;
-		
  
 		public static function fromXML(xml:XML):SentryRPGVO 
 		{
@@ -24,7 +23,7 @@ package home.game.defensiveOperations.vo
 			
 			if (xml.@name != undefined) vo.name = xml.@name;
 			if (xml.@bodyImageUri != undefined) vo.bodyImageUri = xml.@bodyImageUri;
-			
+		 	
 			if (xml.@attack != undefined) vo.attack = xml.@attack;
 			if (xml.@range != undefined) vo.range = xml.@range;
 			if (xml.@health != undefined) vo.healthMax = xml.@health;

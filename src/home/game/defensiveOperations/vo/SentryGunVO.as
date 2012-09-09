@@ -19,6 +19,7 @@ package home.game.defensiveOperations.vo
 			var vo:SentryGunVO = new SentryGunVO();
 			
 			if (xml.@name != undefined) vo.name = xml.@name;
+			trace( "vo.name : " + vo.name );
 			if (xml.@bodyImageUri != undefined) vo.bodyImageUri = xml.@bodyImageUri;
 			
 			if (xml.@attack != undefined) vo.attack = xml.@attack;

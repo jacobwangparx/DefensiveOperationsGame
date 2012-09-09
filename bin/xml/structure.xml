@@ -68,9 +68,9 @@
 					
 			</characters>
 			
-			<sentryGun imageUri="images/assets/sentryGun0.png" name="Sentry Gun" attack="3" health="12" range="300" speed="10"  price="30" />
+			<sentryGun bodyImageUri="images/assets/sentryGun0.png" name="Sentry Gun" attack="3" health="12" range="300" speed="10"  price="30" />
 		 
-			<sentryRPG imageUri="images/assets/sentryGun1.png" name="Sentry RPG" attack="4" health="20" range="350" speed="10" rpgSpeed="3" rpgAttack="12" price="100" />
+			<sentryRPG bodyImageUri="images/assets/sentryGun1.png" name="Sentry RPG" attack="4" health="20" range="350" speed="10" rpgSpeed="3" rpgAttack="12" price="100" />
 						
 			<solider attack="1" speed="4" range="240" health="4" />
 			

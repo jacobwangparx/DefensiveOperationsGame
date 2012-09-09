@@ -40,6 +40,7 @@ package home.game.defensiveOperations.view.components
 			_sentryGunVO = value;
 			
 			body.load(value.bodyImageUri);
+			trace( "value.bodyImageUri : " + value.bodyImageUri );
 	
 			attack = value.attack;
 			attackSpeed = value.speed;

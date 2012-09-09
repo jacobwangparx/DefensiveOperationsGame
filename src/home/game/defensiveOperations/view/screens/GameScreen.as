@@ -60,6 +60,21 @@ package home.game.defensiveOperations.view.screens
 		{
 			super(target);
 		}
+				
+		override public function transitionIn():void 
+		{
+			super.transitionIn();
+		}
+		
+		override public function transitionOut():void 
+		{
+			if(gameScreenVO.isStart)
+			{
+				resetGame();
+				gameScreenVO.isStart = false;
+			}
+			super.transitionOut();
+		}
 		
 		override protected function createChildren():void 
 		{
@@ -93,19 +108,10 @@ package home.game.defensiveOperations.view.screens
 			sentryRPGs = new Array();
 		}
 		
-		override public function transitionIn():void 
-		{
-			super.transitionIn();
-		}
-		
-		override public function transitionOut():void 
-		{
-			if(gameScreenVO.isStart)
-			{
-				resetGame();
-				gameScreenVO.isStart = false;
-			}
-			super.transitionOut();
+		private function onClickButtonStartOnPanelControl():void 
+		{			
+			gameScreenVO.isStart = true;
+			createEnemiesForCurrentStep();
 		}
 		
 		private function onClickButtonPauseOnPanelControl():void 
@@ -116,6 +122,7 @@ package home.game.defensiveOperations.view.screens
 		private function onClickButtonMenuOnPanelControl():void 
 		{
 			trace("click button menu");
+			resetGame();
 			signalClickButtonMenu.dispatch();
 		}
 		
@@ -132,10 +139,28 @@ package home.game.defensiveOperations.view.screens
 			currentStep = 0;
 		}
 		
-		private function positionNewGameObject(e:MouseEvent):void 
+				
+		private function onClickPanelUnitOnPanelControl(index:int):void 
 		{
-			stage.removeEventListener(MouseEvent.MOUSE_MOVE, moveNewGameObject);
-			stage.removeEventListener(MouseEvent.MOUSE_UP, positionNewGameObject);
+			if (index == 0)
+			{
+				var sentryGun:SentryGun = new SentryGun(new sentryGunClip());
+				sentryGun.sentryGunVO = gameScreenVO.sentryGunVO;
+				gameElementHolder.addChild(sentryGun);
+				sentryGuns.push(sentryGun);
+				objectOnMove = sentryGun; 
+			}
+			else if(index == 1)
+			{
+				var sentryRPG:SentryRPG = new SentryRPG(new sentryRpgClip());
+				sentryRPG.sentryRPGVO = gameScreenVO.sentryRPGVO;
+				gameElementHolder.addChild(sentryRPG);
+				sentryRPGs.push(sentryRPG);
+				objectOnMove = sentryRPG;
+			}
+			
+			stage.addEventListener(MouseEvent.MOUSE_MOVE, moveNewGameObject);
+			stage.addEventListener(MouseEvent.MOUSE_UP, positionNewGameObject);
 		}
 		
 		private function moveNewGameObject(e:MouseEvent):void 
@@ -144,12 +169,12 @@ package home.game.defensiveOperations.view.screens
 			objectOnMove.y = mouseY;
 		}
 		
-		private function onClickButtonStartOnPanelControl():void 
-		{			
-			gameScreenVO.isStart = true;
-			createEnemiesForCurrentStep();
+		private function positionNewGameObject(e:MouseEvent):void 
+		{
+			stage.removeEventListener(MouseEvent.MOUSE_MOVE, moveNewGameObject);
+			stage.removeEventListener(MouseEvent.MOUSE_UP, positionNewGameObject);
 		}
-		
+				
 		private function createEnemiesForCurrentStep():void 
 		{
 			btrs = new Array();
@@ -253,29 +278,15 @@ package home.game.defensiveOperations.view.screens
 			//reset sentryRPG
 			if (sentryRPGs.length >= 0)
 			{
-				for (index = 0; index < sentryGuns.length; index++) 
+				for (index = 0; index < sentryRPGs.length; index++) 
 				{
-					var sentryRPG:SentryGun = SentryGun(sentryRPGs[index]);
+					var sentryRPG:SentryRPG = SentryRPG(sentryRPGs[index]);
 					gameElementHolder.removeChild(sentryRPG.target);
 				}
 				
 				sentryRPGs = new Array();
 			}
 			
-		}
-		
-		private function onClickPanelUnitOnPanelControl(index:int):void 
-		{
-			if (index == 0)
-			{
-				var sentryGun:SentryGun = new SentryGun(new sentryGunClip());
-				gameElementHolder.addChild(sentryGun);
-			}
-			else if(index == 1)
-			{
-				var sentryRPG:SentryRPG = new SentryRPG(new sentryRpgClip());
-				gameElementHolder.addChild(sentryRPG);
-			}
 		}
 			
 		public function get gameScreenVO():GameScreenVO 
@@ -294,7 +305,7 @@ package home.game.defensiveOperations.view.screens
 			
 			characterJacob.currentCharacterVO = value.characterVOs[1];
 			characterStacey.currentCharacterVO = value.characterVOs[0];
-		
+			
 			currentStep = 0;
 		}
 		

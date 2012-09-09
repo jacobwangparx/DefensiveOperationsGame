@@ -45,7 +45,9 @@ package home.game.defensiveOperations.vo
 			}
 			
 			vo.sentryGunVO = SentryGunVO.fromXML(XML(xml.sentryGun));
+			trace( "vo.sentryGunVO : " + vo.sentryGunVO.bodyImageUri );
 			vo.sentryRPGVO = SentryRPGVO.fromXML(XML(xml.sentryRPG));
+			trace( "vo.sentryRPGVO : " + vo.sentryRPGVO.bodyImageUri );
 			vo.soliderVO = EnemyVO.fromXML(XML(xml.solider));
 			vo.tankVO = EnemyVO.fromXML(XML(xml.tank));
 			vo.btrVO = EnemyVO.fromXML(XML(xml.btr));
