@@ -23,9 +23,34 @@ package home.game.defensiveOperations.view.components
 	public class SentryGun extends SupportUnit
 	{	
 		
+		private var _sentryGunVO:SentryGunVO;
+		
 		public function SentryGun(target:MovieClip):void
 		{
 			super(target);
+		}
+		
+		public function get sentryGunVO():SentryGunVO 
+		{
+			return _sentryGunVO;
+		}
+		
+		public function set sentryGunVO(value:SentryGunVO):void 
+		{
+			_sentryGunVO = value;
+			
+			body.load(value.bodyImageUri);
+	
+			attack = value.attack;
+			attackSpeed = value.speed;
+			attackRange.width = value.range; 
+			attackRange.height = value.range; 
+			
+			healthMax = value.healthMax;
+			currentHealth = healthMax;
+			healthLine.width = currentHealth / healthMax;
+			
+			
 		}
 							
 	}

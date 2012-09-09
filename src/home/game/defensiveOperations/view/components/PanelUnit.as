@@ -61,7 +61,6 @@ package home.game.defensiveOperations.view.components
 			_panelControlVO = value;
 			
 			sentryGun.panelControlVO = value;
-			trace( "value : " + value );
 			sentryRPG.panelControlVO = value;
 		
 			

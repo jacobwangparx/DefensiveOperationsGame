@@ -23,9 +23,32 @@ package home.game.defensiveOperations.view.components
 	public class SentryRPG extends SupportUnit
 	{	
 		
-		public function SupportUnit(target:MovieClip):void
+		private var _sentryRPGVO: SentryRPGVO;
+		
+		public function SentryRPG(target:MovieClip):void
 		{
 			super(target);
+		}
+		
+		public function get sentryRPGVO():SentryRPGVO 
+		{
+			return _sentryRPGVO;
+		}
+		
+		public function set sentryRPGVO(value:SentryRPGVO):void 
+		{
+			_sentryRPGVO = value;
+			
+			body.load(value.bodyImageUri);
+	
+			attack = value.attack;
+			attackSpeed = value.speed;
+			attackRange.width = value.range; 
+			attackRange.height = value.range; 
+			
+			healthMax = value.healthMax;
+			currentHealth = healthMax;
+			healthLine.width = currentHealth / healthMax;
 		}
 							
 	}

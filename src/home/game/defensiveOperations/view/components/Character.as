@@ -43,8 +43,15 @@ package home.game.defensiveOperations.view.components
 			
 			var bodyImageUri:String = LevelCharacterVO(value.levelVOs[value.currentLevel]).imageUri;
 			body.load(bodyImageUri);
-			attackRange.width = value.currentRange;
+	 
+			attack = value.currentAttack;
+			attackSpeed = value.currentSpeed;
+			attackRange.width = value.currentRange; 
 			attackRange.height = value.currentRange;
+			
+			healthMax = value.currentHealth;
+			currentHealth = healthMax;
+			healthLine.width = currentHealth / healthMax;
 		}
 		
 	 

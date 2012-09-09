@@ -35,6 +35,9 @@ package home.game.defensiveOperations.view.screens
 		private var tanks:Array;
 		private var soliders:Array;
 		
+		private var sentryGuns:Array;
+		private var sentryRPGs:Array;
+		
 		private var stepTotal:int;
 		private var stepVOs:Array;
 		
@@ -85,6 +88,9 @@ package home.game.defensiveOperations.view.screens
 			panelControl.signalClickButtonPause.add(onClickButtonPauseOnPanelControl);
 		
 			stepVOs = new Array();
+			
+			sentryGuns = new Array();
+			sentryRPGs = new Array();
 		}
 		
 		override public function transitionIn():void 
@@ -231,14 +237,47 @@ package home.game.defensiveOperations.view.screens
 				
 				soliders = new Array();
 			}
+			
+			//reset sentryGun
+			if (sentryGuns.length >= 0)
+			{
+				for (index = 0; index < sentryGuns.length; index++) 
+				{
+					var sentryGun:SentryGun = SentryGun(sentryGuns[index]);
+					gameElementHolder.removeChild(sentryGun.target);
+				}
+				
+				sentryGuns = new Array();
+			}
+			
+			//reset sentryRPG
+			if (sentryRPGs.length >= 0)
+			{
+				for (index = 0; index < sentryGuns.length; index++) 
+				{
+					var sentryRPG:SentryGun = SentryGun(sentryRPGs[index]);
+					gameElementHolder.removeChild(sentryRPG.target);
+				}
+				
+				sentryRPGs = new Array();
+			}
+			
 		}
-		
 		
 		private function onClickPanelUnitOnPanelControl(index:int):void 
 		{
-			trace("click button unit: + index: " + index);
+			if (index == 0)
+			{
+				var sentryGun:SentryGun = new SentryGun(new sentryGunClip());
+				gameElementHolder.addChild(sentryGun);
+			}
+			else if(index == 1)
+			{
+				var sentryRPG:SentryRPG = new SentryRPG(new sentryRpgClip());
+				gameElementHolder.addChild(sentryRPG);
+			}
 		}
-				
+			
 		public function get gameScreenVO():GameScreenVO 
 		{
 			return _gameScreenVO;
