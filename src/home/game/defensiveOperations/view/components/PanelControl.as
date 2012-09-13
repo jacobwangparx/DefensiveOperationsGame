@@ -87,6 +87,7 @@ package home.game.defensiveOperations.view.components
 			
 		private function onClickButtonStart(e:MouseEvent):void 
 		{
+			buttonStart.enabled = false;
 			signalClickStartButton.dispatch();
 		}
 		
@@ -113,6 +114,8 @@ package home.game.defensiveOperations.view.components
 			panelUnit.panelControlVO = value;
 			characterLabelStacey.panelControlVO = value;
 			characterLabelJacob.panelControlVO = value;
+			
+			buttonStart.enabled = true;
 		}
 						
 	}

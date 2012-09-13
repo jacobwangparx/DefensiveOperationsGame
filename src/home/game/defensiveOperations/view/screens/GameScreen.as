@@ -7,6 +7,7 @@ package home.game.defensiveOperations.view.screens
 	import flash.display.DisplayObject;
 	import flash.display.MovieClip;
 	import flash.events.MouseEvent;
+	import flash.events.TimerEvent;
 	import flash.text.TextField;
 	import flash.text.TextFieldAutoSize;
 	import flash.utils.Dictionary;
@@ -22,6 +23,7 @@ package home.game.defensiveOperations.view.screens
 	public class GameScreen extends AbstractScreen
 	{
 		//private var gameScreenMask: MovieClip;
+		static public const FPS:int = 60;
 		
 		private var gameElementHolder:MovieClip;
 		
@@ -106,12 +108,25 @@ package home.game.defensiveOperations.view.screens
 			
 			sentryGuns = new Array();
 			sentryRPGs = new Array();
+			
+			timer = new Timer(1000 / FPS);
+			timer.addEventListener(TimerEvent.TIMER, tick);
+			timer.stop();
 		}
+		
+	
 		
 		private function onClickButtonStartOnPanelControl():void 
 		{			
 			gameScreenVO.isStart = true;
 			createEnemiesForCurrentStep();
+			startGame();
+		}
+		
+		private function startGame():void 
+		{
+			timer.start();
+			gameScreenVO.isStart = true;
 		}
 		
 		private function onClickButtonPauseOnPanelControl():void 
@@ -159,20 +174,20 @@ package home.game.defensiveOperations.view.screens
 				objectOnMove = sentryRPG;
 			}
 			
-			stage.addEventListener(MouseEvent.MOUSE_MOVE, moveNewGameObject);
-			stage.addEventListener(MouseEvent.MOUSE_UP, positionNewGameObject);
+			stage.addEventListener(MouseEvent.MOUSE_MOVE, onStageMouseMove);
+			stage.addEventListener(MouseEvent.MOUSE_UP, onStageMouseUp);
 		}
 		
-		private function moveNewGameObject(e:MouseEvent):void 
+		private function onStageMouseMove(e:MouseEvent):void 
 		{
 			objectOnMove.x = mouseX;
 			objectOnMove.y = mouseY;
 		}
 		
-		private function positionNewGameObject(e:MouseEvent):void 
+		private function onStageMouseUp(e:MouseEvent):void 
 		{
-			stage.removeEventListener(MouseEvent.MOUSE_MOVE, moveNewGameObject);
-			stage.removeEventListener(MouseEvent.MOUSE_UP, positionNewGameObject);
+			stage.removeEventListener(MouseEvent.MOUSE_MOVE, onStageMouseMove);
+			stage.removeEventListener(MouseEvent.MOUSE_UP, onStageMouseUp);
 		}
 				
 		private function createEnemiesForCurrentStep():void 
@@ -286,7 +301,7 @@ package home.game.defensiveOperations.view.screens
 				
 				sentryRPGs = new Array();
 			}
-			
+			panelControl.panelControlVO = gameScreenVO.panelControlVO;
 		}
 			
 		public function get gameScreenVO():GameScreenVO 
@@ -324,6 +339,13 @@ package home.game.defensiveOperations.view.screens
 		}
 			
 	  
+		private function tick(e:TimerEvent):void
+		{
+			for each (var solider:EnemySolider in soliders) 
+			{
+				solider.tick();
+			}
+		}
 	}
 
 }

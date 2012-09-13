@@ -18,13 +18,42 @@ package home.game.defensiveOperations.view.components
 	 * @author Jake
 	 */
 	public class EnemySolider extends Enemy
-	{	
+	{			
+		private var frame:int;
+		private var ySpeed:Number = 0;
+		static private const ACC_Y:Number = 0.2;
+		static private const MAX_Y:Number = 1.5;
+		static private const MIN_Y:Number = 1;
 		 
+		
 		public function EnemySolider(target:MovieClip):void
 		{
 			super(target);
 		}
-						
+	
+		public function tick():void 
+		{
+			//accelerate
+			ySpeed += ACC_Y;
+			//limit speed
+			if (ySpeed < MIN_Y) ySpeed = MIN_Y;
+			if (ySpeed > MAX_Y) ySpeed = MAX_Y;
+			//move
+			y += ySpeed;
+			
+			
+		}
+		
+		
+		private function  selectFrame(actionName:String):void 
+		{
+			if (actionName == 'run')
+			{	
+				frame = 17;
+				gotoAndPlay(17);
+				
+			}
+		}
 	}
 
 }
