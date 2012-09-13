@@ -1,0 +1,92 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="gameElements/characterClip" itemID="5038995d-000003c9" linkageExportForAS="true" linkageClassName="characterClip" lastModified="1347111248" lastUniqueIdentifier="1">
+  <timeline>
+    <DOMTimeline name="characterClip">
+      <layers>
+        <DOMLayer name="flame" color="#FF4FFF" locked="true" autoNamed="false" heightLiteral="15">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="hitspot" color="#9933CC" locked="true" autoNamed="false" heightLiteral="15">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="components/characterHitspot" name="hitspot" centerPoint3DX="-3.65" centerPoint3DY="-6.7">
+                  <matrix>
+                    <Matrix tx="-13.65" ty="-16.7"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="10" y="10"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="body" color="#9933CC" locked="true" autoNamed="false" heightLiteral="15">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="components/characterBody" name="body" centerPoint3DX="5.7" centerPoint3DY="-1.05">
+                  <matrix>
+                    <Matrix tx="-13.2" ty="-35.25"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="13.25" y="35.6"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="bulletHolder" color="#FF4FFF" current="true" isSelected="true" autoNamed="false" heightLiteral="15">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="components/bulletHolderCharacter" name="bulletHolder" selected="true" centerPoint3DX="2.4" centerPoint3DY="3.6">
+                  <transformationPoint>
+                    <Point x="-0.1" y="0.1"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="healthLine" color="#FF800A" locked="true" autoNamed="false" heightLiteral="15">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="components/blood" name="healthLine" centerPoint3DX="-0.1" centerPoint3DY="28.4">
+                  <matrix>
+                    <Matrix tx="-46.9" ty="24.8"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.1" y="0.1"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="attackRange" color="#4FFFFF" locked="true" autoNamed="false" heightLiteral="15">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="components/attackRangeCharacter" name="attackRange" centerPoint3DX="56.9" centerPoint3DY="51.4">
+                  <matrix>
+                    <Matrix a="1.1448974609375" d="1.1448974609375" tx="-1.35" ty="-7"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="1.7" y="1.6"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

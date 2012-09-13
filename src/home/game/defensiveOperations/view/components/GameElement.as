@@ -40,6 +40,17 @@ package home.game.defensiveOperations.view.components
 			super(target);
 		}
 		
+		public function transitionIn():void 
+		{
+			if (!visible) visible = true;
+		}
+		
+		public function transitionOut():void 
+		{
+			if (visible) visible = false;
+		}
+		
+		
 		override protected function createChildren():void 
 		{
 			super.createChildren();
@@ -48,7 +59,8 @@ package home.game.defensiveOperations.view.components
 			hitspot.addEventListener(MouseEvent.ROLL_OVER, onRollOverBody);
 			hitspot.addEventListener(MouseEvent.ROLL_OUT, onRollOutBody);
 			
-			body = target.body;
+			if(target.body !=null)
+				body = target.body;
 			
 			attackRange = target.attackRange;
 			attackRange.visible = false;

@@ -1,0 +1,77 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="screens/creditsScreenClip" itemID="501e0214-00000276" linkageExportForAS="true" linkageClassName="creditsScreenClip" lastModified="1345555510" lastUniqueIdentifier="5">
+  <timeline>
+    <DOMTimeline name="creditsScreenClip">
+      <layers>
+        <DOMLayer name="textHeading" color="#4FFF4F" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="textHeading" selected="true" width="292.45" height="40.75" isSelectable="false">
+                  <matrix>
+                    <Matrix tx="22.5" ty="25.25"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>CREDITS</characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" size="36" bitmapSize="720" face="Bauhaus93" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="labelCredit" color="#9933CC" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="components/labelCreditClip" centerPoint3DX="225.95" centerPoint3DY="95">
+                  <matrix>
+                    <Matrix tx="18" ty="81"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="207.95" y="14"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="bg" color="#FF800A" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor alpha="0.756862745098039"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!11843 8942|240 8942!240 8942|240 160!240 160|11843 160!11843 160|11843 8942"/>
+                  </edges>
+                </DOMShape>
+                <DOMSymbolInstance libraryItemName="components/elements/screenBg" name="bg" centerPoint3DX="500" centerPoint3DY="295">
+                  <transformationPoint>
+                    <Point x="500" y="295"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="bgImage" color="#9933CC" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMBitmapInstance libraryItemName="images/creditsScreenBg.jpg"/>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

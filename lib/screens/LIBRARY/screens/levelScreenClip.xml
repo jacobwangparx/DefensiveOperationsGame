@@ -1,0 +1,143 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="screens/levelScreenClip" itemID="501e01d8-00000269" linkageExportForAS="true" linkageClassName="levelScreenClip" lastModified="1346939804" lastUniqueIdentifier="14">
+  <timeline>
+    <DOMTimeline name="levelScreenClip">
+      <layers>
+        <DOMLayer name="textHeading" color="#4FFF4F" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="textHeading" width="237.5" height="43" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="215.95" ty="134"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>SELECT LEVEL</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" letterSpacing="1" size="38" bitmapSize="760" face="Bauhaus93" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="buttonBack" color="#9933CC" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="buttons/buttonBackScreenClip" name="buttonBack">
+                  <matrix>
+                    <Matrix tx="627.3" ty="10.55"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="26.85" y="11.45"/>
+                  </transformationPoint>
+                  <filters>
+                    <DropShadowFilter blurX="2" blurY="2" distance="2"/>
+                  </filters>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="buttonLevels" color="#FF4FFF" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="buttons/buttonLevel" name="buttonLevel0" centerPoint3DX="337.95" centerPoint3DY="216.35">
+                  <matrix>
+                    <Matrix tx="219.05" ty="193.05"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="41.9" y="23.3"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="buttons/buttonLevel" name="buttonLevel1" centerPoint3DX="337.95" centerPoint3DY="275.95">
+                  <matrix>
+                    <Matrix tx="219.05" ty="252.65"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="41.9" y="23.3"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="buttons/buttonLevel" name="buttonLevel2" centerPoint3DX="337.95" centerPoint3DY="336.9">
+                  <matrix>
+                    <Matrix tx="219.05" ty="313.6"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="41.9" y="23.3"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="panelDescriptions" color="#4FFFFF" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="bg_ref" color="#FF800A" locked="true" autoNamed="false" visible="false" layerType="guide">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMBitmapInstance libraryItemName="references/ref_levelScreen.JPG"/>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="bgMid" color="#FF800A" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor alpha="0.650980392156863"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!9439 7520|4040 7520!4040 7520|4040 2400!4040 2400|9439 2400!9439 2400|9439 7520"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="bg_Filter" color="#9933CC" locked="true" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="bgs/bgFilter">
+                  <transformationPoint>
+                    <Point x="375.5" y="276.95"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="bg" color="#FF800A" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMBitmapInstance libraryItemName="images/levelScreenBg.jpg">
+                  <matrix>
+                    <Matrix a="1.0142822265625"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="350" y="262.5"/>
+                  </transformationPoint>
+                </DOMBitmapInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

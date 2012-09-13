@@ -1,0 +1,143 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="components/labelProfile" itemID="501e7ccb-000003f3" lastModified="1345390742" lastUniqueIdentifier="12">
+  <timeline>
+    <DOMTimeline name="labelProfile">
+      <layers>
+        <DOMLayer name="textMoney" color="#4FFFFF" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="textMoney" left="-7.85" width="26.7" height="19.7" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="186.85" ty="14.9"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>222</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" size="18" bitmapSize="360" face="BerlinSansFB-Reg" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="icon" color="#808080" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="components/elements/iconGold" centerPoint3DX="219.6" centerPoint3DY="23.9">
+                  <matrix>
+                    <Matrix tx="209.6" ty="13.9"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="10" y="10"/>
+                  </transformationPoint>
+                  <filters>
+                    <DropShadowFilter angle="60" blurX="1" blurY="1" distance="1" quality="3"/>
+                  </filters>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="button" color="#FF4FFF" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="buttons/buttonUnit" name="button" centerPoint3DX="146.25" centerPoint3DY="23.55">
+                  <matrix>
+                    <Matrix tx="123.3" ty="11.8"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="22.95" y="11.75"/>
+                  </transformationPoint>
+                  <filters>
+                    <DropShadowFilter angle="60" blurX="2" blurY="2" distance="1" quality="3"/>
+                  </filters>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="textHeading" color="#9933CC" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="textHeading" width="100" height="14.5" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="6.6" ty="2.5"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>profile heading</characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" size="13" bitmapSize="260" face="ArialMT" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="stars" color="#4FFF4F" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="components/elements/star" name="star0" centerPoint3DX="52" centerPoint3DY="29.25">
+                  <matrix>
+                    <Matrix tx="4.45" ty="22.15"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="47.55" y="7.1"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="components/elements/star" name="star1" centerPoint3DX="71.3" centerPoint3DY="29.25">
+                  <matrix>
+                    <Matrix tx="23.75" ty="22.15"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="47.55" y="7.1"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="components/elements/star" name="star2" centerPoint3DX="90.75" centerPoint3DY="29.25">
+                  <matrix>
+                    <Matrix tx="43.2" ty="22.15"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="47.55" y="7.1"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="components/elements/star" name="star3" centerPoint3DX="110.05" centerPoint3DY="29.25">
+                  <matrix>
+                    <Matrix tx="62.5" ty="22.15"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="47.55" y="7.1"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="components/elements/star" name="star4" centerPoint3DX="129.55" centerPoint3DY="29.25">
+                  <matrix>
+                    <Matrix tx="82" ty="22.15"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="47.55" y="7.1"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="bg" color="#4FFF4F" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

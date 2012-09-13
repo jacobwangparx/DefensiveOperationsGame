@@ -1,0 +1,67 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="buttons/buttonUnit" itemID="501e37aa-00000379" lastModified="1345390808">
+  <timeline>
+    <DOMTimeline name="buttonUnit">
+      <layers>
+        <DOMLayer name="f" color="#9933CC" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" name="rollOut" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="1" name="rollOver" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="2" name="press" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="3" name="disable" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="hitspot" color="#FF4FFF" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="4" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="bg" color="#4FFF4F" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="4" keyMode="9728">
+              <elements>
+                <DOMShape isDrawingObject="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF"/>
+                    </FillStyle>
+                    <FillStyle index="2">
+                      <SolidColor color="#505054"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="2" edges="!919 118[919 0 819 0!819 0|100 0!100 0[0 0 0 118!0 118|0 353!0 353[0 470 100 470!100 470|819 470!819 470[919 470 919 353!919 353|919 118"/>
+                    <Edge fillStyle0="1" fillStyle1="2" edges="!455 78/324 393!324 393/326 393!326 393/455 338!455 338/471 345!471 345/584 393!584 393/455 78"/>
+                    <Edge cubics="!0 353(;0,431 33,470 100,470q0 353Q0 470q100 470);"/>
+                    <Edge cubics="!0 118(;0,118 0,353 0,353q0 118 0 353);"/>
+                    <Edge cubics="!100 0(;33,0 0,39 0,118q100 0Q0 0q0 118);"/>
+                    <Edge cubics="!919 118(;919,39 886,0 819,0q919 118Q919 0q819 0);"/>
+                    <Edge cubics="!919 353(919,353;919,353 919,118 919,118q919 353 919 118);"/>
+                    <Edge cubics="!819 470(819,470;886,470 919,431 919,353q819 470Q919 470q919 353);"/>
+                    <Edge cubics="!819 0(819,0;819,0 100,0 100,0q819 0 100 0);"/>
+                    <Edge cubics="!100 470(100,470;100,470 819,470 819,470q100 470 819 470);"/>
+                    <Edge cubics="!324 393(;324,393 326,393 326,393q324 393 326 393);"/>
+                    <Edge cubics="!471 345(;471,345 455,338 455,338q471 345 455 338);"/>
+                    <Edge cubics="!471 345(471,345;471,345 584,393 584,393q471 345 584 393)584,393;"/>
+                    <Edge cubics="!455 78(;455,78 324,393 324,393q455 78 324 393)324,393;"/>
+                    <Edge cubics="!584 393(;584,393 455,78 455,78q584 393 455 78);"/>
+                    <Edge cubics="!326 393(;326,393 455,338 455,338q326 393 455 338);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

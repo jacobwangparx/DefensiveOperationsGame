@@ -1,0 +1,63 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="panels/processBar" itemID="501e0e9d-000002ba" lastModified="1345308405">
+  <timeline>
+    <DOMTimeline name="processBar">
+      <layers>
+        <DOMLayer name="bg" color="#4FFF4F" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="components/bg" centerPoint3DX="274.4" centerPoint3DY="25">
+                  <matrix>
+                    <Matrix a="0.991058349609375"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="274" y="22.45"/>
+                  </transformationPoint>
+                  <filters>
+                    <DropShadowFilter angle="60" blurX="2" blurY="2" distance="2"/>
+                  </filters>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="point" color="#FF800A" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#2A2720"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="!551 17|551 877!551 877[551 883 554 887!554 887[557 892 561 892!561 892[565 892 568 887!568 887[571 883 571 877!571 877|571 17!571 17[571 11 568 6!568 6[565 2 561 2!561 2[557 2 554 6!554 6[551 11 551 17"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="bgMid" color="#9933CC" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#999999"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!10960 899|0 899!0 899|0 0!0 0|10960 0!10960 0|10960 899"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

@@ -1,0 +1,45 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="panels/panelDescriptionClip" itemID="501e1bf5-00000326" linkageExportForAS="true" linkageClassName="panelDescriptionClip" lastModified="1344150735">
+  <timeline>
+    <DOMTimeline name="panelDescriptionClip">
+      <layers>
+        <DOMLayer name="textField" color="#9933CC" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="textField" width="255.95" height="53" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="8" ty="6"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>TextField</characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" letterSpacing="1" lineSpacing="0.2" size="14" bitmapSize="280" face="ArialMT" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="bg" color="#4FFF4F" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="components/elements/levelDescriptionBg" name="bg" centerPoint3DX="134.95" centerPoint3DY="39">
+                  <matrix>
+                    <Matrix tx="1"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="133.95" y="39"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

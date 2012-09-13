@@ -1,0 +1,26 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="bgs/bgTextMoneyCircle" itemID="50310de6-00000267" scaleGridLeft="20" scaleGridRight="75.75" scaleGridTop="7.75" scaleGridBottom="23.25" lastModified="1345392155">
+  <timeline>
+    <DOMTimeline name="bgTextMoneyCircle">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#333333"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="!2340 460|2340 160!2340 160[2340 0 2180 0!2180 0|160 0!160 0[0 0 0 160!0 160|0 460!0 460[0 620 160 620!160 620|2180 620!2180 620[2340 620 2340 460"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

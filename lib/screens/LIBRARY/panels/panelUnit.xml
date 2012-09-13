@@ -1,0 +1,67 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="panels/panelUnit" itemID="502a6531-0000025b" lastModified="1347201794" lastUniqueIdentifier="3">
+  <timeline>
+    <DOMTimeline name="panelUnit">
+      <layers>
+        <DOMLayer name="heading" color="#808080" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="components/headingPanelUnit" name="heading" centerPoint3DX="63.5" centerPoint3DY="13.5">
+                  <transformationPoint>
+                    <Point x="63.5" y="13.5"/>
+                  </transformationPoint>
+                  <filters>
+                    <DropShadowFilter angle="90" blurX="0" blurY="0" distance="2" quality="3"/>
+                    <BevelFilter blurX="0" blurY="0" distance="1"/>
+                  </filters>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="units" color="#4FFFFF" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="components/unitPanelUnitClip" name="sentryGun" centerPoint3DX="34" centerPoint3DY="54">
+                  <matrix>
+                    <Matrix tx="7" ty="27"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="27" y="27"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="components/unitPanelUnitClip" name="sentryRPG" centerPoint3DX="94" centerPoint3DY="54">
+                  <matrix>
+                    <Matrix tx="67" ty="27"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="27" y="27"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="bg" color="#4FFF4F" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#333333"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="!2320 246|217 246!217 246[16 246 16 483!16 483|16 1987!16 1987[16 2225 217 2225!217 2225|2320 2225!2320 2225[2521 2225 2521 1987!2521 1987|2521 483!2521 483[2521 246 2320 246"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

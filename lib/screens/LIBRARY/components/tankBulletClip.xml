@@ -1,0 +1,54 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="components/tankBulletClip" itemID="5038834e-000002f0" linkageExportForAS="true" linkageClassName="tankBulletClip" lastModified="1345880910">
+  <timeline>
+    <DOMTimeline name="tankBulletClip">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <LinearGradient>
+                        <matrix>
+                          <Matrix a="0.00091552734375" d="0.0033111572265625" tx="0.75" ty="1.6"/>
+                        </matrix>
+                        <GradientEntry color="#483B2F" ratio="0"/>
+                        <GradientEntry color="#534638" ratio="1"/>
+                      </LinearGradient>
+                    </FillStyle>
+                    <FillStyle index="2">
+                      <LinearGradient>
+                        <matrix>
+                          <Matrix a="0.000518798828125" d="0.000213623046875" tx="0.7" ty="4.5"/>
+                        </matrix>
+                        <GradientEntry color="#483B2F" ratio="0"/>
+                        <GradientEntry color="#534638" ratio="1"/>
+                      </LinearGradient>
+                    </FillStyle>
+                    <FillStyle index="3">
+                      <LinearGradient>
+                        <matrix>
+                          <Matrix a="0.00091552734375" d="0.0044097900390625" tx="0.75" ty="2.55"/>
+                        </matrix>
+                        <GradientEntry color="#483B2F" ratio="0"/>
+                        <GradientEntry color="#534638" ratio="1"/>
+                      </LinearGradient>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="!23 87S1[30 44 30 0!30 0|0 0!0 0[-1 44 6 87"/>
+                    <Edge fillStyle0="1" fillStyle1="2" edges="!6 87S3|23 87"/>
+                    <Edge fillStyle0="3" fillStyle1="2" edges="!21 94S3|7 94"/>
+                    <Edge fillStyle0="3" edges="!7 94S1[9 109 12 123!12 123|15 122!15 122[18 109 21 94"/>
+                    <Edge fillStyle0="2" edges="!21 94S1[22 91 23 87!6 87[6 91 7 94"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

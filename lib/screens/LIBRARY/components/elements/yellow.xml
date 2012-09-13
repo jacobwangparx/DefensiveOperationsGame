@@ -1,0 +1,36 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="components/elements/yellow" itemID="501e9093-000004a8" lastModified="1344180371">
+  <timeline>
+    <DOMTimeline name="yellow">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFF00"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="!300 109S1|186 109!186 109/151 0!151 0/117 109!117 109|0 109!0 109|95 177!95 177|57 285!57 285|151 217!151 217|245 285!245 285|208 176!208 176|300 109"/>
+                    <Edge cubics="!151 0(;151,0 117,109 117,109q151 0 117 109);"/>
+                    <Edge cubics="!117 109(;117,109 0,109 0,109q117 109 0 109);"/>
+                    <Edge cubics="!0 109(;0,109 95,177 95,177q0 109 95 177);"/>
+                    <Edge cubics="!95 177(;95,177 57,285 57,285q95 177 57 285);"/>
+                    <Edge cubics="!57 285(;57,285 151,217 151,217q57 285 151 217);"/>
+                    <Edge cubics="!151 217(;151,217 245,285 245,285q151 217 245 285);"/>
+                    <Edge cubics="!245 285(;245,285 208,176 208,176q245 285 208 176);"/>
+                    <Edge cubics="!208 176(;208,176 300,109 300,109q208 176 300 109);"/>
+                    <Edge cubics="!300 109(;300,109 186,109 186,109q300 109 186 109);"/>
+                    <Edge cubics="!186 109(;186,109 151,0 151,0q186 109 151 0);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

@@ -1,0 +1,130 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="buttons/labelMoney" itemID="50310a9f-00000262" lastModified="1345391263" lastUniqueIdentifier="3">
+  <timeline>
+    <DOMTimeline name="labelMoney" currentFrame="3">
+      <layers>
+        <DOMLayer name="f" color="#9933CC" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" name="rollOUt" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="1" name="rollOver" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="2" name="press" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="3" name="disable" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="cover" color="#FF800A" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="4" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="components/coverButtonLevel" name="glass" centerPoint3DX="41.85" centerPoint3DY="23.9">
+                  <matrix>
+                    <Matrix tx="8.1" ty="5.4"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="33.75" y="18.5"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="glass" color="#4FFFFF" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="4" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="components/glassButtonLevel" name="coverStartButton">
+                  <matrix>
+                    <Matrix tx="8.1" ty="4.55"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="33.2" y="18.3"/>
+                  </transformationPoint>
+                  <filters>
+                    <DropShadowFilter blurX="1" blurY="1" distance="1" knockout="true" quality="3"/>
+                    <BevelFilter isEnabled="false"/>
+                    <GradientBevelFilter strength="0.94">
+                      <GradientEntry color="#CCCCCC" ratio="0"/>
+                      <GradientEntry alpha="0" ratio="0.501960784313725"/>
+                      <GradientEntry ratio="1"/>
+                    </GradientBevelFilter>
+                  </filters>
+                  <color>
+                    <Color alphaMultiplier="0.8515625"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="textField" color="#FF4FFF" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="4" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="textField" fontRenderingMode="standard" width="202.95" height="32.85">
+                  <matrix>
+                    <Matrix tx="16" ty="10.5"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>Level</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" lineSpacing="-7.35" size="24" bitmapSize="480" face="Font 1*" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="bgMid" color="#9933CC" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="4" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="components/elements/bgMidLevel" name="bgMid">
+                  <matrix>
+                    <Matrix tx="8.5" ty="5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="33.2" y="18.3"/>
+                  </transformationPoint>
+                  <filters>
+                    <GradientBevelFilter blurX="3" blurY="3">
+                      <GradientEntry alpha="0" ratio="0.501960784313725"/>
+                      <GradientEntry ratio="1"/>
+                    </GradientBevelFilter>
+                  </filters>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="bg" color="#4FFF4F" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="4" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="components/buttonLevelBg">
+                  <matrix>
+                    <Matrix tx="0.5" ty="0.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="41.4" y="22.8"/>
+                  </transformationPoint>
+                  <filters>
+                    <DropShadowFilter angle="60" blurX="3" blurY="3" distance="2"/>
+                  </filters>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

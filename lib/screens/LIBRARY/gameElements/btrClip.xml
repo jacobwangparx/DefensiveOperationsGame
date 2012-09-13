@@ -1,0 +1,101 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="gameElements/btrClip" itemID="5038883e-00000331" linkageExportForAS="true" linkageClassName="btrClip" lastModified="1347200740" lastUniqueIdentifier="2">
+  <timeline>
+    <DOMTimeline name="btrClip">
+      <layers>
+        <DOMLayer name="flame" color="#FF4FFF" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="hitspot" color="#4FFFFF" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="components/hitSpotBtr" name="hitspot" centerPoint3DX="4.7" centerPoint3DY="-3.6">
+                  <matrix>
+                    <Matrix tx="-18.1" ty="-41.4"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="22.8" y="37.8"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="tower" color="#4FFF4F" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="components/btrTower" name="tower" centerPoint3DX="8.95" centerPoint3DY="28.2">
+                  <matrix>
+                    <Matrix a="0.999923706054688" d="0.999893188476563" tx="-6.6" ty="-6.9"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="6.7" y="7"/>
+                  </transformationPoint>
+                  <filters>
+                    <DropShadowFilter angle="60" blurX="2" blurY="2" distance="0"/>
+                  </filters>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="body" color="#9933CC" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="components/btrBody" name="body" centerPoint3DX="4.75" centerPoint3DY="-3.75">
+                  <matrix>
+                    <Matrix tx="-11.7" ty="-38.6"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="11.85" y="38.25"/>
+                  </transformationPoint>
+                  <filters>
+                    <DropShadowFilter angle="60" blurX="10" blurY="10" distance="2"/>
+                  </filters>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="healthLine" color="#9933CC" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="components/blood" name="healthLine" centerPoint3DX="0.65" centerPoint3DY="-52.2">
+                  <matrix>
+                    <Matrix tx="-46.15" ty="-55.8"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.2" y="0.1"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="attackRange" color="#808080" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="components/attackRangeTank" name="attackRange" centerPoint3DX="1.85" centerPoint3DY="-9.05">
+                  <matrix>
+                    <Matrix tx="1.85" ty="-9.05"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

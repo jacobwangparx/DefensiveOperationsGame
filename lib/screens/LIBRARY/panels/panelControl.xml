@@ -1,0 +1,184 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="panels/panelControl" itemID="501e0d30-000002b0" lastModified="1347200782" lastUniqueIdentifier="14">
+  <timeline>
+    <DOMTimeline name="panelControl">
+      <layers>
+        <DOMLayer name="buttonPasue" color="#FF800A" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="buttons/buttonBackClip" name="buttonPause" centerPoint3DX="116.05" centerPoint3DY="18">
+                  <matrix>
+                    <Matrix tx="79.85" ty="3.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="36.2" y="14.7"/>
+                  </transformationPoint>
+                  <filters>
+                    <DropShadowFilter angle="60" blurX="0" blurY="0" distance="1"/>
+                    <BevelFilter blurX="0" blurY="0" distance="1"/>
+                  </filters>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="buttonMenu" color="#9933CC" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="buttons/buttonBackClip" name="buttonMenu" centerPoint3DX="55.65" centerPoint3DY="18">
+                  <matrix>
+                    <Matrix tx="19.45" ty="3.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="36.2" y="14.7"/>
+                  </transformationPoint>
+                  <filters>
+                    <DropShadowFilter angle="60" blurX="0" blurY="0" distance="1"/>
+                    <BevelFilter blurX="0" blurY="0" distance="1"/>
+                  </filters>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="labelMoney" color="#FF4F4F" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="components/money" name="labelMoney" centerPoint3DX="57.75" centerPoint3DY="49.6">
+                  <matrix>
+                    <Matrix tx="17.75" ty="37.1"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="40" y="12.5"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="labelGold" color="#4F80FF" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="components/gold" name="labelGold" centerPoint3DX="59.35" centerPoint3DY="76.35">
+                  <matrix>
+                    <Matrix tx="19.35" ty="63.85"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="40" y="12.5"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="panelUnit" color="#808080" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="panels/panelUnit" name="panelUnit" selected="true" centerPoint3DX="78.55" centerPoint3DY="208">
+                  <matrix>
+                    <Matrix tx="15.05" ty="91"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="63.5" y="117"/>
+                  </transformationPoint>
+                  <filters>
+                    <DropShadowFilter angle="60" blurX="2" blurY="2" distance="2"/>
+                  </filters>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="buttonStrart" color="#FF800A" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="buttons/buttonStart" name="buttonStart" centerPoint3DX="78.9" centerPoint3DY="232.3">
+                  <matrix>
+                    <Matrix tx="37" ty="209"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="39.75" y="17.5"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="characterIcons" color="#9933CC" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="components/heroIcon" name="characterLabelStacey" centerPoint3DX="78.3" centerPoint3DY="345.9">
+                  <matrix>
+                    <Matrix tx="28.5" ty="292"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="49.5" y="49.5"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="components/heroIcon" name="characterLabelJacob" centerPoint3DX="78.3" centerPoint3DY="461.15">
+                  <matrix>
+                    <Matrix tx="28.5" ty="407.25"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="49.5" y="49.5"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="bgJacey" color="#FF4FFF" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="panels/panelCharacter" name="panelUnit" centerPoint3DX="78.85" centerPoint3DY="380.45">
+                  <matrix>
+                    <Matrix tx="15.35" ty="263.45"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="63.5" y="117"/>
+                  </transformationPoint>
+                  <filters>
+                    <DropShadowFilter angle="60" blurX="2" blurY="2" distance="2"/>
+                  </filters>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="bg" color="#4FFF4F" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="components/panelControlBg" centerPoint3DX="78.5" centerPoint3DY="267.1">
+                  <transformationPoint>
+                    <Point x="77" y="265"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="bg_ref" color="#FF4FFF" locked="true" autoNamed="false" visible="false" layerType="guide">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMBitmapInstance libraryItemName="references/ref_gameScreen.JPG">
+                  <matrix>
+                    <Matrix tx="-723.75"/>
+                  </matrix>
+                </DOMBitmapInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

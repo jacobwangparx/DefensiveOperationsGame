@@ -1,0 +1,38 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="bgs/bgShopScreenLabel" itemID="50310203-00000234" lastModified="1346345152">
+  <timeline>
+    <DOMTimeline name="bgShopScreenLabel">
+      <layers>
+        <DOMLayer name="bg" color="#9933CC" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#2A2720"/>
+                    </FillStyle>
+                    <FillStyle index="2">
+                      <SolidColor color="#0C0C0C"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="2" edges="!13322.5 6242|6519 6242!6519 6242|6519 3480!6519 3480[6519 3379 6476 3320!6476 3320[#1913.D 3242.5 6287.5 3240!6287.5 3240|980 3240!980 3240[959 3240 940 3242!940 3242[803 3255 760 3362!760 3362[746 3396 742 3440!742 3440|740.5 3440!740.5
+ 3440[740 #DC7.7C 740 3619!740 3619|740 9172!740 9172[746 9399 980 9399!980 9399|13199 9399!13199 9399[13433 9399 13439 9172!13439 9172|13439 6460!13439 6460[13439 #1894.AA 13322.5 6242"/>
+                    <Edge fillStyle0="1" fillStyle1="2" edges="
+!13560 8231[#34E7.F #1FEF.EC 13501.5 8132.5!13501.5 8132.5[#34A7.E2 #2003.28 13539 8259!13539 8259[#34F6.65 #2057.B8 13578 8300!13578 8300[#3502.69 #2049.2C 13560 8231"/>
+                    <Edge fillStyle0="2" edges="
+!10821.5 0|0 0!0 0|0 10600!0 10600|14000 10600!14000 10600|14000 0!14000 0|11057.5 0"/>
+                    <Edge fillStyle0="2" fillStyle1="1" edges="
+!11057.5 0[#2A90.8C #65.A6 10821.5 0"/>
+                    <Edge fillStyle0="1" edges="
+!11057.5 0|10821.5 0"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

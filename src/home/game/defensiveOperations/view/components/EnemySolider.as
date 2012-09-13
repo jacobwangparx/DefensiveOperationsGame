@@ -22,7 +22,7 @@ package home.game.defensiveOperations.view.components
 		private var frame:int;
 		private var ySpeed:Number = 0;
 		static private const ACC_Y:Number = 0.2;
-		static private const MAX_Y:Number = 1.5;
+		static private const MAX_Y:Number = 1;
 		static private const MIN_Y:Number = 1;
 		 
 		
@@ -31,6 +31,14 @@ package home.game.defensiveOperations.view.components
 			super(target);
 		}
 	
+		override public function transitionIn():void 
+		{
+			trace("transitionIn");
+			super.transitionIn();
+			//gotoAndPlay();
+			gotoAndStop("run");
+		}
+		
 		public function tick():void 
 		{
 			//accelerate
@@ -39,21 +47,9 @@ package home.game.defensiveOperations.view.components
 			if (ySpeed < MIN_Y) ySpeed = MIN_Y;
 			if (ySpeed > MAX_Y) ySpeed = MAX_Y;
 			//move
-			y += ySpeed;
-			
-			
+			y += ySpeed;			
 		}
 		
-		
-		private function  selectFrame(actionName:String):void 
-		{
-			if (actionName == 'run')
-			{	
-				frame = 17;
-				gotoAndPlay(17);
-				
-			}
-		}
 	}
 
 }

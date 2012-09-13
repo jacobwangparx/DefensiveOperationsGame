@@ -1,0 +1,236 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="screens/shopScreenClip" itemID="501e772a-000003c8" linkageExportForAS="true" linkageClassName="shopScreenClip" lastModified="1346370831" lastUniqueIdentifier="40">
+  <timeline>
+    <DOMTimeline name="shopScreenClip">
+      <layers>
+        <DOMLayer name="gold" color="#9933CC" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="components/elements/iconGold" centerPoint3DX="83.7" centerPoint3DY="96.4">
+                  <matrix>
+                    <Matrix tx="73.7" ty="86.4"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="10" y="10"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="textTitle" color="#808080" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText width="349.95" height="255.8" isSelectable="false" renderAsHTML="true" lineType="multiline">
+                  <matrix>
+                    <Matrix tx="328" ty="43.2"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>Update &#xD;Profiles</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" size="96" bitmapSize="1920" face="Bauhaus93" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="textHeading" color="#4FFF4F" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="textHeading" selected="true" width="72" height="60.3" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="13" ty="6"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>SHOP</characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" size="26" bitmapSize="520" face="BerlinSansFBDemi-Bold" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="buttonContinue" color="#9933CC" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="buttons/buttonContinue" name="buttonContinue">
+                  <matrix>
+                    <Matrix tx="562.3" ty="505.7"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="61.2" y="14.7"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="bgTitle" color="#FF4F4F" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="bgs/bgTitle">
+                  <matrix>
+                    <Matrix tx="0.1" ty="-1.9"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="350.45" y="266.95"/>
+                  </transformationPoint>
+                  <filters>
+                    <DropShadowFilter angle="60" quality="3"/>
+                    <BevelFilter blurX="0" blurY="0" angle="60" distance="2"/>
+                  </filters>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="textMoney" color="#9933CC" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="textGold" width="115.05" height="24.9" isSelectable="false">
+                  <matrix>
+                    <Matrix tx="99" ty="83.55"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>100</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" size="22" bitmapSize="440" face="Bauhaus93" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="bgMoneyGold" color="#9933CC" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="bgs/bgPanelScreenLabel" centerPoint3DX="140.5" centerPoint3DY="95.4">
+                  <matrix>
+                    <Matrix tx="60" ty="71.4"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="80.5" y="24"/>
+                  </transformationPoint>
+                  <filters>
+                    <DropShadowFilter angle="60" blurX="2" blurY="2" quality="3"/>
+                    <BevelFilter blurX="0" blurY="0" angle="60" distance="2"/>
+                  </filters>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="buttonHeros" color="#808080" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="buttons/buttonHero" name="buttonShop0" centerPoint3DX="96.4" centerPoint3DY="234">
+                  <matrix>
+                    <Matrix tx="60.4" ty="197"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="36" y="37"/>
+                  </transformationPoint>
+                  <filters>
+                    <DropShadowFilter angle="60" blurX="1" blurY="1" quality="3"/>
+                    <BevelFilter blurX="0" blurY="0" quality="3" angle="60" distance="2" highlightColor="#D8D8D8"/>
+                  </filters>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="buttons/buttonHero" name="buttonShop1" centerPoint3DX="225.3" centerPoint3DY="234">
+                  <matrix>
+                    <Matrix tx="189.3" ty="197"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="36" y="37"/>
+                  </transformationPoint>
+                  <filters>
+                    <DropShadowFilter angle="60" blurX="1" blurY="1" quality="3"/>
+                    <BevelFilter blurX="0" blurY="0" quality="3" angle="60" distance="2" highlightColor="#D8D8D8"/>
+                  </filters>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="panelProfile" color="#4FFFFF" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="panels/panelProfile" name="panelProfile" centerPoint3DX="280.4" centerPoint3DY="410.35">
+                  <matrix>
+                    <Matrix tx="52.4" ty="332.85"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="228" y="77.5"/>
+                  </transformationPoint>
+                  <filters>
+                    <DropShadowFilter angle="60"/>
+                  </filters>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="bgCover" color="#4F80FF" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="bgs/bgShopScreenLabel" name="bgCover" centerPoint3DX="350" centerPoint3DY="265">
+                  <transformationPoint>
+                    <Point x="350.45" y="265.45"/>
+                  </transformationPoint>
+                  <filters>
+                    <DropShadowFilter angle="60" quality="3"/>
+                    <BevelFilter blurX="1" blurY="1" quality="3" angle="60" distance="1"/>
+                  </filters>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="bgInside" color="#4FFFFF" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="bgs/bgInside">
+                  <matrix>
+                    <Matrix tx="17.5" ty="147.05"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="330.05" y="176"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="bg_ref" color="#FF800A" locked="true" autoNamed="false" visible="false" layerType="guide">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMBitmapInstance libraryItemName="references/ref_updateScreen.JPG"/>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

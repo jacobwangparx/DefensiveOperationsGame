@@ -1,0 +1,75 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="panels/panelCharacter" itemID="503fa019-00000284" lastModified="1346347033" lastUniqueIdentifier="3">
+  <timeline>
+    <DOMTimeline name="panelCharacter">
+      <layers>
+        <DOMLayer name="heading" color="#808080" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="components/headingPanelHero" name="heading" centerPoint3DX="63.5" centerPoint3DY="13.5">
+                  <transformationPoint>
+                    <Point x="63.5" y="13.5"/>
+                  </transformationPoint>
+                  <filters>
+                    <DropShadowFilter angle="90" blurX="0" blurY="0" distance="2" quality="3"/>
+                    <BevelFilter blurX="0" blurY="0" distance="1"/>
+                  </filters>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="units" color="#4FFFFF" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="bg" color="#4FFF4F" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#333333"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!2525 1821S2|2524 5056!2524 5056[2521 5211 2323 5211!2323 5211|215 5211!215 5211[17 5211 14 5056!14 5056|14 361!14 361[18 195 168 174!168 174|215 171!215 171|2370 174!2370 174[2520 195 2524 361!2524 361|2524 1821!2524 1821|2525 1821"/>
+                    <Edge cubics="!215 171(;199,171 184,172 168,174q215 171 168 174);"/>
+                    <Edge cubics="!168 174(;70,188 18,250 14,361q168 174Q18 195q14 361);"/>
+                    <Edge cubics="!14 3621(;14,3621 14,3411 14,3411q14 3621 14 3411);"/>
+                    <Edge cubics="!14 3411(;14,3411 14,2491 14,2491q14 3411 14 2491);"/>
+                    <Edge cubics="!14 2491(;14,2491 14,361 14,361q14 2491 14 361);"/>
+                    <Edge cubics="!2524 1821(;2524,1821 2525,1821 2525,1821q2524 1821 2525 1821);"/>
+                    <Edge cubics="!2524 1821(;2524,1821 2524,361 2524,361q2524 1821 2524 361);"/>
+                    <Edge cubics="!2524 361(;2522,255 2473,192 2370,174q2524 361Q2520 195q2370 174);"/>
+                    <Edge cubics="!215 171(;215,171 2370,174 2370,174q215 171 2370 174);"/>
+                    <Edge cubics="!2525 1821(;2525,1821 2525,2491 2525,2491q2525 1821 2525 2491);"/>
+                    <Edge cubics="!2525 3411(;2525,3411 2525,3621 2525,3621q2525 3411 2525 3621);"/>
+                    <Edge cubics="!14 5056(;18,5159 85,5211 215,5211q14 5056Q17 5211q215 5211);"/>
+                    <Edge cubics="!14 5056(;14,5056 14,4141 14,4141q14 5056 14 4141);"/>
+                    <Edge cubics="!14 4141(;14,4141 14,3981 14,3981q14 4141 14 3981);"/>
+                    <Edge cubics="!2323 5211(;2453,5211 2520,5161 2524,5056q2323 5211Q2521 5211q2524 5056);"/>
+                    <Edge cubics="!215 5211(;215,5211 2323,5211 2323,5211q215 5211 2323 5211);"/>
+                    <Edge cubics="!2525 3981(;2525,3981 2525,4141 2525,4141q2525 3981 2525 4141);"/>
+                    <Edge cubics="!2525 4141(;2525,4141 2524,5056 2524,5056q2525 4141 2524 5056);"/>
+                    <Edge cubics="!14 3981(;14,3981 2525,3981 2525,3981q14 3981 2525 3981);"/>
+                    <Edge cubics="!14 3621(;14,3621 2525,3621 2525,3621q14 3621 2525 3621);"/>
+                    <Edge cubics="!14 2491(;14,2491 2525,2491 2525,2491q14 2491 2525 2491);"/>
+                    <Edge cubics="!2525 3411(;2525,3411 14,3411 14,3411q2525 3411 14 3411);"/>
+                    <Edge cubics="!14 3981(;14,3981 14,3621 14,3621q14 3981 14 3621);"/>
+                    <Edge cubics="!2525 2491(;2525,2491 2525,3981 2525,3981q2525 2491 2525 3981);"/>
+                    <Edge cubics="!2525 4141(;2525,4141 14,4141 14,4141q2525 4141 14 4141);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

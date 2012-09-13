@@ -1,0 +1,34 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="components/elements/star" itemID="501e85b2-00000425" lastModified="1345390102" lastUniqueIdentifier="1">
+  <timeline>
+    <DOMTimeline name="star">
+      <layers>
+        <DOMLayer name="black" color="#9933CC" current="true" isSelected="true" autoNamed="false" visible="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="components/elements/black" name="black" selected="true" centerPoint3DX="7.5" centerPoint3DY="7.1">
+                  <transformationPoint>
+                    <Point x="7.5" y="7.1"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="yellow" color="#4FFF4F" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="components/elements/yellow" name="yellow" centerPoint3DX="7.5" centerPoint3DY="7.1">
+                  <transformationPoint>
+                    <Point x="7.5" y="7.1"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

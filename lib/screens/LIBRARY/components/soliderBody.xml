@@ -1,0 +1,64 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="components/soliderBody" itemID="5039a747-00000560" lastModified="1347516139" lastUniqueIdentifier="8">
+  <timeline>
+    <DOMTimeline name="soliderBody" currentFrame="3">
+      <layers>
+        <DOMLayer name="frameControl" color="#9933CC" locked="true" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" name="crouchToRun" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="1" name="run" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="2" name="runToCrouch" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="3" name="die" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 11" color="#FF800A">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="components/soliderBodyCrouchToRun" centerPoint3DX="23.5" centerPoint3DY="47">
+                  <transformationPoint>
+                    <Point x="23.5" y="47"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="1" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="components/soliderBodyRun" name="run" centerPoint3DX="23.5" centerPoint3DY="47">
+                  <transformationPoint>
+                    <Point x="23.5" y="47"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="2" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="components/soliderBodyRunToCrouch" centerPoint3DX="23.5" centerPoint3DY="47">
+                  <transformationPoint>
+                    <Point x="23.5" y="47"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="3" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="components/soliderBodyDie" centerPoint3DX="23.5" centerPoint3DY="47">
+                  <transformationPoint>
+                    <Point x="23.5" y="47"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

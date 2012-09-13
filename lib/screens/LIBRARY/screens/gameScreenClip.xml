@@ -1,0 +1,393 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="screens/gameScreenClip" itemID="501e0198-00000251" linkageExportForAS="true" linkageClassName="gameScreenClip" lastModified="1347514025" lastUniqueIdentifier="30">
+  <timeline>
+    <DOMTimeline name="gameScreenClip">
+      <layers>
+        <DOMLayer name="gameElementsGuide" color="#FF4FFF" locked="true" autoNamed="false" visible="false" layerType="guide">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="components/gameElementHolders" name="gameElementHolder">
+                  <transformationPoint>
+                    <Point x="37.95" y="43.5"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="gameElements/sentryRpgClip" centerPoint3DX="107.35" centerPoint3DY="126.35">
+                  <matrix>
+                    <Matrix tx="99.9" ty="107.35"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="7.45" y="19"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="gameElements/tankClip" centerPoint3DX="296.7" centerPoint3DY="361.35">
+                  <matrix>
+                    <Matrix tx="280.4" ty="321.1"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="0.1" y="0.1"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="gameElements/btrClip" centerPoint3DX="253.35" centerPoint3DY="282.5">
+                  <matrix>
+                    <Matrix a="1.43405151367188" d="1.43405151367188" tx="237" ty="246.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="0.1"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="gameElements/characterClip" centerPoint3DX="131.55" centerPoint3DY="339.75">
+                  <matrix>
+                    <Matrix a="0.999984741210938" d="0.999984741210938" tx="130.3" ty="350.15"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="1.9" y="-9.7"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="gameElements/characterClip" centerPoint3DX="470.4" centerPoint3DY="285.4">
+                  <matrix>
+                    <Matrix tx="468.5" ty="296.1"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-1.05" y="0.3"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="gameElements/soliderClip" centerPoint3DX="439.1" centerPoint3DY="150.45">
+                  <matrix>
+                    <Matrix tx="440.15" ty="157.15"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-1.05" y="-6.75"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="screenMask" color="#9933CC" locked="true" autoNamed="false" visible="false" layerType="guide">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="gameScreenMaskClip" centerPoint3DX="273.95" centerPoint3DY="242.95">
+                  <transformationPoint>
+                    <Point x="273.95" y="242.95"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="labels" color="#4FFFFF" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="components/labelGameScreen" name="labelKilled" centerPoint3DX="83.45" centerPoint3DY="18.2">
+                  <matrix>
+                    <Matrix tx="9" ty="6.4"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="76.95" y="12"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="components/labelGameScreen" name="labelLevel" centerPoint3DX="248" centerPoint3DY="18.2">
+                  <matrix>
+                    <Matrix tx="173.55" ty="6.4"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="76.95" y="12"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="buttonRestart" color="#4F80FF" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="buttons/buttonRestart" name="buttonRestart" centerPoint3DX="570.3" centerPoint3DY="19.7">
+                  <matrix>
+                    <Matrix tx="469.6" ty="5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="100.7" y="14.7"/>
+                  </transformationPoint>
+                  <filters>
+                    <DropShadowFilter/>
+                  </filters>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="buttonSound" color="#9933CC" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="buttons/buttonSound" name="buttonSound" centerPoint3DX="396.7" centerPoint3DY="20">
+                  <matrix>
+                    <Matrix tx="388.1" ty="8.95"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="8.6" y="11.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="paneControl" color="#FF4F4F" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="panels/panelControl" name="panelControl" centerPoint3DX="625.05" centerPoint3DY="292.45">
+                  <matrix>
+                    <Matrix tx="548"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="77.05" y="292.45"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="progressBar" color="#4FFF4F" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="panels/processBar" name="progressBar" centerPoint3DX="422.95" centerPoint3DY="509.5">
+                  <matrix>
+                    <Matrix ty="487.05"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="422.95" y="22.45"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="gameElementHolder" color="#FF800A" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="gameElementHolder" name="gameElementHolder" centerPoint3DX="254.45" centerPoint3DY="126.5">
+                  <transformationPoint>
+                    <Point x="254.45" y="126.5"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="characters" color="#4FFFFF" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="gameElements/characterClip" name="characterJacob" centerPoint3DX="220.65" centerPoint3DY="464.15">
+                  <matrix>
+                    <Matrix tx="222" ty="471.15"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-1.35" y="-7"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="gameElements/characterClip" name="characterStacey" centerPoint3DX="274.35" centerPoint3DY="464.15">
+                  <matrix>
+                    <Matrix tx="275.7" ty="471.15"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-1.35" y="-7"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="mapElementsLocation" color="#FF800A" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF" alpha="0"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!13284 5341|12223 5341!12223 5341|12223 6621!12223 6621|11183 6621!11183 6621|11183 7101!11183 7101|11203 7101!11203 7101|11203 8682!11203 8682|10843 8682!10843 8682|10843 9342!10843 9342|9923 9342!9923 9342|9923 7101!9923 7101|10243
+ 7101!10243 7101|10243 6361!10243 6361|10883 6361!10883 6361|10883 5621!10883 5621|11763 5621!11763 5621|11763 5021!11763 5021|11743 5021!11743 5021|11743 3501!11743 3501|12163 3501!12163 3501|12163 3480!12163 3480|12323 3480!12323 3480
+|12323 2461!12323 2461|11883 2461!11883 2461|11883 1841!11883 1841|11423 1841!11423 1841|11423 801!11423 801|12463 801!12463 801|12463 1841!12463 1841|12443 1841!12443 1841|12443 2381!12443 2381|12564 2381!12564 2381|12564 2421!12564
+ 2421|12944 2421!12944 2421|12944 2561!12944 2561|12924 2561!12924 2561|12924 3941!12924 3941|13284 3941!13284 3941|13284 5341!8382 1500|8382 3061!8382 3061|8122 3061!8122 3061|8122 4101!8122 4101|5441 4101!5441 4101|5441 3801!5441 3801
+|4921 3801!4921 3801|4921 860!4921 860|6201 860!6201 860|6201 880!6201 880|8402 880!8402 880|8402 1500!8402 1500|8382 1500!7002 1500|6201 1500!6201 1500|6201 3001!6201 3001|7002 3001!7002 3001|7002 1500!6681 4741|7162 4741!7162 4741|7162
+ 4601!7162 4601|7602 4601!7602 4601|7602 5501!7602 5501|7622 5501!7622 5501|7622 5681!7622 5681|6261 5681!6261 5681|6261 5001!6261 5001|6241 5001!6241 5001|6241 4761!6241 4761|6261 4761!6261 4761|6261 4681!6261 4681|6681 4681!6681 4681
+|6681 4741!2220 1260|2600 1260!2600 1260|2600 4060!2600 4060|2220 4060!2220 4060|2220 4698!2220 4698|4069 6427!4069 6427|4037 6461!4037 6461|4041 6461!4041 6461|4041 9502!4041 9502|3841 9502!3841 9502|3841 9562!3841 9562|2760 9562!2760
+ 9562|2760 7341!2760 7341|740 7341!740 7341|740 7101!740 7101|720 7101!720 7101|720 1000!720 1000|2220 1000!2220 1000|2220 1260!5142 9862|4662 9862!4662 9862|4662 9442!4662 9442|5142 9442!5142 9442|5142 9862!9563 9322|9563 9802!9563 9802
+|9043 9802!9043 9802|9043 9322!9043 9322|9563 9322"/>
+                    <Edge cubics="!2220 1000(;2220,1000 2220,1260 2220,1260q2220 1000 2220 1260);"/>
+                    <Edge cubics="!2220 1260(;2220,1260 2600,1260 2600,1260q2220 1260 2600 1260);"/>
+                    <Edge cubics="!720 1000(;720,1000 2220,1000 2220,1000q720 1000 2220 1000);"/>
+                    <Edge cubics="!2220 4060(;2220,4060 2220,4698 2220,4698q2220 4060 2220 4698);"/>
+                    <Edge cubics="!2600 4060(;2600,4060 2220,4060 2220,4060q2600 4060 2220 4060);"/>
+                    <Edge cubics="!3195 7362(;3195,7362 3173,7341 3173,7341q3195 7362 3173 7341);"/>
+                    <Edge cubics="!3173 7341(;3173,7341 2220,6451 2220,6451q3173 7341 2220 6451);"/>
+                    <Edge cubics="!2220 6451(;2220,6451 2220,7101 2220,7101q2220 6451 2220 7101);"/>
+                    <Edge cubics="!2220 7101(;2220,7101 740,7101 740,7101q2220 7101 740 7101);"/>
+                    <Edge cubics="!740 7101(;740,7101 720,7101 720,7101q740 7101 720 7101);"/>
+                    <Edge cubics="!2220 4698(;2220,4698 4069,6427 4069,6427q2220 4698 4069 6427);"/>
+                    <Edge cubics="!4069 6427(;4069,6427 4037,6461 4037,6461q4069 6427 4037 6461);"/>
+                    <Edge cubics="!4037 6461(;4037,6461 3841,6671 3841,6671q4037 6461 3841 6671);"/>
+                    <Edge cubics="!3841 6671(;3841,6671 3681,6842 3681,6842q3841 6671 3681 6842);"/>
+                    <Edge cubics="!3681 6842(;3681,6842 3215,7341 3215,7341q3681 6842 3215 7341);"/>
+                    <Edge cubics="!3215 7341(;3215,7341 3195,7362 3195,7362q3215 7341 3195 7362);"/>
+                    <Edge cubics="!2600 1260(;2600,1260 2600,4060 2600,4060q2600 1260 2600 4060);"/>
+                    <Edge cubics="!720 7101(;720,7101 720,1000 720,1000q720 7101 720 1000);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="mapLoad" color="#FF800A" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF" alpha="0"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="
+!12119 20|8819 0!8819 0|8659 360!8659 360|8599 2540!8599 2540|8299 3980!8299 3980|8219 4180!8219 4180|8059 5360!8059 5360|7939 5800!7939 5800|6300 5980!6300 5980|5700 5500!5700 5500|5560 5000!5560 5000|5080 4280!5080 4280|4840 3860!4840
+ 3860|4720 3280!4720 3280|4720 1200!4720 1200/4590 10!4590 10/1780 10!1780 10/2780 1160!2780 1160|2820 4040!2820 4040|2540 4380!2540 4380|2540 4760!2540 4760|3960 6080!3960 6080|4140 6380!4140 6380[4280 8499 4280 8599!4280 8599[4280 8699
+ 4340 8939!4340 8939|8959 8759!8959 8759|8999 7260!8999 7260|9419 6560!9419 6560|9719 5700!9719 5700|10299 5300!10299 5300|11119 5180!11119 5180|11159 4619!11159 4619|11159 3840!11159 3840|11099 3220!11099 3220|11079 2540!11079 2540|11079
+ 1600!11079 1600|11059 1240!11059 1240|11079 820!11079 820|12119 140!12119 140|12119 20"/>
+                    <Edge cubics="!1780 10(;1780,10 2780,1160 2780,1160q1780 10 2780 1160);"/>
+                    <Edge cubics="!2780 1160(;2780,1160 2820,4040 2820,4040q2780 1160 2820 4040);"/>
+                    <Edge cubics="!2820 4040(;2820,4040 2540,4380 2540,4380q2820 4040 2540 4380);"/>
+                    <Edge cubics="!2540 4380(;2540,4380 2540,4760 2540,4760q2540 4380 2540 4760);"/>
+                    <Edge cubics="!2540 4760(;2540,4760 3960,6080 3960,6080q2540 4760 3960 6080);"/>
+                    <Edge cubics="!3960 6080(;3960,6080 4140,6380 4140,6380q3960 6080 4140 6380);"/>
+                    <Edge cubics="!4140 6380(;4140,6380 4280,8499 4280,8599q4140 6380Q4280 8499q4280 8599);"/>
+                    <Edge cubics="!4280 8599(;4280,8699 4340,8939 4340,8939q4280 8599Q4280 8699q4340 8939);"/>
+                    <Edge cubics="!4340 8939(;4340,8939 8959,8759 8959,8759q4340 8939 8959 8759);"/>
+                    <Edge cubics="!8959 8759(;8959,8759 8999,7260 8999,7260q8959 8759 8999 7260);"/>
+                    <Edge cubics="!8999 7260(;8999,7260 9419,6560 9419,6560q8999 7260 9419 6560);"/>
+                    <Edge cubics="!9419 6560(;9419,6560 9719,5700 9719,5700q9419 6560 9719 5700);"/>
+                    <Edge cubics="!9719 5700(;9719,5700 10299,5300 10299,5300q9719 5700 10299 5300);"/>
+                    <Edge cubics="!10299 5300(;10299,5300 11119,5180 11119,5180q10299 5300 11119 5180);"/>
+                    <Edge cubics="!11119 5180(;11119,5180 11159,4619 11159,4619q11119 5180 11159 4619);"/>
+                    <Edge cubics="!11159 4619(;11159,4619 11159,3840 11159,3840q11159 4619 11159 3840);"/>
+                    <Edge cubics="!11159 3840(;11159,3840 11099,3220 11099,3220q11159 3840 11099 3220);"/>
+                    <Edge cubics="!11099 3220(;11099,3220 11079,2540 11079,2540q11099 3220 11079 2540);"/>
+                    <Edge cubics="!11079 2540(;11079,2540 11079,1600 11079,1600q11079 2540 11079 1600);"/>
+                    <Edge cubics="!11079 1600(;11079,1600 11059,1240 11059,1240q11079 1600 11059 1240);"/>
+                    <Edge cubics="!11059 1240(;11059,1240 11079,820 11079,820q11059 1240 11079 820);"/>
+                    <Edge cubics="!11079 820(;11079,820 12119,140 12119,140q11079 820 12119 140);"/>
+                    <Edge cubics="!12119 140(;12119,140 12119,20 12119,20q12119 140 12119 20);"/>
+                    <Edge cubics="!12119 20(;12119,20 8819,0 8819,0q12119 20 8819 0);"/>
+                    <Edge cubics="!8819 0(;8819,0 8659,360 8659,360q8819 0 8659 360);"/>
+                    <Edge cubics="!8659 360(;8659,360 8599,2540 8599,2540q8659 360 8599 2540);"/>
+                    <Edge cubics="!8599 2540(;8599,2540 8299,3980 8299,3980q8599 2540 8299 3980);"/>
+                    <Edge cubics="!8299 3980(;8299,3980 8219,4180 8219,4180q8299 3980 8219 4180);"/>
+                    <Edge cubics="!8219 4180(;8219,4180 8059,5360 8059,5360q8219 4180 8059 5360);"/>
+                    <Edge cubics="!8059 5360(;8059,5360 7939,5800 7939,5800q8059 5360 7939 5800);"/>
+                    <Edge cubics="!7939 5800(;7939,5800 6300,5980 6300,5980q7939 5800 6300 5980);"/>
+                    <Edge cubics="!6300 5980(;6300,5980 5700,5500 5700,5500q6300 5980 5700 5500);"/>
+                    <Edge cubics="!5700 5500(;5700,5500 5560,5000 5560,5000q5700 5500 5560 5000);"/>
+                    <Edge cubics="!5560 5000(;5560,5000 5080,4280 5080,4280q5560 5000 5080 4280);"/>
+                    <Edge cubics="!5080 4280(;5080,4280 4840,3860 4840,3860q5080 4280 4840 3860);"/>
+                    <Edge cubics="!4840 3860(;4840,3860 4720,3280 4720,3280q4840 3860 4720 3280);"/>
+                    <Edge cubics="!4720 3280(;4720,3280 4720,1200 4720,1200q4720 3280 4720 1200);"/>
+                    <Edge cubics="!4720 1200(;4720,1200 4590,10 4590,10q4720 1200 4590 10);"/>
+                    <Edge cubics="!4590 10(;4590,10 1780,10 1780,10q4590 10 1780 10);"/>
+                  </edges>
+                </DOMShape>
+                <DOMSymbolInstance libraryItemName="map/mapLoadClip" name="maLoad">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="mapElements" color="#9933CC" locked="true" autoNamed="false" visible="false" layerType="guide">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMBitmapInstance libraryItemName="images/sandBag.png">
+                  <matrix>
+                    <Matrix tx="219.4" ty="457.1"/>
+                  </matrix>
+                </DOMBitmapInstance>
+                <DOMBitmapInstance libraryItemName="images/sandBag.png">
+                  <matrix>
+                    <Matrix tx="438.95" ty="452.85"/>
+                  </matrix>
+                </DOMBitmapInstance>
+                <DOMBitmapInstance libraryItemName="images/sandBag.png">
+                  <matrix>
+                    <Matrix a="0.875076293945313" b="0.483978271484375" c="-0.483978271484375" d="0.875076293945313" tx="360.2" ty="208.45"/>
+                  </matrix>
+                </DOMBitmapInstance>
+                <DOMBitmapInstance libraryItemName="images/sandBag.png">
+                  <matrix>
+                    <Matrix a="0.861221313476563" b="-0.508224487304688" c="0.508224487304688" d="0.861221313476563" tx="289.4" ty="233.85"/>
+                  </matrix>
+                </DOMBitmapInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="mapBg" color="#FF4FFF" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="panels/mapGame" name="map">
+                  <matrix>
+                    <Matrix tx="28.15" ty="20"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMBitmapInstance libraryItemName="references/map_ref.jpg"/>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="bgFilter" color="#FF800A" locked="true" autoNamed="false" visible="false" layerType="guide">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#9966CC" alpha="0.4"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="
+!14000 10600|0 10600!0 10600|0 0!0 0|14000 0!14000 0|14000 10600"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="bg_ref" color="#9933CC" locked="true" autoNamed="false" visible="false" layerType="guide">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMBitmapInstance libraryItemName="references/ref_gameScreen.JPG"/>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

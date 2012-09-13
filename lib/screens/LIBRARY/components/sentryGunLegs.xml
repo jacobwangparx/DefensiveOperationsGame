@@ -1,0 +1,33 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="components/sentryGunLegs" itemID="50388028-000002dc" lastModified="1345880104">
+  <timeline>
+    <DOMTimeline name="sentryGunLegs">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <strokes>
+                    <StrokeStyle index="1">
+                      <SolidStroke scaleMode="normal">
+                        <fill>
+                          <SolidColor color="#0D0D0D"/>
+                        </fill>
+                      </SolidStroke>
+                    </StrokeStyle>
+                  </strokes>
+                  <edges>
+                    <Edge strokeStyle="1" edges="!0 301S4|170 202!351 299|181 201!174 0|175 197"/>
+                    <Edge cubics="!174 0(174,0;174,0 175,197 175,197q174 0p175 197)175,197;"/>
+                    <Edge cubics="!0 301(0,301;0,301 170,202 170,202q0 301p170 202)170,202;"/>
+                    <Edge cubics="!351 299(;351,299 181,201 181,201q351 299 181 201);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

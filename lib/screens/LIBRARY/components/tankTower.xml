@@ -1,0 +1,40 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="components/tankTower" itemID="50387cfd-000002bc" lastModified="1345887278" lastUniqueIdentifier="1">
+  <timeline>
+    <DOMTimeline name="tankTower">
+      <layers>
+        <DOMLayer name="body" color="#4FFF4F" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMBitmapInstance libraryItemName="images/tankHead.png">
+                  <transformationPoint>
+                    <Point x="16.5" y="36.5"/>
+                  </transformationPoint>
+                </DOMBitmapInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="bullet" color="#9933CC" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="components/tankBulletClip" name="bullet" centerPoint3DX="16" centerPoint3DY="69">
+                  <matrix>
+                    <Matrix tx="15.25" ty="65.95"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="0.75" y="3.05"/>
+                  </transformationPoint>
+                  <filters>
+                    <DropShadowFilter angle="60" blurX="4" blurY="4" distance="2"/>
+                  </filters>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

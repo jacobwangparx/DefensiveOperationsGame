@@ -234,6 +234,7 @@ package home.game.defensiveOperations.view.screens
 			{
 				var solider:EnemySolider = new EnemySolider(new soliderClip());
 				solider.enemyVO = gameScreenVO.soliderVO;
+				solider.transitionIn();
 				
 				solider.x = currentX;
 				solider.y = currentY;

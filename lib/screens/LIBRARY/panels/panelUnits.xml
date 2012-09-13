@@ -1,0 +1,87 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="panels/panelUnits" itemID="501e79d9-000003d0" lastModified="1344174553" lastUniqueIdentifier="6">
+  <timeline>
+    <DOMTimeline name="panelUnits">
+      <layers>
+        <DOMLayer name="textHeading" color="#9933CC" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText width="451" height="20.1" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="2" ty="2"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>defensive units</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" size="18" bitmapSize="360" face="ArialMT" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="units" color="#FF800A" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="components/unit" name="unitAirstrike0" centerPoint3DX="62.35" centerPoint3DY="88.8">
+                  <matrix>
+                    <Matrix tx="27.35" ty="53.8"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="35" y="35"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="components/unit" name="unitAirstrike1" centerPoint3DX="172" centerPoint3DY="88.8">
+                  <matrix>
+                    <Matrix tx="137" ty="53.8"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="35" y="35"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="components/unit" name="unitAirstrike2" centerPoint3DX="282.4" centerPoint3DY="88.8">
+                  <matrix>
+                    <Matrix tx="247.4" ty="53.8"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="35" y="35"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="components/unit" name="unitAirstrike4" centerPoint3DX="392.05" centerPoint3DY="88.8">
+                  <matrix>
+                    <Matrix tx="357.05" ty="53.8"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="35" y="35"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="bg" color="#4FFF4F" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#2A2720"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!9120 3100S2|0 3100!0 3100|0 0!0 0|9120 0!9120 0|9120 3100"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

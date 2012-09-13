@@ -1,0 +1,43 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="bgs/bgInside" itemID="50327023-000002a1" lastModified="1345555509">
+  <timeline>
+    <DOMTimeline name="bgInside">
+      <layers>
+        <DOMLayer name="bgFilter" color="#9933CC" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor alpha="0.756862745098039"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="!13593 -260|-230 -260!-230 -260|-230 7242!-230 7242|13593 7242!13593 7242|13593 -260"/>
+                    <Edge cubics="!13593 7242(;13593,7242 13593,-260 13593,-260q13593 7242 13593 -260);"/>
+                    <Edge cubics="!-230 7242(;-230,7242 13593,7242 13593,7242q-230 7242 13593 7242);"/>
+                    <Edge cubics="!-230 -260(;-230,-260 -230,7242 -230,7242q-230 -260 -230 7242);"/>
+                    <Edge cubics="!13593 -260(;13593,-260 -230,-260 -230,-260q13593 -260 -230 -260);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="bg" color="#4FFF4F" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMBitmapInstance libraryItemName="images/menuScreenBg.jpg">
+                  <matrix>
+                    <Matrix tx="-20.35" ty="-114.05"/>
+                  </matrix>
+                </DOMBitmapInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

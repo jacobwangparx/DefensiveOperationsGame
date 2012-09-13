@@ -1,0 +1,75 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="components/unitPanelUnitClip" itemID="502a6723-0000026a" lastModified="1347200796" lastUniqueIdentifier="2">
+  <timeline>
+    <DOMTimeline name="unitPanelUnitClip">
+      <layers>
+        <DOMLayer name="lock" color="#FF4FFF" current="true" isSelected="true" autoNamed="false" visible="false" layerType="guide">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="components/elements/lock" name="lock" centerPoint3DX="27.35" centerPoint3DY="27">
+                  <matrix>
+                    <Matrix tx="15.85" ty="10.7"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="11.5" y="15.55"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="loadImage" color="#4FFFFF" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="components/loadImagePanelUnit" name="buttonImage" centerPoint3DX="27" centerPoint3DY="27">
+                  <transformationPoint>
+                    <Point x="27" y="27"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="price" color="#FF800A" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="components/money" name="textPrice" centerPoint3DX="40" centerPoint3DY="64.85">
+                  <matrix>
+                    <Matrix ty="52.35"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="40" y="12.5"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="bg" color="#4FFF4F" locked="true" autoNamed="false" layerType="guide">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <strokes>
+                    <StrokeStyle index="1">
+                      <SolidStroke scaleMode="normal">
+                        <fill>
+                          <SolidColor/>
+                        </fill>
+                      </SolidStroke>
+                    </StrokeStyle>
+                  </strokes>
+                  <edges>
+                    <Edge strokeStyle="1" edges="!0 0|1080 0!1080 0|1080 1080!1080 1080|0 1080!0 1080|0 0"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

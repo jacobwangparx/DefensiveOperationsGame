@@ -1,0 +1,32 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="components/coverButtonStart" itemID="502f6829-000004ce" lastModified="1345300545">
+  <timeline>
+    <DOMTimeline name="coverButtonStart">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <LinearGradient>
+                        <matrix>
+                          <Matrix a="4.57763671875e-005" b="-0.0407867431640625" c="0.0433502197265625" d="4.57763671875e-005" tx="34.15" ty="19.75"/>
+                        </matrix>
+                        <GradientEntry color="#FFFF00" alpha="0.317647058823529" ratio="0.282352941176471"/>
+                        <GradientEntry color="#FFFFFF" alpha="0.0274509803921569" ratio="0.890196078431373"/>
+                      </LinearGradient>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="!245 -6[5 -6 5 232!5 232|5 489!5 489[5 656 124 706!124 706[174 727 245 727!245 727|1115 727!1115 727[1186 727 1236 706!1236 706[1354 656 1354 489!1354 489|1354 232!1354 232[1354 -6 1115 -6!1115 -6|245 -6"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>
