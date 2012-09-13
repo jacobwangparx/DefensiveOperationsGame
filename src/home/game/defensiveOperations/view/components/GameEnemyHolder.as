@@ -17,22 +17,27 @@ package home.game.defensiveOperations.view.components
 	 * ...
 	 * @author Jake
 	 */
-	public class GameElementHolder extends Component
+	public class GameEnemyHolder extends Component
 	{	
 	 
-		private var gameEnemyHolder:GameEnemyHolder;
+		private var holder:MovieClip;
+		private var solider:EnemySolider;
 		
 		private var _currentGameScreenVO:GameScreenVO;
 	 
-		public function GameElementHolder(target:MovieClip):void
+		public function GameEnemyHolder(target:MovieClip):void
 		{
 			super(target);
 		}
 		
 		override protected function createChildren():void 
 		{
+			trace("enemyHolder");
 			super.createChildren();
-			gameEnemyHolder = new GameEnemyHolder(target.enemyHolder);
+			holder = target.holder;
+			solider = new EnemySolider(new soliderClip());
+			solider.transitionIn();
+			holder.addChild(solider);
 		}
 		
 		public function get currentGameScreenVO():GameScreenVO 

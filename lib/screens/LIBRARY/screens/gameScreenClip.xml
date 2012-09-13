@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="screens/gameScreenClip" itemID="501e0198-00000251" linkageExportForAS="true" linkageClassName="gameScreenClip" lastModified="1347514025" lastUniqueIdentifier="30">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="screens/gameScreenClip" itemID="501e0198-00000251" linkageExportForAS="true" linkageClassName="gameScreenClip" lastModified="1347520348" lastUniqueIdentifier="31">
   <timeline>
     <DOMTimeline name="gameScreenClip">
       <layers>
@@ -151,7 +151,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="progressBar" color="#4FFF4F" current="true" isSelected="true" autoNamed="false">
+        <DOMLayer name="progressBar" color="#4FFF4F" locked="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
@@ -167,11 +167,11 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="gameElementHolder" color="#FF800A" locked="true" autoNamed="false">
+        <DOMLayer name="gameElementHolder" color="#FF800A" current="true" isSelected="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="gameElementHolder" name="gameElementHolder" centerPoint3DX="254.45" centerPoint3DY="126.5">
+                <DOMSymbolInstance libraryItemName="gameElementHolder" name="gameElementHolder" selected="true" centerPoint3DX="254.45" centerPoint3DY="126.5">
                   <transformationPoint>
                     <Point x="254.45" y="126.5"/>
                   </transformationPoint>
@@ -245,6 +245,13 @@
                   </edges>
                 </DOMShape>
               </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="motionPathHolder" color="#FF800A" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements/>
             </DOMFrame>
           </frames>
         </DOMLayer>

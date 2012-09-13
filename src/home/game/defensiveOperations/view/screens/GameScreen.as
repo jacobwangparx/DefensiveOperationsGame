@@ -25,7 +25,8 @@ package home.game.defensiveOperations.view.screens
 		//private var gameScreenMask: MovieClip;
 		static public const FPS:int = 60;
 		
-		private var gameElementHolder:MovieClip;
+		private var gameElementHolder:GameElementHolder;
+		private var enemyPath0:MovieClip;
 		
 		private var labelKilled:TextComponent;
 		private var labelLevel:TextComponent;
@@ -82,7 +83,7 @@ package home.game.defensiveOperations.view.screens
 		{
 			super.createChildren();
 		
-			gameElementHolder = target.gameElementHolder;
+			gameElementHolder = new GameElementHolder(target.gameElementHolder);
 			
 			characterStacey = new Character(target.characterStacey);
 			characterJacob = new Character(target.characterJacob);

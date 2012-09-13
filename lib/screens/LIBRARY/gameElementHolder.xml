@@ -1,11 +1,27 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="gameElementHolder" itemID="504b21a8-00000509" lastModified="1347101158">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="gameElementHolder" itemID="504b21a8-00000509" lastModified="1347520908">
   <timeline>
     <DOMTimeline name="gameElementHolder">
       <layers>
-        <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
+        <DOMLayer name="Layer 3" color="#FF800A">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="enemyHolder" color="#808080" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="manWithGuide" name="enemyHolder" selected="true" centerPoint3DX="158.45" centerPoint3DY="172.5">
+                  <matrix>
+                    <Matrix tx="75" ty="-66"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="83.45" y="238.5"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
             </DOMFrame>
           </frames>
         </DOMLayer>

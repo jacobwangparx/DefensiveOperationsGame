@@ -33,9 +33,7 @@ package home.game.defensiveOperations.view.components
 	
 		override public function transitionIn():void 
 		{
-			trace("transitionIn");
 			super.transitionIn();
-			//gotoAndPlay();
 			gotoAndStop("run");
 		}
 		
