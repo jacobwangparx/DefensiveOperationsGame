@@ -29,7 +29,7 @@
                     </FillStyle>
                   </fills>
                   <edges>
-                    <Edge fillStyle1="1" edges="!2807 -71S2|2807 569!2807 569|-76 569!-76 569|-76 -71!-76 -71|2807 -71"/>
+                    <Edge fillStyle1="1" edges="!2807 569S2|-76 569!-76 569|-76 -71!-76 -71|2807 -71!2807 -71|2807 569"/>
                   </edges>
                 </DOMShape>
               </elements>

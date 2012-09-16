@@ -1,4 +1,4 @@
-<DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" backgroundColor="#33FFFF" width="700" height="530" currentTimeline="1" xflVersion="2.2" creatorInfo="Adobe Flash Professional CS6" platform="Windows" versionInfo="Saved by Adobe Flash Windows 12.0 build 481" majorVersion="12" buildNumber="481" objectsSnapTo="false" timelineLabelWidth="203" viewAngle3D="40.0431707259275" vanishingPoint3DX="500" vanishingPoint3DY="295" nextSceneIdentifier="8" playOptionsPlayLoop="false" playOptionsPlayPages="false" playOptionsPlayFrameActions="false" autoSaveEnabled="true" autoSaveHasPrompted="true">
+<DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" backgroundColor="#33FFFF" width="700" height="530" currentTimeline="1" xflVersion="2.0" creatorInfo="Adobe Flash Professional CS6" platform="Windows" versionInfo="Saved by Adobe Flash Windows 12.0 build 481" majorVersion="12" buildNumber="481" objectsSnapTo="false" timelineLabelWidth="203" viewAngle3D="40.0431707259275" vanishingPoint3DX="500" vanishingPoint3DY="295" nextSceneIdentifier="8" playOptionsPlayLoop="false" playOptionsPlayPages="false" playOptionsPlayFrameActions="false">
      <folders>
           <DOMFolderItem name="bgs" itemID="5032d150-00000308"/>
           <DOMFolderItem name="buttons" itemID="501e0e30-000002b6"/>
@@ -18,10 +18,10 @@
           <DOMFolderItem name="screens" itemID="501e0165-00000237" isExpanded="true"/>
      </folders>
      <fonts>
-          <DOMFontItem name="fonts/Font 3" itemID="502a66ac-00000268" font="Arial-BoldMT" size="0" id="6" sourceLastImported="1344956076" embedRanges="5"/>
-          <DOMFontItem name="fonts/textHeading" itemID="501ca3a6-00000235" font="Bauhaus93" size="0" id="1" sourceLastImported="1344054182" embedRanges="5"/>
-          <DOMFontItem name="fonts/Font 1" itemID="501e1c83-00000335" font="Bauhaus93" size="0" id="2" sourceLastImported="1344150659" embedRanges="5"/>
           <DOMFontItem name="fonts/Font 2" itemID="501e7d30-000003f7" font="ArialMT" size="0" id="3" sourceLastImported="1344175408" embedRanges="5"/>
+          <DOMFontItem name="fonts/Font 1" itemID="501e1c83-00000335" font="Bauhaus93" size="0" id="2" sourceLastImported="1344150659" embedRanges="5"/>
+          <DOMFontItem name="fonts/textHeading" itemID="501ca3a6-00000235" font="Bauhaus93" size="0" id="1" sourceLastImported="1344054182" embedRanges="5"/>
+          <DOMFontItem name="fonts/Font 3" itemID="502a66ac-00000268" font="Arial-BoldMT" size="0" id="6" sourceLastImported="1344956076" embedRanges="5"/>
      </fonts>
      <media>
           <DOMBitmapItem name="images/btr.png" itemID="50364f8f-0000048c" sourceExternalFilepath="./LIBRARY/images/btr.png" sourceLastImported="1345736553" externalFileCRC32="679180857" externalFileSize="6263" originalCompressionType="lossless" quality="50" href="images/btr.png" bitmapDataHRef="M 43 1345736591.dat" frameLeft="-115200" frameTop="-115200" frameRight="-115200" frameBottom="-115200"/>
@@ -74,122 +74,122 @@
           <DOMBitmapItem name="unitSentryGun.png" itemID="503cf0dd-00000284" sourceExternalFilepath="./LIBRARY/unitSentryGun.png" sourceLastImported="1346171061" externalFileCRC32="414163363" externalFileSize="65713" originalCompressionType="lossless" quality="50" href="unitSentryGun.png" bitmapDataHRef="M 48 1346171101.dat" frameLeft="-115200" frameTop="-115200" frameRight="-115200" frameBottom="-115200"/>
      </media>
      <symbols>
-          <Include href="bgs/bgFilter.xml" loadImmediate="false" itemID="5030f7aa-000002f0" lastModified="1347508234"/>
-          <Include href="bgs/bgInside.xml" loadImmediate="false" itemID="50327023-000002a1" lastModified="1345555509"/>
-          <Include href="bgs/bgPanelScreenLabel.xml" loadImmediate="false" itemID="503109b5-00000243" lastModified="1346345608"/>
-          <Include href="bgs/bgShopScreenLabel.xml" loadImmediate="false" itemID="50310203-00000234" lastModified="1346345152"/>
-          <Include href="bgs/bgTextMoneyCircle.xml" loadImmediate="false" itemID="50310de6-00000267" lastModified="1345392155"/>
-          <Include href="bgs/bgTitle.xml" loadImmediate="false" itemID="5032785f-000002f7" lastModified="1345484895"/>
-          <Include href="buttons/buttonBackClip.xml" itemID="5025aaad-00000207" lastModified="1345883426"/>
-          <Include href="buttons/buttonBackScreenClip.xml" itemID="50306ec8-000002d0" lastModified="1345883424"/>
-          <Include href="buttons/buttonContinue.xml" loadImmediate="false" itemID="501e329c-0000035e" lastModified="1345485538"/>
-          <Include href="buttons/buttonHero.xml" loadImmediate="false" itemID="501e949e-000004dd" lastModified="1345486022"/>
-          <Include href="buttons/buttonLevel.xml" loadImmediate="false" itemID="50306b58-00000247" lastModified="1346801151"/>
-          <Include href="buttons/buttonLevelClip.xml" itemID="501e1b30-0000031f" lastModified="1345350923"/>
-          <Include href="buttons/buttonMenuClip.xml" itemID="501ca55c-0000025b" lastModified="1345960754"/>
-          <Include href="buttons/buttonRestart.xml" loadImmediate="false" itemID="501e0c17-000002a4" lastModified="1345304905"/>
-          <Include href="buttons/buttonShopLoadImage.xml" loadImmediate="false" itemID="503272da-000002c6" lastModified="1345483484"/>
-          <Include href="buttons/buttonSound.xml" loadImmediate="false" itemID="5045000b-00000290" lastModified="1346942462"/>
-          <Include href="buttons/buttonStart.xml" loadImmediate="false" itemID="502f6329-000004bb" lastModified="1345350979"/>
-          <Include href="buttons/buttonUnit.xml" loadImmediate="false" itemID="501e37aa-00000379" lastModified="1345390808"/>
-          <Include href="buttons/labelMoney.xml" loadImmediate="false" itemID="50310a9f-00000262" lastModified="1345391263"/>
-          <Include href="components/attackRange.xml" loadImmediate="false" itemID="50389804-000003ac" lastModified="1345886212"/>
-          <Include href="components/attackRangeCharacter.xml" loadImmediate="false" itemID="503897f8-000003ab" lastModified="1347106609"/>
-          <Include href="components/attackRangeTank.xml" loadImmediate="false" itemID="50389808-000003ad" lastModified="1347114422"/>
-          <Include href="components/bg.xml" loadImmediate="false" itemID="502fc65e-00000254" lastModified="1345308433"/>
-          <Include href="components/bgMainMenuButtonRollOver.xml" loadImmediate="false" itemID="5039b89e-0000070f" lastModified="1345960094"/>
-          <Include href="components/blood.xml" loadImmediate="false" itemID="503899ec-000003cc" lastModified="1346940319"/>
-          <Include href="components/btrBody.xml" loadImmediate="false" itemID="503888d3-00000369" lastModified="1345882565"/>
-          <Include href="components/btrBulletClip.xml" itemID="503889f5-0000037b" lastModified="1345883409"/>
-          <Include href="components/btrTower.xml" loadImmediate="false" itemID="50388883-00000350" lastModified="1345887502"/>
-          <Include href="components/bulletHolderBtr.xml" loadImmediate="false" itemID="50388a9c-00000380" lastModified="1345882865"/>
-          <Include href="components/bulletHolderCharacter.xml" loadImmediate="false" itemID="50389ba0-000003fd" lastModified="1345887142"/>
-          <Include href="components/buttonImageCharacterIcon.xml" loadImmediate="false" itemID="5040529e-000000c2" lastModified="1346942884"/>
-          <Include href="components/buttonLevelBg.xml" loadImmediate="false" itemID="50306b82-00000298" lastModified="1345350623"/>
-          <Include href="components/buttonMenuScreenBg.xml" loadImmediate="false" itemID="5039b6be-0000070a" lastModified="1345959614"/>
-          <Include href="components/buttonStartBg.xml" loadImmediate="false" itemID="502f6464-000004bf" lastModified="1345283172"/>
-          <Include href="components/characterBody.xml" loadImmediate="false" itemID="50389982-000003ca" lastModified="1347110501"/>
-          <Include href="components/characterHitspot.xml" loadImmediate="false" itemID="503897dd-000003a5" lastModified="1347110874"/>
-          <Include href="components/coverButtonLevel.xml" loadImmediate="false" itemID="50306baa-000002a4" lastModified="1345350652"/>
-          <Include href="components/coverButtonStart.xml" loadImmediate="false" itemID="502f6829-000004ce" lastModified="1345300545"/>
-          <Include href="components/elements/bgCircle.xml" loadImmediate="false" itemID="502f5b4c-000004b4" lastModified="1345281182"/>
-          <Include href="components/elements/bgMid.xml" loadImmediate="false" itemID="502f6533-000004c5" lastModified="1345284032"/>
-          <Include href="components/elements/bgMidLevel.xml" loadImmediate="false" itemID="50306b77-00000292" lastModified="1345350771"/>
-          <Include href="components/elements/black.xml" loadImmediate="false" itemID="501e908a-000004a6" lastModified="1344180362"/>
-          <Include href="components/elements/icon.xml" loadImmediate="false" itemID="501e3559-0000036f" lastModified="1344157017"/>
-          <Include href="components/elements/iconGold.xml" loadImmediate="false" itemID="5025b4ba-0000023c" lastModified="1345282698"/>
-          <Include href="components/elements/levelDescriptionBg.xml" loadImmediate="false" itemID="501e1c9e-00000337" lastModified="1344150715"/>
-          <Include href="components/elements/levelStars.xml" loadImmediate="false" itemID="501e88d3-0000043b" lastModified="1344178387"/>
-          <Include href="components/elements/lock.xml" loadImmediate="false" itemID="501e39d0-00000383" lastModified="1344158243"/>
-          <Include href="components/elements/screenBg.xml" loadImmediate="false" itemID="501e0e4b-000002b8" lastModified="1345351193"/>
-          <Include href="components/elements/star.xml" loadImmediate="false" itemID="501e85b2-00000425" lastModified="1345390102"/>
-          <Include href="components/elements/yellow.xml" loadImmediate="false" itemID="501e9093-000004a8" lastModified="1344180371"/>
-          <Include href="components/gameElementHolders.xml" loadImmediate="false" itemID="50356ad1-00000419" lastModified="1345678063"/>
-          <Include href="components/glassButtonLevel.xml" loadImmediate="false" itemID="50306b9c-0000029e" lastModified="1345350709"/>
-          <Include href="components/glassButtonStart.xml" loadImmediate="false" itemID="502fa4f4-000004db" lastModified="1345299700"/>
-          <Include href="components/gold.xml" loadImmediate="false" itemID="5025b467-00000233" lastModified="1345305374"/>
-          <Include href="components/headingPanelHero.xml" loadImmediate="false" itemID="502fa9be-0000050e" lastModified="1345305634"/>
-          <Include href="components/headingPanelProfile.xml" loadImmediate="false" itemID="50310455-00000241" lastModified="1345389890"/>
-          <Include href="components/headingPanelUnit.xml" loadImmediate="false" itemID="502a6615-00000264" lastModified="1345305604"/>
-          <Include href="components/heroBg.xml" loadImmediate="false" itemID="502fb46f-0000023e" lastModified="1346942673"/>
-          <Include href="components/heroIcon.xml" loadImmediate="false" itemID="502fafb0-00000226" lastModified="1346942846"/>
-          <Include href="components/hitSpotBtr.xml" loadImmediate="false" itemID="50388874-00000347" lastModified="1345887827"/>
-          <Include href="components/iconStar.xml" loadImmediate="false" itemID="5025b4e3-00000245" lastModified="1345281452"/>
-          <Include href="components/labelCreditClip.xml" itemID="501e971c-000004e9" lastModified="1345554645"/>
-          <Include href="components/labelGameScreen.xml" loadImmediate="false" itemID="502f4f5e-0000047c" lastModified="1346374869"/>
-          <Include href="components/labelGameScreenBg.xml" loadImmediate="false" itemID="502f4f8b-00000495" lastModified="1345888337"/>
-          <Include href="components/labelProfile.xml" loadImmediate="false" itemID="501e7ccb-000003f3" lastModified="1345390742"/>
-          <Include href="components/lifeLine.xml" loadImmediate="false" itemID="502fb4a2-00000242" lastModified="1345303714"/>
-          <Include href="components/loadImageCharacterIcon.xml" loadImmediate="false" itemID="504052c7-000000c6" lastModified="1346942769"/>
-          <Include href="components/loadImageForLabelUnit.xml" loadImmediate="false" itemID="5040056a-00000285" lastModified="1346943266"/>
-          <Include href="components/loadImagePanelUnit.xml" loadImmediate="false" itemID="502a6839-00000279" lastModified="1346943537"/>
-          <Include href="components/money.xml" loadImmediate="false" itemID="5025b448-0000022c" lastModified="1346943892"/>
-          <Include href="components/panelControlBg.xml" loadImmediate="false" itemID="502f5a01-000004b0" lastModified="1345308358"/>
-          <Include href="components/sentryGunBody0.xml" loadImmediate="false" itemID="50387958-0000025a" lastModified="1347204413"/>
-          <Include href="components/sentryGunBody1.xml" loadImmediate="false" itemID="50387960-00000263" lastModified="1347204294"/>
-          <Include href="components/sentryGunBulletHolder.xml" loadImmediate="false" itemID="503882dd-000002ec" lastModified="1345880918"/>
-          <Include href="components/sentryGunHitspot.xml" loadImmediate="false" itemID="50357045-0000044d" lastModified="1347114894"/>
-          <Include href="components/sentryGunLegs.xml" loadImmediate="false" itemID="50388028-000002dc" lastModified="1345880104"/>
-          <Include href="components/soliderBody.xml" loadImmediate="false" itemID="5039a747-00000560" lastModified="1347516139"/>
-          <Include href="components/soliderBodyCrouchToRun.xml" loadImmediate="false" itemID="50515836-00000270" lastModified="1347517069"/>
-          <Include href="components/soliderBodyDie.xml" loadImmediate="false" itemID="5051588f-000002f5" lastModified="1347515340"/>
-          <Include href="components/soliderBodyRun.xml" loadImmediate="false" itemID="5051583d-0000029c" lastModified="1347516630"/>
-          <Include href="components/soliderBodyRunToCrouch.xml" loadImmediate="false" itemID="5051584b-000002c8" lastModified="1347515356"/>
-          <Include href="components/tankBody.xml" loadImmediate="false" itemID="50387c9c-000002b2" lastModified="1345879196"/>
-          <Include href="components/tankBulletClip.xml" itemID="5038834e-000002f0" lastModified="1345880910"/>
-          <Include href="components/tankHitspot.xml" loadImmediate="false" itemID="503886c3-0000031a" lastModified="1345881823"/>
-          <Include href="components/tankTower.xml" loadImmediate="false" itemID="50387cfd-000002bc" lastModified="1345887278"/>
-          <Include href="components/textField.xml" loadImmediate="false" itemID="5030f94a-000002f7" lastModified="1345386826"/>
-          <Include href="components/unit.xml" loadImmediate="false" itemID="501e861f-00000429" lastModified="1344648319"/>
-          <Include href="components/unitPanelUnitClip.xml" loadImmediate="false" itemID="502a6723-0000026a" lastModified="1347200796"/>
-          <Include href="gameElementHolder.xml" loadImmediate="false" itemID="504b21a8-00000509" lastModified="1347520908"/>
-          <Include href="gameElements/btrClip.xml" itemID="5038883e-00000331" lastModified="1347200740"/>
-          <Include href="gameElements/characterClip.xml" itemID="5038995d-000003c9" lastModified="1347111248"/>
-          <Include href="gameElements/gunBulletClip.xml" itemID="5038833f-000002ef" lastModified="1345880895"/>
-          <Include href="gameElements/sentryGunClip.xml" itemID="50389a74-000003d0" lastModified="1347204450"/>
-          <Include href="gameElements/sentryRpgClip.xml" itemID="50389a6d-000003cf" lastModified="1347204435"/>
-          <Include href="gameElements/soliderClip.xml" itemID="5038e320-0000045a" lastModified="1347516576"/>
-          <Include href="gameElements/tankClip.xml" itemID="503879de-0000026f" lastModified="1347114436"/>
-          <Include href="gameScreenMaskClip.xml" itemID="504b1a80-00000506" lastModified="1347099428"/>
-          <Include href="manWithGuide.xml" loadImmediate="false" itemID="505181d7-00000597" lastModified="1347521554"/>
-          <Include href="map/map.xml" loadImmediate="false" itemID="502f3c04-0000043e" lastModified="1345273007"/>
-          <Include href="map/mapLoadClip.xml" loadImmediate="false" itemID="502f5089-0000049a" lastModified="1345278089"/>
-          <Include href="motionPath.xml" loadImmediate="false" itemID="50517ef1-0000058f" lastModified="1347518193"/>
-          <Include href="motionPathHolder.xml" loadImmediate="false" itemID="50517dda-00000589" lastModified="1347517914"/>
-          <Include href="panels/mapGame.xml" loadImmediate="false" itemID="501e18ed-00000304" lastModified="1344149741"/>
-          <Include href="panels/panelCharacter.xml" loadImmediate="false" itemID="503fa019-00000284" lastModified="1346347033"/>
-          <Include href="panels/panelControl.xml" loadImmediate="false" itemID="501e0d30-000002b0" lastModified="1347200782"/>
-          <Include href="panels/panelDescriptionClip.xml" itemID="501e1bf5-00000326" lastModified="1344150735"/>
-          <Include href="panels/panelMenuBg.xml" loadImmediate="false" itemID="501e98c1-000004f5" lastModified="1345387756"/>
-          <Include href="panels/panelProfile.xml" loadImmediate="false" itemID="501e79fa-000003e1" lastModified="1346347015"/>
-          <Include href="panels/panelUnit.xml" loadImmediate="false" itemID="502a6531-0000025b" lastModified="1347201794"/>
-          <Include href="panels/panelUnits.xml" loadImmediate="false" itemID="501e79d9-000003d0" lastModified="1344174553"/>
-          <Include href="panels/processBar.xml" loadImmediate="false" itemID="501e0e9d-000002ba" lastModified="1345308405"/>
-          <Include href="screens/creditsScreenClip.xml" itemID="501e0214-00000276" lastModified="1345555510"/>
-          <Include href="screens/gameScreenClip.xml" itemID="501e0198-00000251" lastModified="1347838215"/>
-          <Include href="screens/levelScreenClip.xml" itemID="501e01d8-00000269" lastModified="1346939804"/>
-          <Include href="screens/menuScreenClip.xml" itemID="501dee8d-000001f2" lastModified="1346344947"/>
-          <Include href="screens/shopScreenClip.xml" itemID="501e772a-000003c8" lastModified="1346370831"/>
+          <Include href="bgs/bgFilter.xml" loadImmediate="false"/>
+          <Include href="bgs/bgInside.xml" loadImmediate="false"/>
+          <Include href="bgs/bgPanelScreenLabel.xml" loadImmediate="false"/>
+          <Include href="bgs/bgShopScreenLabel.xml" loadImmediate="false"/>
+          <Include href="bgs/bgTextMoneyCircle.xml" loadImmediate="false"/>
+          <Include href="bgs/bgTitle.xml" loadImmediate="false"/>
+          <Include href="buttons/buttonBackClip.xml"/>
+          <Include href="buttons/buttonBackScreenClip.xml"/>
+          <Include href="buttons/buttonContinue.xml" loadImmediate="false"/>
+          <Include href="buttons/buttonHero.xml" loadImmediate="false"/>
+          <Include href="buttons/buttonLevel.xml" loadImmediate="false"/>
+          <Include href="buttons/buttonLevelClip.xml"/>
+          <Include href="buttons/buttonMenuClip.xml"/>
+          <Include href="buttons/buttonRestart.xml" loadImmediate="false"/>
+          <Include href="buttons/buttonShopLoadImage.xml" loadImmediate="false"/>
+          <Include href="buttons/buttonSound.xml" loadImmediate="false"/>
+          <Include href="buttons/buttonStart.xml" loadImmediate="false"/>
+          <Include href="buttons/buttonUnit.xml" loadImmediate="false"/>
+          <Include href="buttons/labelMoney.xml" loadImmediate="false"/>
+          <Include href="components/attackRange.xml" loadImmediate="false"/>
+          <Include href="components/attackRangeCharacter.xml" loadImmediate="false"/>
+          <Include href="components/attackRangeTank.xml" loadImmediate="false"/>
+          <Include href="components/bg.xml" loadImmediate="false"/>
+          <Include href="components/bgMainMenuButtonRollOver.xml" loadImmediate="false"/>
+          <Include href="components/blood.xml" loadImmediate="false"/>
+          <Include href="components/btrBody.xml" loadImmediate="false"/>
+          <Include href="components/btrBulletClip.xml"/>
+          <Include href="components/btrTower.xml" loadImmediate="false"/>
+          <Include href="components/bulletHolderBtr.xml" loadImmediate="false"/>
+          <Include href="components/bulletHolderCharacter.xml" loadImmediate="false"/>
+          <Include href="components/buttonImageCharacterIcon.xml" loadImmediate="false"/>
+          <Include href="components/buttonLevelBg.xml" loadImmediate="false"/>
+          <Include href="components/buttonMenuScreenBg.xml" loadImmediate="false"/>
+          <Include href="components/buttonStartBg.xml" loadImmediate="false"/>
+          <Include href="components/characterBody.xml" loadImmediate="false"/>
+          <Include href="components/characterHitspot.xml" loadImmediate="false"/>
+          <Include href="components/coverButtonLevel.xml" loadImmediate="false"/>
+          <Include href="components/coverButtonStart.xml" loadImmediate="false"/>
+          <Include href="components/elements/bgCircle.xml" loadImmediate="false"/>
+          <Include href="components/elements/bgMid.xml" loadImmediate="false"/>
+          <Include href="components/elements/bgMidLevel.xml" loadImmediate="false"/>
+          <Include href="components/elements/black.xml" loadImmediate="false"/>
+          <Include href="components/elements/icon.xml" loadImmediate="false"/>
+          <Include href="components/elements/iconGold.xml" loadImmediate="false"/>
+          <Include href="components/elements/levelDescriptionBg.xml" loadImmediate="false"/>
+          <Include href="components/elements/levelStars.xml" loadImmediate="false"/>
+          <Include href="components/elements/lock.xml" loadImmediate="false"/>
+          <Include href="components/elements/screenBg.xml" loadImmediate="false"/>
+          <Include href="components/elements/star.xml" loadImmediate="false"/>
+          <Include href="components/elements/yellow.xml" loadImmediate="false"/>
+          <Include href="components/gameElementHolders.xml" loadImmediate="false"/>
+          <Include href="components/glassButtonLevel.xml" loadImmediate="false"/>
+          <Include href="components/glassButtonStart.xml" loadImmediate="false"/>
+          <Include href="components/gold.xml" loadImmediate="false"/>
+          <Include href="components/headingPanelHero.xml" loadImmediate="false"/>
+          <Include href="components/headingPanelProfile.xml" loadImmediate="false"/>
+          <Include href="components/headingPanelUnit.xml" loadImmediate="false"/>
+          <Include href="components/heroBg.xml" loadImmediate="false"/>
+          <Include href="components/heroIcon.xml" loadImmediate="false"/>
+          <Include href="components/hitSpotBtr.xml" loadImmediate="false"/>
+          <Include href="components/iconStar.xml" loadImmediate="false"/>
+          <Include href="components/labelCreditClip.xml"/>
+          <Include href="components/labelGameScreen.xml" loadImmediate="false"/>
+          <Include href="components/labelGameScreenBg.xml" loadImmediate="false"/>
+          <Include href="components/labelProfile.xml" loadImmediate="false"/>
+          <Include href="components/lifeLine.xml" loadImmediate="false"/>
+          <Include href="components/loadImageCharacterIcon.xml" loadImmediate="false"/>
+          <Include href="components/loadImageForLabelUnit.xml" loadImmediate="false"/>
+          <Include href="components/loadImagePanelUnit.xml" loadImmediate="false"/>
+          <Include href="components/money.xml" loadImmediate="false"/>
+          <Include href="components/panelControlBg.xml" loadImmediate="false"/>
+          <Include href="components/sentryGunBody0.xml" loadImmediate="false"/>
+          <Include href="components/sentryGunBody1.xml" loadImmediate="false"/>
+          <Include href="components/sentryGunBulletHolder.xml" loadImmediate="false"/>
+          <Include href="components/sentryGunHitspot.xml" loadImmediate="false"/>
+          <Include href="components/sentryGunLegs.xml" loadImmediate="false"/>
+          <Include href="components/soliderBody.xml" loadImmediate="false"/>
+          <Include href="components/soliderBodyCrouchToRun.xml" loadImmediate="false"/>
+          <Include href="components/soliderBodyDie.xml" loadImmediate="false"/>
+          <Include href="components/soliderBodyRun.xml" loadImmediate="false"/>
+          <Include href="components/soliderBodyRunToCrouch.xml" loadImmediate="false"/>
+          <Include href="components/tankBody.xml" loadImmediate="false"/>
+          <Include href="components/tankBulletClip.xml"/>
+          <Include href="components/tankHitspot.xml" loadImmediate="false"/>
+          <Include href="components/tankTower.xml" loadImmediate="false"/>
+          <Include href="components/textField.xml" loadImmediate="false"/>
+          <Include href="components/unit.xml" loadImmediate="false"/>
+          <Include href="components/unitPanelUnitClip.xml" loadImmediate="false"/>
+          <Include href="gameElementHolder.xml" loadImmediate="false"/>
+          <Include href="gameElements/btrClip.xml"/>
+          <Include href="gameElements/characterClip.xml"/>
+          <Include href="gameElements/gunBulletClip.xml"/>
+          <Include href="gameElements/sentryGunClip.xml"/>
+          <Include href="gameElements/sentryRpgClip.xml"/>
+          <Include href="gameElements/soliderClip.xml"/>
+          <Include href="gameElements/tankClip.xml"/>
+          <Include href="gameScreenMaskClip.xml"/>
+          <Include href="manWithGuide.xml" loadImmediate="false"/>
+          <Include href="map/map.xml" loadImmediate="false"/>
+          <Include href="map/mapLoadClip.xml" loadImmediate="false"/>
+          <Include href="motionPath.xml" loadImmediate="false"/>
+          <Include href="motionPathHolder.xml" loadImmediate="false"/>
+          <Include href="panels/mapGame.xml" loadImmediate="false"/>
+          <Include href="panels/panelCharacter.xml" loadImmediate="false"/>
+          <Include href="panels/panelControl.xml" loadImmediate="false"/>
+          <Include href="panels/panelDescriptionClip.xml"/>
+          <Include href="panels/panelMenuBg.xml" loadImmediate="false"/>
+          <Include href="panels/panelProfile.xml" loadImmediate="false"/>
+          <Include href="panels/panelUnit.xml" loadImmediate="false"/>
+          <Include href="panels/panelUnits.xml" loadImmediate="false"/>
+          <Include href="panels/processBar.xml" loadImmediate="false"/>
+          <Include href="screens/creditsScreenClip.xml"/>
+          <Include href="screens/gameScreenClip.xml"/>
+          <Include href="screens/levelScreenClip.xml"/>
+          <Include href="screens/menuScreenClip.xml"/>
+          <Include href="screens/shopScreenClip.xml"/>
      </symbols>
      <timelines>
           <DOMTimeline name="Scene 1">

@@ -38,10 +38,11 @@
                   </fills>
                   <edges>
                     <Edge fillStyle0="1" edges="!23 87S1[30 44 30 0!30 0|0 0!0 0[-1 44 6 87"/>
-                    <Edge fillStyle0="1" fillStyle1="2" edges="!6 87S3|23 87"/>
-                    <Edge fillStyle0="3" fillStyle1="2" edges="!21 94S3|7 94"/>
+                    <Edge fillStyle0="2" edges="!6 87S1[6 91 7 94"/>
                     <Edge fillStyle0="3" edges="!7 94S1[9 109 12 123!12 123|15 122!15 122[18 109 21 94"/>
-                    <Edge fillStyle0="2" edges="!21 94S1[22 91 23 87!6 87[6 91 7 94"/>
+                    <Edge fillStyle0="3" fillStyle1="2" edges="!21 94S3|7 94"/>
+                    <Edge fillStyle0="2" edges="!21 94S1[22 91 23 87"/>
+                    <Edge fillStyle0="2" fillStyle1="1" edges="!23 87S3|6 87"/>
                   </edges>
                 </DOMShape>
               </elements>
