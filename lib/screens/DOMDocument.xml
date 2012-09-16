@@ -1,4 +1,4 @@
-<DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" backgroundColor="#33FFFF" width="700" height="530" currentTimeline="1" xflVersion="2.2" creatorInfo="Adobe Flash Professional CS6" platform="Windows" versionInfo="Saved by Adobe Flash Windows 12.0 build 481" majorVersion="12" buildNumber="481" objectsSnapTo="false" timelineLabelWidth="203" viewAngle3D="40.0431707259275" vanishingPoint3DX="500" vanishingPoint3DY="295" nextSceneIdentifier="7" playOptionsPlayLoop="false" playOptionsPlayPages="false" playOptionsPlayFrameActions="false" autoSaveEnabled="true" autoSaveHasPrompted="true">
+<DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" backgroundColor="#33FFFF" width="700" height="530" currentTimeline="1" xflVersion="2.2" creatorInfo="Adobe Flash Professional CS6" platform="Windows" versionInfo="Saved by Adobe Flash Windows 12.0 build 481" majorVersion="12" buildNumber="481" objectsSnapTo="false" timelineLabelWidth="203" viewAngle3D="40.0431707259275" vanishingPoint3DX="500" vanishingPoint3DY="295" nextSceneIdentifier="8" playOptionsPlayLoop="false" playOptionsPlayPages="false" playOptionsPlayFrameActions="false" autoSaveEnabled="true" autoSaveHasPrompted="true">
      <folders>
           <DOMFolderItem name="bgs" itemID="5032d150-00000308"/>
           <DOMFolderItem name="buttons" itemID="501e0e30-000002b6"/>
@@ -15,7 +15,7 @@
           <DOMFolderItem name="map" itemID="502f3c11-00000443"/>
           <DOMFolderItem name="panels" itemID="501ca3bc-00000242"/>
           <DOMFolderItem name="references" itemID="501e0346-0000027b"/>
-          <DOMFolderItem name="screens" itemID="501e0165-00000237"/>
+          <DOMFolderItem name="screens" itemID="501e0165-00000237" isExpanded="true"/>
      </folders>
      <fonts>
           <DOMFontItem name="fonts/Font 3" itemID="502a66ac-00000268" font="Arial-BoldMT" size="0" id="6" sourceLastImported="1344956076" embedRanges="5"/>
@@ -186,7 +186,7 @@
           <Include href="panels/panelUnits.xml" loadImmediate="false" itemID="501e79d9-000003d0" lastModified="1344174553"/>
           <Include href="panels/processBar.xml" loadImmediate="false" itemID="501e0e9d-000002ba" lastModified="1345308405"/>
           <Include href="screens/creditsScreenClip.xml" itemID="501e0214-00000276" lastModified="1345555510"/>
-          <Include href="screens/gameScreenClip.xml" itemID="501e0198-00000251" lastModified="1347520348"/>
+          <Include href="screens/gameScreenClip.xml" itemID="501e0198-00000251" lastModified="1347838215"/>
           <Include href="screens/levelScreenClip.xml" itemID="501e01d8-00000269" lastModified="1346939804"/>
           <Include href="screens/menuScreenClip.xml" itemID="501dee8d-000001f2" lastModified="1346344947"/>
           <Include href="screens/shopScreenClip.xml" itemID="501e772a-000003c8" lastModified="1346370831"/>
@@ -197,7 +197,13 @@
                     <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
                          <frames>
                               <DOMFrame index="0" keyMode="9728">
-                                   <elements/>
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="screens/gameScreenClip" selected="true" centerPoint3DX="357.5" centerPoint3DY="266.6">
+                                             <transformationPoint>
+                                                  <Point x="357.5" y="266.55"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
                               </DOMFrame>
                          </frames>
                     </DOMLayer>
@@ -508,6 +514,9 @@
      </extendedSwatchLists>
      <PrinterSettings/>
      <publishHistory>
+          <PublishItem publishSize="516187" publishTime="1347578248"/>
+          <PublishItem publishSize="1106" publishTime="1347578214"/>
+          <PublishItem publishSize="516422" publishTime="1347578207"/>
           <PublishItem publishSize="516370" publishTime="1347521535"/>
           <PublishItem publishSize="516205" publishTime="1347520972"/>
           <PublishItem publishSize="516207" publishTime="1347520941"/>
@@ -525,8 +534,5 @@
           <PublishItem publishSize="514873" publishTime="1347515599"/>
           <PublishItem publishSize="514865" publishTime="1347515438"/>
           <PublishItem publishSize="514890" publishTime="1347515395"/>
-          <PublishItem publishSize="514792" publishTime="1347515210"/>
-          <PublishItem publishSize="514546" publishTime="1347514875"/>
-          <PublishItem publishSize="513202" publishTime="1347509078"/>
      </publishHistory>
 </DOMDocument>
